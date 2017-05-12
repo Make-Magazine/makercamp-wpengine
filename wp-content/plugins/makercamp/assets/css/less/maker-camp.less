@@ -1,0 +1,57 @@
+/**
+ * Maker Camp
+ * http://quorstudio.com
+ *
+ * Copyright (c) 2015 Alex T (Quorstudio)
+ * Licensed under the GPLv2+ license.
+ */
+
+.makercamp {
+  position: relative;
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+  }
+
+  .flexslider {
+    .flex-direction-nav a {
+      height: 55px;
+
+      &:after {
+        content: attr(data-content);
+      }
+    }
+
+    .flex-next {
+      opacity: 0.8;
+      right: 10px;
+    }
+
+    .flex-prev {
+      opacity: 0.8;
+      left: 10px;
+    }
+  }
+
+  .calendar-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+
+    padding-bottom: 85px;
+
+    .calendar {
+      max-width: 910px;
+      padding: 40px 55px 80px;
+      margin: 0 auto;
+      background: white;
+
+      .popover-content {
+        color: #000000;
+      }
+    }
+  }
+}

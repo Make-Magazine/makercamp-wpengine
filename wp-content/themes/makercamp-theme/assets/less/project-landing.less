@@ -1,0 +1,190 @@
+.project-landing {
+  position: relative;
+  .project-hero {
+    background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 610px;
+    @media (max-width: 767px) {
+      height: 52vw;
+    }
+    h1 {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      right: 0;
+      color: #fff;
+      letter-spacing: 4px;
+      font-weight: 300;
+      font-size: 42px;
+      @media (max-width: 767px) {
+        font-size: 9vw;
+        top: 30%;
+      }
+    }
+    #animation {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .hero .week-1,
+  .hero .week-2,
+  .hero .week-3,
+  .hero .week-4,
+  .hero .week-5,
+  .hero .week-6 {
+    background-image: none;
+  }
+
+  .mc-blue-arrow-btn {
+    position: absolute;
+    z-index: 2;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  #week-2-scroller {
+    .mc-blue-arrow-btn {
+      top: 50px;
+      left: 54%;
+    }
+  }
+  #week-3-scroller{
+    .mc-blue-arrow-btn {
+      top: 230px;
+      left: 76%;
+    }
+  }
+  #week-6-scroller {
+    .mc-blue-arrow-btn {
+      top: 445px;
+      left: 79%;
+    }    
+  }
+  #week-5-scroller {
+    .mc-blue-arrow-btn {
+      top: 547px;
+      left: 53%;
+    }    
+  }
+  #week-4-scroller {
+    .mc-blue-arrow-btn {
+      top: 400px;
+      left: 11%;
+    }    
+  }
+  #week-1-scroller {
+    .mc-blue-arrow-btn {
+      top: 125px;
+      left: 11%;
+    }   
+  }
+
+
+  .project-theme {
+    padding: 60px 0;
+    &:nth-child(odd) {
+      background-color: #ebebeb;
+    }
+    h2 {
+      color: #3fafed;
+      margin-top: 0;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    p {
+      line-height: 1.6em;
+      margin-bottom: 0;
+      height: 100px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    hr {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-top: 1px solid #3fafed;
+    }
+    h3 {
+      color: #3fafed;
+      margin-top: 0;
+      text-align: center;
+      font-weight: 300;
+    }
+    @media (max-width: 767px) {
+      .pl-theme-desc {
+        margin-bottom: 15px;
+        p {
+          height: 100%;
+        }
+      }
+    }
+    .pl-theme-projects {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+      .pl-theme-project {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        @media (min-width: 768px) and (max-width: 991px) {
+          width: 150px;
+        }
+        @media (max-width: 767px) {
+          width: 50%;
+          padding: 0 15px 15px;
+        }
+        h4 {
+          text-align: center;
+          font-weight: 300;
+          line-height: 1.2em;
+        }
+        .pl-project-img {
+          width: 200px;
+          height: 200px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          @media (min-width: 768px) and (max-width: 991px) {
+            width: 150px;
+            height: 150px;
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+            height: 40vw;
+          }
+        }
+        .btn-cyan {
+          display: block;
+          text-align: center;
+          border-radius: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .container {
+      position: relative;
+      .pl-scroll-up {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        color: #3fafed;
+        cursor: pointer;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

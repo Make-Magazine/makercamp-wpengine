@@ -1,0 +1,6 @@
+[submodule "wp-content/plugins/makercamp"]
+	path = wp-content/plugins/makercamp
+	url = https://github.com/Make-Magazine/makercamp-plugin.git
+[submodule "wp-content/themes/makercamp-theme"]
+	path = wp-content/themes/makercamp-theme
+	url = https://github.com/Make-Magazine/makercamp-theme.git

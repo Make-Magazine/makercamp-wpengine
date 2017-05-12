@@ -1,0 +1,1068 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Bootstrap CSS
+--------------------------------------------------------------*/
+@import 'base.less';
+@import "typography";
+@import "buttons";
+@import "layouts/header";
+@import "layouts/footer";
+@import "home/index";
+@import "find-a-camp/index";
+@import "hidden/index";
+@import "project-library/index";
+@import "host-a-camp/index";
+@import "about/index";
+@import "layouts/overlay";
+@import "single-project.less";
+@import "project-landing.less";
+
+// Glyphicon Path Fix
+@icon-font-path: "http://makercamp.com/wp-content/themes/makercamp-theme/bower_components/bootstrap/fonts/";
+
+/*--------------------------------------------------------------
+2.0 - Custom Styling
+--------------------------------------------------------------*/
+
+body {
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top {
+  margin-top: 30px;
+}
+
+// Sidebar
+
+#secondary {
+  padding-top: 30px;
+}
+
+// Main Content
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.error-404 {
+  margin: 80px 0;
+}
+
+/*--------------------------------------------------------------
+2.1 Week day
+--------------------------------------------------------------*/
+.makercamp {
+  .flexslider {
+    background-color: #ebebeb;
+
+    border: 0;
+    border-radius: 0;
+
+    padding: 0;
+    margin: 0;
+
+    min-height: 516px;
+    min-height: 516px;
+
+    .week-mobile-image {
+      display: none;
+    }
+
+    .taxonomy-week {
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+
+      height: 516px;
+    }
+
+    .flex-direction-nav {
+      .flex-next {
+        right: 179px;
+        width: 105px;
+        height: 96px;
+
+        opacity: 1;
+
+        text-align: left;
+        text-decoration: none;
+
+        padding: 37px 0 0 0;
+
+        font-size: 0;
+
+        background: url("../assets/img/slider_arrow_right.png") right center no-repeat;
+        background-size: 54px;
+      }
+
+      .flex-prev {
+        left: 179px;
+        width: 120px;
+        height: 96px;
+
+        opacity: 1;
+
+        text-align: left;
+        text-decoration: none;
+
+        padding: 37px 0 0 57px;
+
+        font-size: 0;
+
+        background: url("../assets/img/slider_arrow_left.png") left center no-repeat;
+        background-size: 54px;
+      }
+
+      .flex-next:before {
+        content: "";
+      }
+
+      .flex-prev:before {
+        content: "";
+      }
+
+      .flex-next:hover:after {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+
+        text-transform: uppercase;
+      }
+
+      .flex-prev:hover:after {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+
+        text-transform: uppercase;
+      }
+    }
+
+    .container {
+      text-align: center;
+
+      .week-title {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 100;
+
+        text-transform: uppercase;
+        margin: 0;
+        padding: 69px 0 30px 0;
+      }
+
+      .day-title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+
+        .label {
+          text-transform: uppercase;
+        }
+      }
+
+      .day-description {
+        display: none;
+
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .list-label {
+        position: relative;
+
+        margin-bottom: 21px;
+        padding-right: 25px;
+
+        color: #fff;
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .camp_days {
+        margin: 0 auto;
+        margin-top: 30px;
+
+        display: inline-block;
+
+        .camp_day-number {
+          position: relative;
+          display: inline-block;
+
+          margin-right: 36px;
+
+          a {
+            display: block;
+            padding: 2px 0 0 0;
+
+            color: #000;
+            font-size: 38px;
+            font-weight: 600;
+            text-decoration: none;
+
+            width: 71px;
+            height: 71px;
+
+            background-color: #fff;
+
+            border-radius: 50%;
+            border: 6px solid #05729f;
+
+            &:hover {
+              color: #000;
+              text-decoration: none;
+              background-color: #3299c3;
+            }
+
+            &:visited {
+              color: #000;
+            }
+          }
+
+          .icon-locked {
+            position: absolute;
+            top: -15px;
+            left: 35px;
+
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: #e95130;
+            background-image: url("../assets/img/lock_icon.png");
+            background-size: 15px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border-radius: 50%;
+          }
+
+          .label {
+            text-transform: uppercase;
+            font-size: inherit;
+          }
+
+          &.opened-day {
+            a {
+              background-color: #3299c3;
+            }
+          }
+        }
+
+        .icon-current {
+          position: absolute;
+          top: -15px;
+          left: 35px;
+
+          display: block;
+          width: 32px;
+          height: 32px;
+          background-color: #ebf954;
+          background-image: url("../assets/img/current_icon.png");
+          background-size: 15px;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          border-radius: 50%;
+        }
+      }
+
+      .camp_day-number:last-child {
+        margin-right: 0;
+      }
+
+      .calendar-button {
+        background-color: #3ec075;
+        background-image: url("../../assets/img/calendar_icon.png");
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+
+        width: 52px;
+        height: 52px;
+
+        position: relative;
+        top: -37px;
+
+        border-radius: 50%;
+        margin: 0 0 0 25px;
+
+        font-size: 0;
+      }
+    }
+
+    .play-first-video-button {
+      display: block;
+      padding: 19px 45px;
+      margin: 0 auto;
+      margin-top: 49px;
+      margin-bottom: 60px;
+
+      max-width: 320px;
+
+      border-radius: 40px;
+      overflow: hidden;
+
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      background: #00bff3;
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .makercamp {
+
+    .flexslider {
+      background: #daf1f7;
+      padding: 28px 0 31px 0;
+
+      min-height: 732px;
+
+
+      .taxonomy-week {
+        background: none !important;
+
+        height: auto;
+      }
+
+      .week-mobile-image {
+        display: block;
+        margin: 0 auto;
+
+        width: 181px;
+      }
+
+      .flex-direction-nav {
+
+        .flex-next, .flex-prev {
+          width: 35px;
+          background-size: 30px;
+        }
+
+        .flex-next {
+          top: 160px;
+          right: 10px;
+        }
+
+        .flex-prev {
+          top: 160px;
+          left: 10px;
+        }
+
+        .flex-next:hover:after, .flex-prev:hover:after {
+          display: none;
+        }
+      }
+
+      .container {
+        text-align: center;
+
+        .calendar-button {
+          display: block;
+          top: 0;
+          margin: 0 auto;
+        }
+
+        .week-title {
+          color: #333;
+          font-size: 44px;
+          font-weight: 100;
+
+          padding: 0 0 24px 0;
+        }
+
+        .day-title, .label {
+          color: #333;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .day-description {
+          display: block;
+          margin-top: 19px;
+        }
+
+        .attachment-thumbnail {
+          display: block;
+        }
+
+        .list-label {
+          color: #00bff3;
+          font-size: 22px;
+
+          padding-right: 0;
+          margin-top: 48px;
+          display: block;
+        }
+
+        .camp_days {
+          margin-top: 0;
+
+          .camp_day-number {
+            margin: 0 7px 25px 7px;
+          }
+        }
+
+        .day-title {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.daily-camp-videos-wrapper {
+  background-color: #ebebeb;
+  text-align: center;
+
+  padding: 35px 0 32px 0;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .dayly-camp-videos {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+      float: left;
+      padding-right: 20px;
+      padding-bottom: 20px;
+
+      a {
+        float: left;
+        position: relative;
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        img {
+          width: 201px;
+        }
+
+        .fancybox-video-play-button {
+          background-image: url("../assets/img/play_button.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 58px;
+          width: 58px;
+
+          display: block;
+          position: absolute;
+          top: 46px;
+          left: 69px;
+        }
+      }
+
+      h3 {
+        color: #010101;
+        font-size-adjust: 20.5px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0;
+        clear: none;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        text-align: left;
+        display: inherit;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .daily-camp-videos-wrapper {
+    background-color: #f6f6f6;
+
+    padding: 24px 0 38px 0;
+
+    .dayly-camp-videos {
+      padding: 0 14px;
+
+      li {
+        float: none;
+        margin: 0;
+        margin-bottom: 60px;
+
+        width: 100%;
+
+        a {
+          float: none;
+
+          img {
+            width: 100%;
+          }
+
+          .fancybox-video-play-button {
+            top: 50%;
+            left: 50%;
+
+            margin: -29px 0 0 -29px;
+          }
+        }
+
+        h3 {
+          margin-top: 13px;
+        }
+
+        h3, p {
+          font-size: 18px;
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  background-color: #f7f7f7;
+  padding: 21px 0 21px 0;
+  text-align: center;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .entry-content {
+    margin-top: 0;
+  }
+
+  p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+
+    max-width: 888px;
+    display: inline-block;
+
+    margin: 0;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .content-wrapper {
+    display: none;
+  }
+}
+
+.camp-resources-wrapper {
+  padding: 68px 0 63px 0;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .camp-resources {
+    margin-bottom: 0;
+
+    li {
+      width: 48%;
+      font-size: 18px;
+      text-align: left;
+
+      float: left;
+
+      text-align: left;
+
+      img {
+        width: 90px;
+        float: left;
+
+        margin-right: 43px;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+
+        margin: 0;
+
+        display: block;
+        clear: none;
+      }
+
+      p {
+        font-weight: 400;
+        margin: 29px 0 0 0;
+        padding: 0 109px 0 0;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-left: 0;
+        padding: 10px 0 10px 62px;
+        background: url("../assets/img/arrow_right.png") left center no-repeat;
+        background-size: 21px;
+        color: #00bff3;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .other-projects {
+        overflow: hidden;
+
+        li {
+          float: none;
+          width: 100%;
+          text-align: left;
+
+          .read-more {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .camp-resources-wrapper {
+    padding: 34px 0 31px 0;
+
+    .camp-resources {
+
+      li {
+        width: 100%;
+        float: none;
+
+        text-align: center;
+        margin-bottom: 59px;
+
+        img {
+          width: 86px;
+          float: none;
+
+          margin: 0 auto;
+          margin-bottom: 35px;
+        }
+
+        p {
+          padding: 0 14px;
+          margin-bottom: 22px;
+        }
+
+        .read-more {
+          text-align: left;
+          margin-left: 27px;
+        }
+
+        .other-projects {
+          padding-top: 15px;
+
+          li {
+            text-align: center;
+
+            margin-bottom: 21px;
+
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.fancybox-outer {
+  .fancybox-nav {
+    width: 20%;
+    height: 25%;
+    top: 37%;
+  }
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 320px) {
+  .fancybox-inner {
+    max-height: 150px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 420px) and (min-width: 321px) {
+  .fancybox-inner {
+    max-height: 200px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 520px) and (min-width: 431px) {
+  .fancybox-inner {
+    max-height: 245px;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 620px) and (min-width: 531px) {
+  .fancybox-inner {
+    max-height: 300px;
+  }
+}
+
+/*--------------------------------------------------------------
+2.2 Week day - Calender
+--------------------------------------------------------------*/
+.calendar-wrapper {
+  background: #90D1BE url('../assets/img/calendar-bg.png') bottom center no-repeat;
+
+  .calendar {
+    background: #2BAD63 !important;
+    color: white;
+
+    padding: 40px 55px 80px !important;
+
+    -webkit-box-shadow: 10px 14px 0px 0px #3A905F;
+    -moz-box-shadow: 10px 14px 0px 0px #3A905F;
+    box-shadow: 10px 14px 0px 0px #3A905F;
+
+    ul {
+      margin: 0;
+      clear: right;
+    }
+
+    .go-back {
+      float: right;
+      padding: 5px 0 5px 33px;
+
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 50px;
+      text-transform: uppercase;
+
+      background: url("../assets/img/arrow-left.png") left center no-repeat;
+      background-size: 23px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cal-week-title {
+    margin-bottom: 9px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .cal-week-description {
+    margin: 0 0 28px 0;
+    font-size: 16px;
+  }
+
+  .camp_days {
+    text-align: center;
+
+    .camp_day-number {
+      position: relative;
+      display: inline-block;
+
+      margin: 0 32px;
+
+      a {
+        display: block;
+        position: relative;
+
+        color: #666;
+        font-size: 46px;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 5.25rem;
+
+        width: 95px;
+        height: 95px;
+
+        background-color: #fff;
+
+        border-radius: 50%;
+        border: 3px solid #05729f;
+
+        -webkit-box-shadow: 5px 4px 0px 0px #3a905f;
+        -moz-box-shadow: 5px 4px 0px 0px #3a905f;
+        box-shadow: 5px 4px 0px 0px #3a905f;
+        z-index: 2;
+
+        &:hover {
+          color: #000;
+          text-decoration: none;
+          background-color: #3299c3;
+        }
+
+        &:visited {
+          color: #000;
+        }
+      }
+
+      .icon-locked {
+        position: absolute;
+        top: -8px;
+        right: -7px;
+
+        display: block;
+        width: 45px;
+        height: 45px;
+
+        background-color: #e95130;
+        background-image: url("../assets/img/lock_icon.png");
+        background-size: 22px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+
+        z-index: 3;
+      }
+
+      .icon-current {
+        position: absolute;
+        top: -8px;
+        right: -7px;
+
+        display: block;
+        width: 45px;
+        height: 45px;
+
+        background-color: #e9d447;
+        background-image: url("../assets/img/current_icon.png");
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+
+        z-index: 3;
+      }
+
+      &.opened-day {
+        a {
+          background-color: #3299c3;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .calendar-wrapper {
+    .calendar {
+      padding: 0 0 80px !important;
+
+      .go-back {
+        width: 100%;
+        display: block;
+
+        margin: 0;
+        padding: 0 0 0 48px;
+
+        background-color: #288d17;
+        background-position: 15px center;
+      }
+
+      .cal-weeks {
+        overflow: hidden;
+      }
+
+      .cal-week-title {
+        text-align: center;
+        margin: 35px 0 16px 0;
+
+        font-weight: 400;
+      }
+
+      .cal-week-description {
+        text-align: center;
+        line-height: 24px;
+        font-variant: small-caps;
+
+        margin: 0;
+        padding: 0 0 31px 0;
+      }
+
+      .camp_day-number {
+        margin: 0 16px 33px;
+
+        a {
+          border-color: #28aade;
+          color: #797979;
+          font-size: 38px;
+          line-height: 4.5rem;
+
+          width: 71px;
+          height: 71px;
+        }
+
+        .icon-current,
+        .icon-locked {
+          width: 31px;
+          height: 31px;
+          background-size: 15px;
+        }
+      }
+
+      .camp_day-number:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+Helper classes and others
+--------------------------------------------------------------*/
+.top15 { 
+  margin-top:15px!important;
+}
+.bottom15 { 
+  margin-bottom:15px!important;
+}
+.left15 { 
+  margin-left:15px!important;
+}
+.right15 { 
+  margin-right:15px!important;
+}
+.padtop { 
+  padding-top:15px!important;
+}
+.padbottom { 
+  padding-bottom:15px!important;
+}
+.padleft { 
+  padding-left:15px!important;
+}
+.padright { 
+  padding-right:15px!important;
+}
+.padtop5 {
+  padding-top: 5px;
+}
+.padbottom5 {
+  padding-bottom: 5px;
+}
+.padright5 {
+  padding-right: 5px;
+}
+.padleft5 {
+  padding-left: 5px;
+}
+.no-margins {
+  margin: 0 !important;
+}
+// Youtube, Vimeo, and Google Maps responsiveness 
+// To use: place div around iframe with one of these classes
+.embed-youtube, .embed-vimeo, .googlemaps, .videoBox_center {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin-bottom: 15px;
+  position: relative;
+  height: 0 !important;
+  width: 100% !important;
+  iframe, object {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+// Forms
+form {
+  input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+}
+
+/*** ADDING FLEXBOX TO PARENTS AND CHILDREN ***/
+// Add center horizontal flexbox to parent
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+}
+// Add center vertical flexbox to parent
+.flexbox-center-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+// BS Tool tip styling
+.tooltip-inner {
+  background: #14bcfb;
+  background-color: #14bcfb;
+  white-space: nowrap;
+  z-index: 100;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #14bcfb;
+}
