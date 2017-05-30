@@ -5,7 +5,9 @@
       <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp_Intro.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
-      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>2017 projects coming this June!</span></h2>
+      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Camp launches June 19 during National Week of Making
+2017 projects coming soon!</span></h2>
+      <a class="mc-blue-btn hidden-xs" href="/explore#host">Start a Camp</a>
       <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
       </div>
@@ -20,7 +22,7 @@
         <div class="foating-div-1">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Make_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>PROJECTS</h4>
-          <p>Check out our awesome collection of projects and start making today!</p>
+          <p>Check out our awesome collection of projects from last summer!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/projects"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
@@ -28,7 +30,7 @@
         <div class="foating-div-2">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Share_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>SHARE</h4>
-          <p>Post on social media with #makercamp and it’ll appear below!</p>
+          <p>Post your projects on social media with #MakerCamp and it will appear below!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="#share"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>SEE WHAT CAMPERS ARE SHARING</a>
           </div>
@@ -36,21 +38,21 @@
         <div class="foating-div-3">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>COMMUNITY</h4>
-          <p>Make friends with Campers from all around the world and swap ideas!</p>
-          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN THE <span>MAKER CAMP </span>COMMUNITY</a>
+          <p>Make friends with campers from all around the world and swap ideas!</p>
+          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN <span>MAKER CAMP </span>COMMUNITY</a>
         </div>
         <div class="foating-div-4">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>EXPLORE</h4>
           <p>Find a Maker Camp near you!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/explore"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE THE <span>MAKER CAMP </span>MAP</a>
+          <a class="mc-blue-arrow-btn" href="/explore"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE <span>MAKER CAMP </span>MAP</a>
           </div>
         </div>
         <div class="foating-div-5">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Host_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>HOST</h4>
-          <p>Become a Maker Camp affiliate and introduce the kids you love to the magic of making!</p>
+          <p>Become a Maker Camp affiliate and introduce kids to the joy of making!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/explore#host"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
           </div>
@@ -60,11 +62,13 @@
     <dic class="clearfix"></div>
   </section>
 
+  <?php echo social_media_panel(); ?>
+
   <section class="newsletter-panel">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <h4>Join the Maker Community</h4>
+          <h4>Join Maker Community</h4>
           <p>Get the latest news near you.</p>
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -128,8 +132,6 @@
       </div>
     </div>
   </section>
-
-  <?php echo social_media_panel(); ?>
 
   <section class="helps-make-makers">
     <div class="container">
