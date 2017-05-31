@@ -360,13 +360,13 @@ function stuff_for_sale_panel() { ?>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Spinbot kit</h4>
+              <h4>Maker's Notebook</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Maker Camp Gear</h4>
+              <h4>Make It Glow</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -391,16 +391,16 @@ function stuff_for_sale_panel() { ?>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-start-making" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/MSRSPIN-2_d59bdbdc-5ad6-4503-a38f-6da199eda67a_large_cropped.jpg" class="img-responsive" alt="Spinbot kit" />
-            <h4>Spinbot kit</h4>
-            <p>Spinbots are easy-to-make drawing robots that kids love to build, tweak, and enjoy.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">BUY NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/9780596519414-2_notebook_515x515_grande_6745f7ac-f2fc-4cf1-987c-b8c906b9411f_large_cropped.jpg" class="img-responsive" alt="Makers Notebook" />
+            <h4>Maker's Notebook</h4>
+            <p>Jot down project ideas, diagrams, calculations and notes in this sweet notebook.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/DSC_5185_1_large_cropped.jpg" class="img-responsive" alt="Maker Camp Hat" />
-            <h4>Maker Camp Gear</h4>
-            <p>Keep your campers cool with an official 2016 Maker Camp hat!</p>
-            <a class="mc-blue-btn" href="http://www.makershed.com/products/maker-faire-2016-trucker-hat" target="_blank">BUY NOW</a>
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/make-it-glow.jpg' ?>" class="img-responsive" alt="Make It Glow - Book" />
+            <h4>Make It Glow</h4>
+            <p>Explore electricity and electronics with a collection of kid-ready LED projects.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-it-glow" target="_blank">BUY NOW</a>
           </div>        
 
         </div>

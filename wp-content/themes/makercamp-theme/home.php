@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
   <section class="home-hero">
-    <video id="hero-video" autoplay="autoplay" muted="muted" poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp_Hm-Hero.jpg">
-      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp_Intro.mp4" type="video/mp4">
+    <video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp_Intro_2017.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
       <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Camp launches June 19 during National Week of Making
@@ -68,7 +68,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <h4>Join Maker Community</h4>
+          <h4>Join Maker Camp Community</h4>
           <p>Get the latest news near you.</p>
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -124,7 +124,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h2>WANT TO START</br> YOUR OWN <strong>MAKER CAMP</strong>?</h2>
-          <a class="mc-blue-btn" href="/explore#host">SIGN UP!</a>
+          <a class="mc-blue-btn" href="/explore#host">REGISTER</a>
         </div>
         <div class="col-xs-12 col-sm-6">
             <p>Maker Camp provides a simple, fun way for kids to get involved in making. Our worldwide network of affiliates host Maker Camps in public libraries, community groups, makerspaces, and maker homes. Cool projects are always available here online! More than <strong>1 million kids</strong> have participated in Maker Camp since it launched in 2012.</p>
