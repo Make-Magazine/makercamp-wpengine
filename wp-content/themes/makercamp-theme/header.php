@@ -29,6 +29,9 @@
   <script>try {Typekit.load();} catch (e) {}</script>
 
   <?php wp_head(); ?>
+
+  <!-- SUMOME -->
+  <script src="//load.sumome.com/" data-sumo-site-id="ca0a6aaae70076a4dba72da40006d7171363422e2ced11e4de3adff33d4878dd" async="async"></script>
 </head>
 
 <body <?php body_class(); ?>>
