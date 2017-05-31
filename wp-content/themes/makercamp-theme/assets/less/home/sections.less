@@ -1,16 +1,36 @@
 .home-hero {
-  padding-top: 75px;
-  background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
   position: relative;
-  height: 38vw;
+  height: 610px;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate(0, 0);
+  text-align: center;
+  video {
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: .6;
+    transition: opacity .3s ease;
+  }
+  .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
   .sponsor-container {
     span {
       color: #fff;
       margin-right: 3px;
+      text-shadow: 0px 0px 27px #000;
     }
     .white-sponsored-img {
       width: 45px;
@@ -24,6 +44,18 @@
     letter-spacing: 2px;
     margin-top: 48px;
     text-shadow: 0px 0px 27px #000;
+    strong {
+      font-size: 54px;
+      @media (max-width: 767px) {
+        font-size: 9vw;
+      }
+    }
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      display: block;
+      margin-top: 6px;
+    }
   }
   h1 {
     color: #fff; 
@@ -42,14 +74,12 @@
     left: 0;
     right: 0;
   }
-  @media (min-width: 1200px) {
-    height: 36vw;
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    padding-top: 4vw;
-  }
   @media (max-width: 767px) {
-    padding-top: 20px;
+    // background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    height: 45vw;
     h2 {
       font-size: 6vw;
       margin-top: 20px;
@@ -60,12 +90,57 @@
     }
   }
   @media (max-width: 460px) {
-    padding-top: 10px;
     h2 {
       margin-top: 10px;
     }
     i {
       display: none;
+    }
+  }
+}
+
+.newsletter-panel {
+  padding: 35px 0;
+  background-color: #ebebeb;
+  h4 {
+    color: #231f20;
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  p {
+    color: #231f20;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  form {
+    margin-top: 20px;
+    margin-bottom: 0;
+    @media (max-width:1199px) {
+      margin-top: 18px;
+    }
+    .nl-panel-input {
+      width: 67%;
+      height: 31px;
+      max-width: 350px;
+      margin-right: 15px;
+      @media (max-width:767px) {
+        width: 100%;
+        margin-right: 0;
+        max-width: none;
+        margin-bottom: 15px;
+      }
+    }
+    .btn-cyan {
+      margin-bottom: 10px;
+      vertical-align: middle;
+      height: 31px;
+      padding: 5px 8px;
+      @media (max-width:767px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -233,6 +308,7 @@
 .home-sponsor {
   padding: 10px 0 10px;
   position: relative;
+  display: none;
   .triangle-block {
     width: 26px;
     height: 26px;
@@ -297,7 +373,8 @@
 }
 
 .mc-social {
-  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
   @media (max-width: 767px) {
     text-align: center;
   }
@@ -322,6 +399,8 @@
   }
   .tintup {
     overflow: hidden;
+    margin-left: -7px;
+    margin-right: -7px;
   }
   .mc-blue-arrow-btn {
     display: inline-block;
@@ -330,7 +409,7 @@
 }
 
 .helps-make-makers {
-  background-color: #ebebeb;
+  //background-color: #ebebeb;
   padding: 70px 0 70px;
   position: relative;
   text-align: center;
@@ -342,7 +421,7 @@
   .triangle-block {
     width: 26px;
     height: 26px;
-    background-color: #ebebeb;
+    background-color: #fff;
     position: absolute;
     bottom: -13px;
     left: 0;
@@ -362,14 +441,19 @@
       display: none;
     }
     .sale-flex-btm {
-      height: 100px;
+      height: 67px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      padding: 15px 0;
       h4 {
         color: #fff;
         text-align: center;
         z-index: 10;
+        margin: 0;
+        @media (max-width: 991px) {
+          font-size: 16px;
+        }
       }
       .triangle-block {
         width: 26px;
@@ -400,9 +484,19 @@
       img {
         padding: 0 7px 10px;
       }
+      h4 {
+        display: none;
+        margin: 0 0 5px;
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
       p, a {
         font-size: 14px;
         margin-bottom: 0;
+      }
+      a {
+        margin-top: 10px;
       }
     }
 

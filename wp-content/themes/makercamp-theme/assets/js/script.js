@@ -27,22 +27,22 @@ var hideAnimation = function (alt) {
 /**
  * Project Landing page blue button/hero shadow trigger
  */
-$(".week-2-scroller").hover(function () {
+$(".week-1-scroller").hover(function () {
   $(".week.week-1").toggleClass("active");
 });
-$(".week-3-scroller").hover(function () {
+$(".week-2-scroller").hover(function () {
   $(".week.week-2").toggleClass("active");
 });
-$(".week-6-scroller").hover(function () {
+$(".week-3-scroller").hover(function () {
   $(".week.week-3").toggleClass("active");
 });
-$(".week-5-scroller").hover(function () {
+$(".week-4-scroller").hover(function () {
   $(".week.week-4").toggleClass("active");
 });
-$(".week-4-scroller").hover(function () {
+$(".week-5-scroller").hover(function () {
   $(".week.week-5").toggleClass("active");
 });
-$(".week-1-scroller").hover(function () {
+$(".week-6-scroller").hover(function () {
   $(".week.week-6").toggleClass("active");
 });
 
@@ -561,6 +561,46 @@ $(document).ready(function () {
         }
       }
     });
+  });
+
+
+  // Fancybox newsletter subscribe modal stuff
+  $(".fancybox-thx").fancybox({
+    autoSize : false,
+    width  : 400,
+    autoHeight : true,
+    padding : 0,
+    afterLoad   : function() {
+      this.content = this.content.html();
+    }
+  });
+  $(document).on('submit', '.whatcounts-signup1', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+  $(document).on('submit', '.whatcounts-signup1f', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+  $(document).on('submit', '.whatcounts-signup1m', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+
+
+  // Facybox for home page promo video
+  jQuery(".fancybox-promo").fancybox({
+    fitToView : false,
+    width   : '90%',
+    height    : '90%',
+    autoSize  : false,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none',
+    padding : 0
   });
 
 });

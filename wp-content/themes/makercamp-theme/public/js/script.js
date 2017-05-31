@@ -2913,6 +2913,11 @@ $(document).ready(function () {
     $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
     $('.fancybox-thx').trigger('click');
   });
+  $(document).on('submit', '.whatcounts-signup1f', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
   $(document).on('submit', '.whatcounts-signup1m', function (e) {
     e.preventDefault();
     $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());

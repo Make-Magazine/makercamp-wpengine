@@ -1,15 +1,12 @@
 .project-landing {
   position: relative;
-  .project-hero {
-    background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
+  #hero {
     position: relative;
-    height: 610px;
     @media (max-width: 767px) {
       height: 52vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
     h1 {
       position: absolute;
@@ -20,6 +17,7 @@
       letter-spacing: 4px;
       font-weight: 300;
       font-size: 42px;
+      text-shadow: 0 0 27px #000;
       @media (max-width: 767px) {
         font-size: 9vw;
         top: 30%;
@@ -38,7 +36,7 @@
   .hero .week-4,
   .hero .week-5,
   .hero .week-6 {
-    background-image: none;
+    //background-image: none;
   }
 
   .mc-blue-arrow-btn {
@@ -49,47 +47,120 @@
     }
   }
 
-  #week-2-scroller {
+  #week-1-scroller {
     .mc-blue-arrow-btn {
       top: 50px;
       left: 54%;
     }
   }
-  #week-3-scroller{
+  #week-2-scroller{
     .mc-blue-arrow-btn {
       top: 230px;
       left: 76%;
     }
   }
-  #week-6-scroller {
+  #week-3-scroller {
     .mc-blue-arrow-btn {
       top: 445px;
       left: 79%;
     }    
   }
-  #week-5-scroller {
+  #week-4-scroller {
     .mc-blue-arrow-btn {
       top: 547px;
       left: 53%;
     }    
   }
-  #week-4-scroller {
+  #week-5-scroller {
     .mc-blue-arrow-btn {
       top: 400px;
-      left: 11%;
+      left: 16%;
     }    
   }
-  #week-1-scroller {
+  #week-6-scroller {
     .mc-blue-arrow-btn {
       top: 125px;
       left: 11%;
     }   
   }
 
+  .pl-sponsored-projects {
+    padding: 30px 0;
+    position: relative;
+    background-color: #ebebeb;
+    .triangle-block {
+      width: 26px;
+      height: 26px;
+      background-color: #ebebeb;
+      position: absolute;
+      top: -13px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      @media (max-width: 450px) {
+        display: none;
+      }
+    }
+    h3 {
+      color: #3fafed;
+      font-size: 30px;
+      line-height: 1.1em;
+      margin-top: 140px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      @media (max-width: 767px) {
+        margin-top: 30px;
+      }
+    }
+    .btn-cyan {
+      padding: 18px 50px;
+      border-radius: 30px;
+    }
+    img {
+      width: 110px;
+      height: auto;
+    }
+    .pl-sponsored-blue {
+      color: #3fafed;
+      text-transform: uppercase;
+      margin-top: 30px;
+      line-height: 1.3em;
+    }
+    .pl-theme-sponsor {
+      margin-top: 20px;
+      span {
+        font-size: 14px;
+        color: #888;
+        font-weight: 300;
+      }
+      img {
+        padding-left: 3px;
+      }
+    }
+    @media (max-width: 767px) {
+      a {
+        margin-top: 0;
+      }
+      .col-sm-push-6 > img {
+        float: left;
+        padding: 0 15px 15px 0;
+      }
+      .pl-sponsored-blue {
+        margin-top: 0;
+      }
+      .col-sm-pull-6 {
+        text-align: center;
+      }
+    }
+  }
+
 
   .project-theme {
     padding: 60px 0;
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background-color: #ebebeb;
     }
     h2 {
@@ -133,6 +204,7 @@
       justify-content: space-between;
       @media (max-width: 767px) {
         flex-wrap: wrap;
+        margin: 0 -15px;
       }
       .pl-theme-project {
         display: inline-block;
@@ -144,24 +216,47 @@
         @media (max-width: 767px) {
           width: 50%;
           padding: 0 15px 15px;
+          margin-bottom: 15px;
         }
         h4 {
-          text-align: center;
-          font-weight: 300;
-          line-height: 1.2em;
+            text-align: center;
+            color: #444;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            height: 45px;
+            overflow: hidden;
+            position: relative;
+          span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
         }
-        .pl-project-img {
-          width: 200px;
+        .pl-project-img-parent {
+          width: 100%;
           height: 200px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
+          overflow: hidden;
+          display: block;
+          .pl-project-img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: transform .2s cubic-bezier(0.4, 0, 1, 1);
+          }
           @media (min-width: 768px) and (max-width: 991px) {
-            width: 150px;
+            height: 200px;
+          }
+          @media (min-width: 768px) and (max-width: 991px) {
             height: 150px;
           }
           @media (max-width: 767px) {
-            width: 100%;
             height: 40vw;
           }
         }
@@ -170,6 +265,16 @@
           text-align: center;
           border-radius: 20px;
           margin-top: 10px;
+        }
+        &:hover {
+          .pl-project-img {
+            transform: scale(1.07);
+            transition: transform .2s cubic-bezier(0.4, 0, 1, 1);
+          }
+          .btn-cyan {
+            background-color: #029bd4;
+            transition: background-color .2s;
+          }
         }
       }
     }
