@@ -28,7 +28,7 @@
     <div class="week week-5"></div>
     <div class="week week-6"></div>
 
-    <h1>START <strong>MAKING!</strong></h1>
+    <h1><strong>2016 Projects<br/><span>This summer’s projects coming June 19!</span></strong></h1>
 
   </section>
 
