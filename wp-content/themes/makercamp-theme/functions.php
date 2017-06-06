@@ -273,6 +273,44 @@ function is_child($page_ID) {
 }
 
 
+/**
+ * Create the Project Paths post types
+ */
+add_action( 'init', 'project_path_post_types' );
+function project_path_post_types() {
+  /**
+   * Register the project path post type
+   */
+  $labels = array(
+      'name'                => _x('Project Paths', 'post type general name'),
+      'singular_name'       => _x('Project Path', 'post type singular name'),
+      'add_new'             => _x('Add New', 'new project path'),
+      'add_new_item'        => __('Add New Project Path'),
+      'edit_item'           => __('Edit Project Path'),
+      'new_item'            => __('New Project Path'),
+      'view_item'           => __('View Project Path'),
+      'search_items'        => __('Search Project Path'),
+      'not_found'           => __('Nothing found'),
+      'not_found_in_trash'  => __('Nothing found in Trash'),
+      'parent_item_colon'   => ''
+  );
+  $args = array(
+      'labels'              => $labels,
+      'public'              => true,
+      'has_archive'         => false,
+      'publicly_queryable'  => true,
+      'show_ui'             => true,
+      'query_var'           => true,
+      'capability_type'     => 'page',
+      'hierarchical'        => true,
+      'menu_position'       => null,
+      'menu_icon'           => 'dashicons-star-filled',
+      'supports'            => array('title','editor','excerpt','thumbnail','revisions','page-attributes',)
+  );
+  register_post_type( 'project-paths', $args );
+}
+
+
 
 /**
  * Adds the subscribe header return path overlay
