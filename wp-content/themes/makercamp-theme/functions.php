@@ -386,25 +386,25 @@ function stuff_for_sale_panel() { ?>
 
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Make: Getting Started with Arduino Kit</h4>
-              <div class="triangle-block"></div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <div class="sale-flex-btm">
               <h4>Start Making!</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Maker's Notebook</h4>
+              <h4>Make It Glow</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Make It Glow</h4>
+              <h4>Make: Paper Inventions</h4>
+              <div class="triangle-block"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="sale-flex-btm">
+              <h4>Maker's Notebook</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -417,29 +417,29 @@ function stuff_for_sale_panel() { ?>
         <div class="row">
 
           <div class="col-xs-6 col-sm-3">
-            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/MakeKits-Arduino-components_web_large.jpg" class="img-responsive" alt="Getting Started with Arduino Kit" />
-            <h4>Make: Getting Started with Arduino Kit</h4>
-            <p>Kit contains the components and book you need to make getting started with Arduino easy.</p>
-            <a class="mc-blue-btn" href="http://www.makershed.com/products/make-getting-started-with-arduino-kit-special-edition" target="_blank">BUY NOW</a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
             <img src="<?php echo get_template_directory_uri() . '/assets/img/StartMaking.jpg' ?>" class="img-responsive" alt="Start Making!" />
             <h4>Start Making!</h4>
             <p>Six great projects guaranteed to spark your imagination and get you making.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-start-making" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/9780596519414-2_notebook_515x515_grande_6745f7ac-f2fc-4cf1-987c-b8c906b9411f_large_cropped.jpg" class="img-responsive" alt="Makers Notebook" />
-            <h4>Maker's Notebook</h4>
-            <p>Jot down project ideas, diagrams, calculations and notes in this sweet notebook.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
             <img src="<?php echo get_template_directory_uri() . '/assets/img/make-it-glow.jpg' ?>" class="img-responsive" alt="Make It Glow - Book" />
             <h4>Make It Glow</h4>
             <p>Explore electricity and electronics with a collection of kid-ready LED projects.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-it-glow" target="_blank">BUY NOW</a>
-          </div>        
+          </div>  
+          <div class="col-xs-6 col-sm-3">
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Paper_Inventions_large.jpg" class="img-responsive" alt="Make: Paper Inventions Book" />
+            <h4>Make: Paper Inventions</h4>
+            <p>A colorful book to guide you in making your own paper projects.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-paper-inventions" target="_blank">BUY NOW</a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/9780596519414-2_notebook_515x515_grande_6745f7ac-f2fc-4cf1-987c-b8c906b9411f_large_cropped.jpg" class="img-responsive" alt="Makers Notebook" />
+            <h4>Maker's Notebook</h4>
+            <p>Jot down project ideas, diagrams, calculations and notes in this sweet notebook.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
+          </div>      
 
         </div>
       </div>
