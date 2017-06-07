@@ -182,16 +182,27 @@ get_header();
             <h2 class="text-center">GALLERY OF IDEAS</h2>
           </div>
           <?php foreach($gallery_of_ideas as $gallery_of_idea) {
+            //true/false
             $project_from_2016 = $gallery_of_idea['project_from_2016'];
 
             if($project_from_2016) {
+              //post object
               $project_2016 = $gallery_of_idea['2016_project'];
+
               // override $post
               $post = $project_2016;
-              setup_postdata( $post ); ?>
+              setup_postdata( $post );
+              if ( has_post_thumbnail() ) {
+                $project_img = get_the_post_thumbnail_url($post_object->ID);
+                
+              } else {
+                $project_img = get_field('hero_image'); 
+                $project_img = $project_img['url'];
+              }
+              ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php the_permalink(); ?>" target="_blank">
-                  <div class="pp-ideas-img" style="background: url(<?php echo $gallery_of_idea['image']; ?>)no-repeat center center;"></div>
+                  <div class="pp-ideas-img" style="background: url('<?php echo $project_img; ?>')no-repeat center center;"></div>
                   <h4><?php the_title(); ?></h4>
                 </a>
               </div>
