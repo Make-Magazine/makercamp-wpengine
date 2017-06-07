@@ -53,12 +53,16 @@ get_header();
     </section>
 
     <section class="pp-intro">
-      <div><?php echo $intro; ?></div>      
+      <div class="container">
+        <div><?php echo $intro; ?></div>
+      </div>  
     </section>
 
     <section class="pp-details">
-      <h2 class="text-center">START MAKING!</h2>
-      <div class="pp-learn"><?php echo $start_making; ?></div>      
+      <div class="container">
+        <h2 class="text-center">START MAKING!</h2>
+        <div class="pp-learn"><?php echo $start_making; ?></div>
+      </div>
     </section>
 
     <section class="pp-materials container">
@@ -88,9 +92,10 @@ get_header();
       </div>
     </section>
 
-    <section class="pp-steps container">
-      <?php if($steps) {
-        $step_number = 1;
+
+    <?php if($steps) { ?>
+      <section class="pp-steps container">
+        <?php $step_number = 1;
         foreach($steps as $step) {
 
           $image_1 = $step['image_1'];
@@ -132,31 +137,29 @@ get_header();
           </div>
 
           <?php $step_number++;
-        }
-      } ?>
-    </section>
+        } ?>
+      </section>
+    <?php } ?>
 
-    <section class="pp-tip-bubbles container">
-      <?php if($tip_bubbles) {
-        foreach($tip_bubbles as $tip_bubble) {
+    <?php if($tip_bubbles) { ?>
+      <section class="pp-tip-bubbles container">
+        <?php foreach($tip_bubbles as $tip_bubble) {
           $background_color = $tip_bubble['background_color'];
           $title = $tip_bubble['title'];
           $description = $tip_bubble['description']; ?>
 
-          <div class="row">
-            <div class="col-xs-12 alert pp-bg-<?php echo $background_color; ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
-              <h4><?php echo $title; ?></h4>
-              <div class="pp-tip-desc"><?php echo $description; ?></div>
-            </div>
+          <div class="col-xs-12 alert pp-bg-<?php echo $background_color; ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
+            <h4><?php echo $title; ?></h4>
+            <div class="pp-tip-desc"><?php echo $description; ?></div>
           </div>
 
-        <?php }
-      } ?>
-    </section>
+        <?php } ?>
+      </section>
+    <?php } ?>
+
 
     <?php if( $keep_making ): ?>
-
       <section class="pp-whats-next">
         <div class="container">
           <div class="row">
@@ -169,8 +172,47 @@ get_header();
           </div>
         </div>
       </section>
-
     <?php endif; ?>
+
+
+    <?php if($gallery_of_ideas) { ?>
+      <section class="pp-ideas container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">GALLERY OF IDEAS</h2>
+          </div>
+          <?php foreach($gallery_of_ideas as $gallery_of_idea) {
+            $project_from_2016 = $gallery_of_idea['project_from_2016'];
+
+            if($project_from_2016) {
+              $project_2016 = $gallery_of_idea['2016_project'];
+              // override $post
+              $post = $project_2016;
+              setup_postdata( $post ); ?>
+              <div class="col-xs-6 col-sm-4">
+                <a href="<?php the_permalink(); ?>" target="_blank">
+                  <div class="pp-ideas-img" style="background: url(<?php echo $gallery_of_idea['image']; ?>)no-repeat center center;"></div>
+                  <h4><?php the_title(); ?></h4>
+                </a>
+              </div>
+
+            <?php }
+            else { ?>
+              <div class="col-xs-6 col-sm-4">
+                <a href="<?php echo $gallery_of_idea['url']; ?>" target="_blank">
+                  <div class="pp-ideas-img" style="background: url(<?php echo $gallery_of_idea['image']; ?>)no-repeat center center;"></div>
+                  <h4><?php echo $gallery_of_idea['title']; ?></h4>
+                </a>
+              </div>
+              
+
+            <?php }
+          }
+          //reset the $post object so the rest of the page works correctly
+          wp_reset_postdata(); ?>
+        </div>
+      </section>
+    <?php } ?>
 
 
     <section class="pp-buttons container text-center">

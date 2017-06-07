@@ -113,7 +113,7 @@
 
   .pp-intro {
     background-image: url("../assets/img/cloud_bg.svg");
-    padding: 30px 15px 60px; 
+    padding: 30px 0 60px; 
     div {
       font-size: 18px;
       line-height: 1.6em;
@@ -122,7 +122,7 @@
 
   .pp-details {
     background-color: #ebebeb;
-    padding: 30px 15px 60px;
+    padding: 30px 0 60px;
     h2 {
       color: #3fafed;
       margin: 10px 0;
@@ -272,7 +272,7 @@
   }
 
   .pp-tip-bubbles {
-    padding-top: 30px;
+    margin-top: -60px;
     padding-bottom: 60px;
     .pp-bg-Purple {
       background-color: #9c78c5;
@@ -288,7 +288,7 @@
     }
     img {
       display: inline-block;
-      width: 50px;
+      width: 35px;
     }
     h4 {
       display: inline-block;
@@ -298,21 +298,58 @@
       margin-bottom: 0;
       margin-left: 5px;
       vertical-align: bottom;
+      line-height: 16px;
     }
     .pp-tip-desc {
       color: #fff;
       margin-top: 10px;
+      p {
+        line-height: 1.3em;
+      }
     }
   }
 
   .pp-whats-next {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
     background-color: #ebebeb;
     h2 {
       color: #3fafed;
       margin: 0 0 20px;
       font-weight: 300;
+    }
+  }
+
+  .pp-ideas {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    h2 {
+      color: #3fafed;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    .col-sm-4 {
+      a {
+      }
+      .pp-ideas-img {
+        width: 100%;
+        height: 360px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          height: 293px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          height: 220px;
+        }
+        @media screen and (max-width: 767px) {
+          height: 45vw;
+        }
+      }
+      h4 {
+        text-align: center;
+      }
     }
   }
 
@@ -329,7 +366,8 @@
 
   .pp-disclaimer {
     .container {
-      padding: 40px 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
       border-top: 1px solid #3fafed;
       p {
         font-size: 14px;
