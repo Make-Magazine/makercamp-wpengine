@@ -114,21 +114,21 @@ get_header();
             <?php if (empty($image_2)) { ?>
               <div class="col-xs-12 col-sm-4">
                 <a class="pp-step-img1" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
+                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
                 </a>
               </div>
             <?php }
             elseif (!empty($image_2)) { ?>
               <div class="col-xs-12">
                 <a class="pp-step-img2" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
+                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
                 </a>
                 <a class="pp-step-img2" href="<?php echo $image_2['url']; ?>">
-                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_2['url'], 380, 380); ?>);"></div>
+                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_2['url'], 380, 380); ?>);"></div>
                 </a>
                 <?php if(!empty($image_3)) { ?>
                   <a class="pp-step-img2" href="<?php echo $image_3['url']; ?>">
-                    <div style="background-image: url(<?php echo get_resized_remote_image_url($image_3['url'], 380, 380); ?>);"></div>
+                    <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_3['url'], 380, 380); ?>);"></div>
                   </a>
                 <?php } ?>
               </div>
