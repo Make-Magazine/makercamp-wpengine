@@ -32,7 +32,7 @@ get_header();
     <section class="pp-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
       <div class="pp-hero-div">
         <?php if ($hero_image_sponsor) { ?>
-          <img src="<?php echo $hero_image_sponsor ?>" alt="Maker Camp project theme sponsorship logo" />
+          <img src="<?php echo get_resized_remote_image_url($hero_image_sponsor, 1900, 814); ?>" alt="Maker Camp project theme sponsorship logo" />
         <?php } ?>
         <h1><?php the_title(); ?></h1>
         <hr />
@@ -84,7 +84,7 @@ get_header();
             <?php if( have_rows('resources_images') ): ?>
               <?php while( have_rows('resources_images') ): the_row(); 
                 $image = get_sub_field('image'); ?>
-                <li style="background: url(<?php echo $image; ?>) no-repeat center center;"></li>
+                <li style="background: url(<?php echo get_resized_remote_image_url($image, 200, 200); ?>) no-repeat center center;"></li>
               <?php endwhile; ?>
             <?php endif; ?>
           </ul>
@@ -114,21 +114,21 @@ get_header();
             <?php if (empty($image_2)) { ?>
               <div class="col-xs-12 col-sm-4">
                 <a class="pp-step-img1" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo $image_1['url']; ?>);"></div>
+                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
                 </a>
               </div>
             <?php }
             elseif (!empty($image_2)) { ?>
               <div class="col-xs-12">
                 <a class="pp-step-img2" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo $image_1['url']; ?>);"></div>
+                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
                 </a>
                 <a class="pp-step-img2" href="<?php echo $image_2['url']; ?>">
-                  <div style="background-image: url(<?php echo $image_2['url']; ?>);"></div>
+                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_2['url'], 380, 380); ?>);"></div>
                 </a>
                 <?php if(!empty($image_3)) { ?>
                   <a class="pp-step-img2" href="<?php echo $image_3['url']; ?>">
-                    <div style="background-image: url(<?php echo $image_3['url']; ?>);"></div>
+                    <div style="background-image: url(<?php echo get_resized_remote_image_url($image_3['url'], 380, 380); ?>);"></div>
                   </a>
                 <?php } ?>
               </div>
@@ -202,7 +202,7 @@ get_header();
               ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php the_permalink(); ?>" target="_blank">
-                  <div class="pp-ideas-img" style="background: url('<?php echo $project_img; ?>')no-repeat center center;"></div>
+                  <div class="pp-ideas-img" style="background: url('<?php echo get_resized_remote_image_url($project_img, 400, 400); ?>')no-repeat center center;"></div>
                   <h4><?php the_title(); ?></h4>
                 </a>
               </div>
@@ -211,7 +211,7 @@ get_header();
             else { ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php echo $gallery_of_idea['url']; ?>" target="_blank">
-                  <div class="pp-ideas-img" style="background: url(<?php echo $gallery_of_idea['image']; ?>)no-repeat center center;"></div>
+                  <div class="pp-ideas-img" style="background: url(<?php echo get_resized_remote_image_url($gallery_of_idea['image'], 400, 400); ?>)no-repeat center center;"></div>
                   <h4><?php echo $gallery_of_idea['title']; ?></h4>
                 </a>
               </div>
