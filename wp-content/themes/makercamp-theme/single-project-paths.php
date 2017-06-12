@@ -14,6 +14,7 @@ get_header();
   $sponsored_by = get_field('sponsored_by');
   $sponsored_by_2 = get_field('sponsored_by_2');
 
+  $makey_image = get_field('makey_image');
   $startmaking_panel_title = get_field('startmaking_panel_title');
   $start_making = get_field('start_making');
 
@@ -62,6 +63,9 @@ get_header();
 
     <section class="pp-details">
       <div class="container">
+        <?php if ($makey_image) {
+          echo '<img class="pp-theme-img" src="' . get_fitted_remote_image_url($makey_image, 80, 80) . '" alt="Maker Camp Project Path Icon" />';
+        } ?>
         <h2 class="text-center"><?php echo $startmaking_panel_title; ?></h2>
         <div class="pp-learn"><?php echo $start_making; ?></div>
       </div>
@@ -69,6 +73,7 @@ get_header();
 
     <section class="pp-materials">
       <div class="container">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/supplyimage.png" alt="Maker Camp Project Materials Icon" />
         <h2 class="text-center"><?php echo $materials_panel_title; ?></h2>
         <div class="row">
           <div class="col-sm-6">

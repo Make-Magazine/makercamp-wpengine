@@ -119,6 +119,30 @@
             "endpoint": 1
         },
         {
+            "key": "field_593ec0670d8af",
+            "label": "Makey Image",
+            "name": "makey_image",
+            "type": "image",
+            "instructions": "Upload a Makey Image here to display over the panel title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_593e8fd059d8d",
             "label": "Panel Title",
             "name": "startmaking_panel_title",
@@ -920,5 +944,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1497279607
+    "modified": 1497284798
 }
