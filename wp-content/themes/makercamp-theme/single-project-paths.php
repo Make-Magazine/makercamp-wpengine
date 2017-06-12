@@ -7,26 +7,34 @@
 get_header(); 
 
   $hero_image = get_field('hero_image');
+  $path_theme = get_field('path_theme');
   $hero_project_path_description = get_field('hero_project_path_description');
   $hero_image_sponsor = get_field('hero_image_sponsor');
 
   $sponsored_by = get_field('sponsored_by');
   $sponsored_by_2 = get_field('sponsored_by_2');
 
-  $intro = get_field('intro');
-
+  $startmaking_panel_title = get_field('startmaking_panel_title');
   $start_making = get_field('start_making');
 
+  $materials_panel_title = get_field('materials_panel_title');
   $resources = get_field('resources');
   $resources_images = get_field('resources_images');
 
+  $steps_panel_title = get_field('steps_panel_title');
+  $steps_description = get_field('steps_description');
   $steps = get_field('steps');
-
   $tip_bubbles = get_field('tip_bubbles');
 
+  $keepmaking_panel_title = get_field('keepmaking_panel_title');
   $keep_making = get_field('keep_making');
 
-  $gallery_of_ideas = get_field('gallery_of_ideas'); ?>
+  $gallery_panel_title = get_field('gallery_panel_title');
+  $gallery_of_ideas = get_field('gallery_of_ideas'); 
+
+  $maker_panel_title = get_field('maker_panel_title');
+  $featured_maker_info = get_field('featured_maker_info');
+  //$ = get_field(''); ?>
 
   <div id="single-project-path">
     <section class="pp-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
@@ -34,9 +42,10 @@ get_header();
         <?php if ($hero_image_sponsor) { ?>
           <img src="<?php echo get_resized_remote_image_url($hero_image_sponsor, 1900, 814); ?>" alt="Maker Camp project theme sponsorship logo" />
         <?php } ?>
+        <h2><?php echo $path_theme; ?></h2>
         <h1><?php the_title(); ?></h1>
         <hr />
-        <h2><?php echo $hero_project_path_description; ?></h2>
+        <h3><?php echo $hero_project_path_description; ?></h3>
       </div>
     </section>
 
@@ -52,42 +61,39 @@ get_header();
       <?php } ?>
     </section>
 
-    <section class="pp-intro">
-      <div class="container">
-        <div><?php echo $intro; ?></div>
-      </div>  
-    </section>
-
     <section class="pp-details">
       <div class="container">
-        <h2 class="text-center">START MAKING!</h2>
+        <h2 class="text-center"><?php echo $startmaking_panel_title; ?></h2>
         <div class="pp-learn"><?php echo $start_making; ?></div>
       </div>
     </section>
 
-    <section class="pp-materials container">
-      <h2 class="text-center">MATERIALS</h2>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="pp-materials-ul">
-            <?php if( have_rows('what_will_you_need') ): ?>
-              <?php while( have_rows('what_will_you_need') ): the_row(); 
-                $materials = get_sub_field('materials'); ?>
-                <li><i class="fa fa-check-square-o" aria-hidden="true"></i><?php echo $materials; ?></li>
-              <?php endwhile; ?>
-            <?php endif; ?>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <ul class="pp-materials-images">
-            <?php if( have_rows('resources_images') ): ?>
-              <?php while( have_rows('resources_images') ): the_row(); 
-                $image = get_sub_field('image'); ?>
-                <li style="background: url(<?php echo get_resized_remote_image_url($image, 200, 200); ?>) no-repeat center center;"></li>
-              <?php endwhile; ?>
-            <?php endif; ?>
-          </ul>
+    <section class="pp-materials">
+      <div class="container">
+        <h2 class="text-center"><?php echo $materials_panel_title; ?></h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="pp-materials-ul">
+              <?php if( have_rows('what_will_you_need') ): ?>
+                <?php while( have_rows('what_will_you_need') ): the_row(); 
+                  $materials = get_sub_field('materials'); ?>
+                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i><?php echo $materials; ?></li>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <div class="row pp-materials-images">
+              <?php if( have_rows('resources_images') ): ?>
+                <?php while( have_rows('resources_images') ): the_row(); 
+                  $image = get_sub_field('image'); ?>
+                  <div class="col-xs-4">
+                    <div style="background: url(<?php echo get_resized_remote_image_url($image, 200, 200); ?>) no-repeat center center;"></div>
+                  </div>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -95,7 +101,10 @@ get_header();
 
     <?php if($steps) { ?>
       <section class="pp-steps container">
-        <?php $step_number = 1;
+        <h2 class="text-center"><?php echo $steps_panel_title; ?></h2>
+        <?php if($steps_description) {
+          echo '<div class="pp-step-desc">' . $steps_description . '</div>';
+        }
         foreach($steps as $step) {
 
           $image_1 = $step['image_1'];
@@ -106,8 +115,7 @@ get_header();
 
           <div class="row">
             <div class="col-xs-12 <?php if(empty($image_2)){ echo 'col-sm-8';} ?>">
-              <h4>STEP <?php echo $step_number; ?></h4>
-              <?php if (!empty($title)) { echo '<h5>' . $title . '</h5>'; } ?>
+              <?php if (!empty($title)) { echo '<h4>' . $title . '</h4>'; } ?>
               <?php if (!empty($description)) { echo '<div class="pp-step-desc">' . $description . '</div>'; } ?>
             </div>
 
@@ -135,9 +143,7 @@ get_header();
             <?php } ?>
 
           </div>
-
-          <?php $step_number++;
-        } ?>
+        <?php } ?>
       </section>
     <?php } ?>
 
@@ -164,7 +170,7 @@ get_header();
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <h2>KEEP MAKING!</h2>
+              <h2><?php echo $keepmaking_panel_title; ?></h2>
             </div> 
             <div class="col-xs-12">
               <?php echo $keep_making; ?>
@@ -179,7 +185,7 @@ get_header();
       <section class="pp-ideas container">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="text-center">GALLERY OF IDEAS</h2>
+            <h2 class="text-center"><?php echo $gallery_panel_title; ?></h2>
           </div>
           <?php foreach($gallery_of_ideas as $gallery_of_idea) {
             //true/false
@@ -225,6 +231,14 @@ get_header();
       </section>
     <?php } ?>
 
+    <?php if($featured_maker_info) { ?>
+      <section class="pp-featured-maker">
+        <div class="container">
+          <h2 class="text-center"><?php echo $maker_panel_title; ?></h2>
+          <div><?php echo $featured_maker_info; ?></div>
+        </div>
+      </section>
+    <?php } ?>
 
     <section class="pp-buttons container text-center">
       <a class="ghost-arrow-btn" href="/projects"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>BROWSE MORE MAKER CAMP PROJECTS</a>

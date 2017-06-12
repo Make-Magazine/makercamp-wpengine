@@ -25,8 +25,8 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
   <!-- TYPEKIT -->
-  <script src="//use.typekit.net/zaa4pqy.js"></script>
-  <script>try {Typekit.load();} catch (e) {}</script>
+  <script src="https://use.typekit.net/kth1koc.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <?php wp_head(); ?>
 </head>
