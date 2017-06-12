@@ -24,7 +24,6 @@ get_header();
   $steps_panel_title = get_field('steps_panel_title');
   $steps_description = get_field('steps_description');
   $steps = get_field('steps');
-  $tip_bubbles = get_field('tip_bubbles');
 
   $keepmaking_panel_title = get_field('keepmaking_panel_title');
   $keep_making = get_field('keep_making');
@@ -106,61 +105,65 @@ get_header();
           echo '<div class="pp-step-desc">' . $steps_description . '</div>';
         }
         foreach($steps as $step) {
+          $click_here_to_add_tip_bubbles = $step['click_here_to_add_tip_bubbles'];
 
-          $image_1 = $step['image_1'];
-          $image_2 = $step['image_2'];
-          $image_3 = $step['image_3'];
-          $title = $step['title'];
-          $description = $step['description']; ?>
+          if ($click_here_to_add_tip_bubbles) {
+            $tip_bubbles = $step['tip_bubbles'];
+            foreach($tip_bubbles as $tip_bubble) {
+              $background_color = $tip_bubble['background_color'];
+              $title = $tip_bubble['title'];
+              $description = $tip_bubble['description']; ?>
 
-          <div class="row">
-            <div class="col-xs-12 <?php if(empty($image_2)){ echo 'col-sm-8';} ?>">
-              <?php if (!empty($title)) { echo '<h4>' . $title . '</h4>'; } ?>
-              <?php if (!empty($description)) { echo '<div class="pp-step-desc">' . $description . '</div>'; } ?>
-            </div>
-
-            <?php if (empty($image_2)) { ?>
-              <div class="col-xs-12 col-sm-4">
-                <a class="pp-step-img1" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
-                </a>
+              <div class="row pp-tip-bubbles">
+                <div class="col-xs-12">
+                  <div class="alert pp-bg-<?php echo $background_color; ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
+                    <h4><?php echo $title; ?></h4>
+                    <div class="pp-tip-desc"><?php echo $description; ?></div>
+                  </div>
+                </div>
               </div>
             <?php }
-            elseif (!empty($image_2)) { ?>
-              <div class="col-xs-12">
-                <a class="pp-step-img2" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
-                </a>
-                <a class="pp-step-img2" href="<?php echo $image_2['url']; ?>">
-                  <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_2['url'], 380, 380); ?>);"></div>
-                </a>
-                <?php if(!empty($image_3)) { ?>
-                  <a class="pp-step-img2" href="<?php echo $image_3['url']; ?>">
-                    <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_3['url'], 380, 380); ?>);"></div>
-                  </a>
-                <?php } ?>
+          }
+          else {
+            $image_1 = $step['image_1'];
+            $image_2 = $step['image_2'];
+            $image_3 = $step['image_3'];
+            $title = $step['title'];
+            $description = $step['description']; ?>
+
+            <div class="row">
+              <div class="col-xs-12 <?php if(empty($image_2)){ echo 'col-sm-8';} ?>">
+                <?php if (!empty($title)) { echo '<h4>' . $title . '</h4>'; } ?>
+                <?php if (!empty($description)) { echo '<div class="pp-step-desc">' . $description . '</div>'; } ?>
               </div>
-            <?php } ?>
 
-          </div>
-        <?php } ?>
-      </section>
-    <?php } ?>
+              <?php if (empty($image_2)) { ?>
+                <div class="col-xs-12 col-sm-4">
+                  <a class="pp-step-img1" href="<?php echo $image_1['url']; ?>">
+                    <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
+                  </a>
+                </div>
+              <?php }
+              elseif (!empty($image_2)) { ?>
+                <div class="col-xs-12">
+                  <a class="pp-step-img2" href="<?php echo $image_1['url']; ?>">
+                    <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_1['url'], 380, 380); ?>);"></div>
+                  </a>
+                  <a class="pp-step-img2" href="<?php echo $image_2['url']; ?>">
+                    <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_2['url'], 380, 380); ?>);"></div>
+                  </a>
+                  <?php if(!empty($image_3)) { ?>
+                    <a class="pp-step-img2" href="<?php echo $image_3['url']; ?>">
+                      <div style="background-image: url(<?php echo get_fitted_remote_image_url($image_3['url'], 380, 380); ?>);"></div>
+                    </a>
+                  <?php } ?>
+                </div>
+              <?php } ?>
+            </div>
+          <?php }
 
-    <?php if($tip_bubbles) { ?>
-      <section class="pp-tip-bubbles container">
-        <?php foreach($tip_bubbles as $tip_bubble) {
-          $background_color = $tip_bubble['background_color'];
-          $title = $tip_bubble['title'];
-          $description = $tip_bubble['description']; ?>
-
-          <div class="col-xs-12 alert pp-bg-<?php echo $background_color; ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
-            <h4><?php echo $title; ?></h4>
-            <div class="pp-tip-desc"><?php echo $description; ?></div>
-          </div>
-
-        <?php } ?>
+        } ?>
       </section>
     <?php } ?>
 
@@ -208,8 +211,9 @@ get_header();
               ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php the_permalink(); ?>" target="_blank">
-                  <div class="pp-ideas-img" style="background: url('<?php echo get_resized_remote_image_url($project_img, 400, 400); ?>')no-repeat center center;"></div>
                   <h4><?php the_title(); ?></h4>
+                  <div class="pp-ideas-img" style="background: url('<?php echo get_resized_remote_image_url($project_img, 400, 400); ?>')no-repeat center center;"></div>
+                  <div class="mc-blue-btn">Make This!</div>
                 </a>
               </div>
 
@@ -217,8 +221,9 @@ get_header();
             else { ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php echo $gallery_of_idea['url']; ?>" target="_blank">
-                  <div class="pp-ideas-img" style="background: url(<?php echo get_resized_remote_image_url($gallery_of_idea['image'], 400, 400); ?>)no-repeat center center;"></div>
                   <h4><?php echo $gallery_of_idea['title']; ?></h4>
+                  <div class="pp-ideas-img" style="background: url(<?php echo get_resized_remote_image_url($gallery_of_idea['image'], 400, 400); ?>)no-repeat center center;"></div>
+                  <div class="mc-blue-btn">Make This!</div>
                 </a>
               </div>
               

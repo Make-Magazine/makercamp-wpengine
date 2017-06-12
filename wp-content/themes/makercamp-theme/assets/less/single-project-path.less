@@ -212,7 +212,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     .row {
-      margin-bottom: 40px;
+      margin-top: 40px;
+      margin-bottom: 15px;
     }
     h2 {
       color: #3fafed;
@@ -220,7 +221,6 @@
       font-weight: 300;
     }
     .pp-step-desc {
-      margin-bottom: 30px;
     }
     h4 {
       color: #3fafed;
@@ -290,42 +290,42 @@
       line-height: 1.5;
       font-size: 16px;
     }
-  }
 
-  .pp-tip-bubbles {
-    margin-top: -60px;
-    padding-bottom: 60px;
-    .pp-bg-Purple {
-      background-color: #9c78c5;
-    }
-    .pp-bg-Yellow {
-      background-color: #e0bf3b;
-    }
-    .pp-bg-Green {
-      background-color: #51b985;
-    }
-    .pp-bg-Orange {
-      background-color: #e66f27;
-    }
-    img {
-      display: inline-block;
-      width: 35px;
-    }
-    h4 {
-      display: inline-block;
-      color: #fff;
-      font-weight: 500;
-      font-size: 24px;
+    .pp-tip-bubbles {
+      margin-top: 0;
       margin-bottom: 0;
-      margin-left: 5px;
-      vertical-align: bottom;
-      line-height: 16px;
-    }
-    .pp-tip-desc {
-      color: #fff;
-      margin-top: 10px;
-      p {
-        line-height: 1.3em;
+      .pp-bg-Purple {
+        background-color: #9c78c5;
+      }
+      .pp-bg-Yellow {
+        background-color: #e0bf3b;
+      }
+      .pp-bg-Green {
+        background-color: #51b985;
+      }
+      .pp-bg-Orange {
+        background-color: #e66f27;
+      }
+      img {
+        display: inline-block;
+        width: 35px;
+      }
+      h4 {
+        display: inline-block;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        vertical-align: bottom;
+        line-height: 16px;
+      }
+      .pp-tip-desc {
+        color: #fff;
+        margin-top: 10px;
+        p {
+          line-height: 1.3em;
+        }
       }
     }
   }
@@ -352,6 +352,8 @@
     .col-sm-4 {
       padding-bottom: 30px;
       a {
+        text-align: center;
+        display: block;
       }
       .pp-ideas-img {
         width: 100%;
@@ -373,6 +375,13 @@
         text-align: center;
         height: 38px;
         overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .mc-blue-btn {
+        margin-top: 5px;
       }
     }
   }
