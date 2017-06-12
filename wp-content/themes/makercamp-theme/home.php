@@ -2,7 +2,7 @@
 
   <section class="home-hero">
     <video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
-      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp_Intro_2017.mp4" type="video/mp4">
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp-Intro-Video-2017-v2.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
       <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Camp starts June 19 during National Week of Making<br />2017 projects coming soon!</span></h2>
