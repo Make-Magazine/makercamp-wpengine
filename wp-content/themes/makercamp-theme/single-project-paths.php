@@ -122,7 +122,7 @@ get_header();
               <div class="row pp-tip-bubbles">
                 <div class="col-xs-12">
                   <div class="alert pp-bg-<?php echo $background_color; ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
+                    <img class="pp-tip-icon" src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
                     <h4><?php echo $title; ?></h4>
                     <div class="pp-tip-desc"><?php echo $description; ?></div>
                   </div>
