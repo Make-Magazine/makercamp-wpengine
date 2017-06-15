@@ -1,0 +1,266 @@
+{
+    "key": "group_5941cd3b23ea2",
+    "title": "Sponsors Page",
+    "fields": [
+        {
+            "key": "field_5941cd6d3089c",
+            "label": "Sponsors",
+            "name": "sponsors",
+            "type": "flexible_content",
+            "instructions": "Start by clicking \"Add Row\" to add a new sponsor group.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "sponsors-admin",
+                "id": ""
+            },
+            "layouts": {
+                "5941cd82e8d8c": {
+                    "key": "5941cd82e8d8c",
+                    "name": "sponsors_with_image",
+                    "label": "Sponsors with Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5941cdb53089d",
+                            "label": "Sponsor Group Title",
+                            "name": "sponsor_group_title",
+                            "type": "text",
+                            "instructions": "i.e. \"Presenting Sponsors\" or \"Goldsmith Sponsors\"",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5941cdd73089e",
+                            "label": "Sponsors Image Size",
+                            "name": "sponsors_image_size",
+                            "type": "select",
+                            "instructions": "Displays the sponsor images at small, medium, or large sizes. Sizes can be used as a way to show importance.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sponsors-box-md": "Small",
+                                "sponsors-box-lg": "Medium",
+                                "sponsors-box-xl": "Large"
+                            },
+                            "default_value": [
+                                "sponsors-box-md"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5941cdfd3089f",
+                            "label": "Sponsors",
+                            "name": "sponsors_with_image",
+                            "type": "repeater",
+                            "instructions": "Add each individual sponsor as a new row.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5941ce23308a0",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5941ce40308a1",
+                                    "label": "URL",
+                                    "name": "url",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5941ce79308a2": {
+                    "key": "5941ce79308a2",
+                    "name": "sponsors_with_text",
+                    "label": "Sponsors with Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5941ce92308a3",
+                            "label": "Sponsor Group Title",
+                            "name": "sponsor_group_title",
+                            "type": "text",
+                            "instructions": "i.e. \"Presenting Sponsors\" or \"Goldsmith Sponsors\"",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5941cea8308a4",
+                            "label": "Sponsors",
+                            "name": "sponsors_with_text",
+                            "type": "repeater",
+                            "instructions": "Add each individual sponsor as a new row.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5941cecb308a5",
+                                    "label": "Sponsor Name",
+                                    "name": "sponsor_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5941cedf308a6",
+                                    "label": "URL",
+                                    "name": "url",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5941d1b0dc74e",
+            "label": "\"Become a Sponsor\" Button",
+            "name": "become_a_sponsor_button",
+            "type": "url",
+            "instructions": "If you enter a URL here, the \"Become a Sponsor\" button will show on the Sponsors page and in the Sponsors Slider. Or leave field empty to not show button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-sponsors.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1497485805
+}
