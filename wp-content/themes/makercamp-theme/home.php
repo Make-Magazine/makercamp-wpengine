@@ -14,6 +14,56 @@
     <i style="margin-bottom:5px;" class="fa fa-chevron-down" aria-hidden="true"></i>
   </section>
 
+  <section class="home-sponsor">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE</br> POSSIBLE BY THE GENEROUS SUPPORT OF:</P>
+        </div>
+        <div class="col-xs-12 col-sm-6 home-sponsor-img">
+          <?php
+          $sponsor_pages = get_pages(array(
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'page-sponsors.php'
+          ));
+          foreach($sponsor_pages as $sponsor_page) {
+            $sponsor_ID = $sponsor_page->ID;
+          }
+          // check if the nested repeater field has rows of data
+          if( have_rows('sponsors', $sponsor_ID)) {
+            // loop through the rows of data
+            while ( have_rows('sponsors', $sponsor_ID) ) {
+              the_row();
+
+              if( get_row_layout() == 'sponsors_with_image' ) {
+                $sub_field_3 = get_sub_field('sponsors_image_size'); //size option
+
+                // check if the nested repeater field has rows of data
+                if( have_rows('sponsors_with_image') ) {
+
+                  // loop through the rows of data
+                  while ( have_rows('sponsors_with_image') ) {
+                    the_row();
+
+                    $sub_field_1 = get_sub_field('image'); //Photo
+                    $photon = get_fitted_remote_image_url($sub_field_1['url'], 300, 300);
+
+                    // check if the nested repeater field has rows of data
+                    if( $sub_field_3 == 'sponsors-box-xl' ) {
+                      echo '<img src="' . $photon . '" class="img-responsive" alt="Maker Camp Sponsor logos" />';
+                    }
+                  }
+                }
+              }// end if sponsor image rows
+            }// end while
+          }
+          ?>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="what-happens-at-mc">
     <div class="">
       <h2>WHAT HAPPENS AT <strong>MAKER CAMP?</strong></h2>
@@ -104,20 +154,6 @@
     </div>
   </section> -->
 
-  <section class="home-sponsor">
-    <div class="triangle-block"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE</br> POSSIBLE BY THE GENEROUS SUPPORT OF:</P>
-        </div>
-        <div class="col-xs-12 col-sm-6 home-sponsor-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/att_globe_rgb_pos.png" />
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="how-can-you-start">
     <div class="container">
       <div class="row">
@@ -130,16 +166,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="helps-make-makers">
-    <div class="container">
-      <h3>MORE MAKER RESOURCES</h3>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <p>Make: produces a variety of great products and helpful project tutorials to enhance your making experience. Here are a few select items that Maker Camp affiliates are sure to enjoy.</p>
-      </div>
-    </div>
-    <div class="triangle-block"></div>
   </section>
 
 
@@ -242,6 +268,16 @@
       });
     </script>';
   } ?>
+
+  <section class="helps-make-makers">
+    <div class="container">
+      <h3>MORE MAKER RESOURCES</h3>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <p>Make: produces a variety of great products and helpful project tutorials to enhance your making experience. Here are a few select items that Maker Camp affiliates are sure to enjoy.</p>
+      </div>
+    </div>
+    <div class="triangle-block"></div>
+  </section>
 
   <?php echo stuff_for_sale_panel(); ?>
 
