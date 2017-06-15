@@ -1,0 +1,199 @@
+.project-path-gallery {
+  position: relative;
+  .ppg-hero {
+    padding: 0 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 75vh;
+    .ppg-div {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      img {
+        width: 35%;
+        max-width: 447px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        color: #fff; 
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 10px;
+        margin-bottom: -4%;
+        position: relative;
+      }
+      @media (max-width: 767px) {
+        padding-top: 0;
+        h1 {
+          font-size: 6vw;
+          margin-top: 5px;
+        }
+      }
+    }
+    .ppg-c-paths {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .ppg-c-img {
+        width: 170px;
+        height: 170px;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        border-radius: 50%;
+        position: relative;
+        border: 5px solid #3fafed;
+        box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+      }
+      h4 {
+        color: #fff;
+        font-weight: 400;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+
+  .ppg-startmaking {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3fafed;
+    text-align: center;
+    position: relative;
+    h2 {
+      color: #fff;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    h3 {
+      color: #fff;
+      margin-top: 0;
+    }
+    a {
+      background-color: #fff;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      transition: background-color 0.2s;
+      display: inline-block;
+      &:hover,
+      &:focus {
+        background-color: #efefef;
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+    }
+    .triangle-block {
+      width: 26px;
+      height: 26px;
+      background-color: #3fafed;
+      position: absolute;
+      top: -13px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      @media (max-width: 450px) {
+        display: none;
+      }
+    }
+  }
+
+  .ppg-paths {
+    article {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .container {
+        position: relative;
+      }
+      .ppg-feat-img {
+        transition: 0.2s;
+        display: inline-block;
+        float: left;
+        width: 30%;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 2%;
+        padding: 1.2% 1.2% 5% 1.2%;
+        box-shadow:0px 0px 6px rgba(0,0,0,0.5);
+        background:#fff;
+        position:relative;
+        border-radius: 1px;
+        &:first-child {
+          margin-left: 4%;
+        }
+        @media (max-width: 767px) {
+          margin-left: 0 !important;
+          width: 32%;
+          margin-bottom: 15px;
+        }
+      }
+      &:nth-of-type(even) {
+        background-color: #ebebeb;
+        .ppg-makey {
+          left: initial;
+          right: 0;
+        }
+      }
+      .ppg-makey {
+        width: 10%;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        margin-left: 15px;
+        margin-right: 15px;
+        @media (max-width: 767px) {
+          width: 15%;
+          left: initial;
+          right: 0;
+        }
+      }
+      h2 {
+        color: #3fafed;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .ppg-path-desc {
+        p {
+          line-height: 1.4em;
+        }
+      }
+      h4 {
+        color: #3fafed;
+        font-weight: 400;
+        margin-bottom: 3px;
+        font-size: 16px;
+      }
+      .ppg-path-goals {
+        p {
+          line-height: 1.4em;
+        }
+      }
+    }
+
+  }
+
+
+}
