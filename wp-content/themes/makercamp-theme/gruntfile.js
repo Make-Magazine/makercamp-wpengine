@@ -56,18 +56,6 @@ module.exports = function(grunt) {
       },
     },
 
-    imagemin: {
-      dynamic: {
-        files: [{
-            expand: true,
-            // Compresses all png / jpg / gif images
-            cwd: './assets/img/',
-            src: ['**/*.{png,jpg,gif}'],
-            dest:'./public/assets/img/'
-        }]
-      }
-    },
-
     watch: {
         js_script: {
           files: [
@@ -83,14 +71,6 @@ module.exports = function(grunt) {
           // Watched files
           files: ['./assets/less/**/*.less'],
           tasks: ['less'],
-          options: {
-          livereload: true
-          }
-        },
-        images: {
-          // Watched files
-          files: ['./assets/img/**/*.{png,jpg,gif}'], 
-          tasks: ['imagemin'],
           options: {
           livereload: true
           }
@@ -111,10 +91,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   
   // Compile CSS and Javascript
-  grunt.registerTask('compile', ['concat', 'less', 'uglify', 'imagemin']);
+  grunt.registerTask('compile', ['concat', 'less', 'uglify']);
 
   // Set default task
   grunt.registerTask('default', ['watch']);
