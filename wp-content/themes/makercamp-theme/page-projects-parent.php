@@ -100,7 +100,7 @@ if( have_rows('summer_2016_themes')) {
               <a href="<?php echo $project_1->guid; ?>">
                 <h4><span><?php echo $project_1->post_title; ?></span></h4>
                 <div class="pl-project-img-parent">
-                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);"></div>
+                  <div class="pl-project-img" style="background-image: url(<?php echo get_resized_remote_image_url($project_image_1, 500, 500); ?>);"></div>
                 </div>
                 <span class="btn-cyan" href="<?php echo $project_1->guid; ?>">Make This!</span>
               </a>
@@ -114,7 +114,7 @@ if( have_rows('summer_2016_themes')) {
               <a href="<?php echo $project_2->guid; ?>">
                 <h4><span><?php echo $project_2->post_title; ?></span></h4>
                 <div class="pl-project-img-parent">
-                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);"></div>
+                  <div class="pl-project-img" style="background-image: url(<?php echo get_resized_remote_image_url($project_image_2, 500, 500); ?>);"></div>
                 </div>
                 <span class="btn-cyan" href="<?php echo $project_2->guid; ?>">Make This!</span>
               </a>
@@ -128,7 +128,7 @@ if( have_rows('summer_2016_themes')) {
               <a href="<?php echo $project_3->guid; ?>">
                 <h4><span><?php echo $project_3->post_title; ?></span></h4>
                 <div class="pl-project-img-parent">
-                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);"></div>
+                  <div class="pl-project-img" style="background-image: url(<?php echo get_resized_remote_image_url($project_image_3, 500, 500); ?>);"></div>
                 </div>
                 <span class="btn-cyan" href="<?php echo $project_3->guid; ?>">Make This!</span>
               </a>
@@ -142,7 +142,7 @@ if( have_rows('summer_2016_themes')) {
               <a href="<?php echo $project_4->guid; ?>">
                 <h4><span><?php echo $project_4->post_title; ?></span></h4>
                 <div class="pl-project-img-parent">
-                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);"></div>
+                  <div class="pl-project-img" style="background-image: url(<?php echo get_resized_remote_image_url($project_image_4, 500, 500); ?>);"></div>
                 </div>
                 <span class="btn-cyan" href="<?php echo $project_4->guid; ?>">Make This!</span>
               </a>

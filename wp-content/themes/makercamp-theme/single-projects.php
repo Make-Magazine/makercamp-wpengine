@@ -23,7 +23,7 @@ $parent_id = $post->post_parent; ?>
   $what_will_you_learn = get_field('what_will_you_learn'); ?>
 
   <div id="single-project">
-    <section class="project-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
+    <section class="project-hero" style="background-image: url(<?php echo get_resized_remote_image_url($hero_image['url'], 1900, 814); ?>);">
       <div class="sp-hero-div">
         <?php if ($hero_image_sponsor) { ?>
           <img src="<?php echo $hero_image_sponsor ?>" alt="Maker Camp project theme sponsorship logo" />
@@ -97,14 +97,14 @@ $parent_id = $post->post_parent; ?>
             <div class="col-xs-12 col-sm-6">
 
               <?php if (!empty($image_1)) { ?>
-                <a class="sp-step-img" href="<?php echo $image_1['url']; ?>">
-                  <div style="background-image: url(<?php echo $image_1['url']; ?>);"></div>
+                <a class="sp-step-img" href="<?php echo get_fitted_remote_image_url($image_1['url'], 1000, 1000); ?>">
+                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_1['url'], 500, 500); ?>);"></div>
                 </a>
               <?php } ?>
 
               <?php if (!empty($image_2)) { ?>
-                <a class="sp-step-img" href="<?php echo $image_2['url']; ?>">
-                  <div style="background-image: url(<?php echo $image_2['url']; ?>);"></div>
+                <a class="sp-step-img" href="<?php echo get_fitted_remote_image_url($image_2['url'], 1000, 1000); ?>">
+                  <div style="background-image: url(<?php echo get_resized_remote_image_url($image_2['url'], 500, 500); ?>);"></div>
                 </a>
               <?php } ?>
 

@@ -37,10 +37,10 @@ get_header();
   //$ = get_field(''); ?>
 
   <div id="single-project-path">
-    <section class="pp-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
+    <section class="pp-hero" style="background-image: url(<?php echo get_fitted_remote_image_url($hero_image['url'], 1900, 1200); ?>);">
       <div class="pp-hero-div">
         <?php if ($hero_image_sponsor) { ?>
-          <img src="<?php echo get_resized_remote_image_url($hero_image_sponsor, 1900, 814); ?>" alt="Maker Camp project theme sponsorship logo" />
+          <img src="<?php echo get_fitted_remote_image_url($hero_image_sponsor, 500, 500); ?>" alt="Maker Camp project theme sponsorship logo" />
         <?php } ?>
         <h2><?php echo $path_theme; ?></h2>
         <h1><?php the_title(); ?></h1>

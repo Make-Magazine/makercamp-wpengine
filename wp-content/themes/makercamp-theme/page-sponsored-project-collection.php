@@ -65,7 +65,7 @@
                 <a href="<?php echo $sponsored_project->guid; ?>">
                   <h3><span><?php echo $sponsored_project->post_title; ?></span></h3>
                   <div class="pl-project-img-parent">
-                    <div class="pl-project-img" style="background-image: url(<?php echo $sponsored_project_image; ?>);"></div>
+                    <div class="pl-project-img" style="background-image: url(<?php echo get_resized_remote_image_url($sponsored_project_image, 600, 600); ?>);"></div>
                   </div>
                   <span class="btn-cyan">GET MAKING!</span>
                 </a>
