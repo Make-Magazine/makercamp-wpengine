@@ -185,6 +185,27 @@ get_header();
               <?php echo $keep_making; ?>
             </div>
           </div>
+
+          <?php $tip_bubbles_5 = get_field('tip_bubbles_5');
+
+          if ($tip_bubbles_5) {
+            foreach($tip_bubbles_5 as $tip_bubble_5) {
+              $background_color = $tip_bubble_5['background_color'];
+              $title = $tip_bubble_5['title'];
+              $description = $tip_bubble_5['description']; ?>
+
+              <div class="row pp-tip-bubbles">
+                <div class="col-xs-12">
+                  <div class="alert pp-bg-<?php echo $background_color; ?>">
+                    <img class="pp-tip-icon" src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
+                    <h4><?php echo $title; ?></h4>
+                    <div class="pp-tip-desc"><?php echo $description; ?></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            <?php }
+          } ?>
         </div>
       </section>
     <?php endif; ?>
@@ -239,6 +260,27 @@ get_header();
           //reset the $post object so the rest of the page works correctly
           wp_reset_postdata(); ?>
         </div>
+
+        <?php $tip_bubbles_6 = get_field('tip_bubbles_6');
+
+        if ($tip_bubbles_6) {
+          foreach($tip_bubbles_6 as $tip_bubble_6) {
+            $background_color = $tip_bubble_6['background_color'];
+            $title = $tip_bubble_6['title'];
+            $description = $tip_bubble_6['description']; ?>
+
+            <div class="row pp-tip-bubbles">
+              <div class="col-xs-12">
+                <div class="alert pp-bg-<?php echo $background_color; ?>">
+                  <img class="pp-tip-icon" src="<?php echo get_template_directory_uri(); ?>/public/assets/img/maker-robot-textbox.png" alt="Makey tip icon" />
+                  <h4><?php echo $title; ?></h4>
+                  <div class="pp-tip-desc"><?php echo $description; ?></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          <?php }
+        } ?>
       </section>
     <?php } ?>
 

@@ -676,11 +676,11 @@
             "delay": 0
         },
         {
-            "key": "field_5943f43cf8f7d",
+            "key": "field_59440599086a1",
             "label": "Tip Bubbles",
-            "name": "tip_bubbles_panel_5",
-            "type": "clone",
-            "instructions": "",
+            "name": "tip_bubbles_5",
+            "type": "repeater",
+            "instructions": "Add 1 or more tip bubbles.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -688,13 +688,80 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_593568d810cab"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 1,
-            "prefix_name": 0
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add a tip bubble",
+            "sub_fields": [
+                {
+                    "key": "field_59440a88086a3",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Yellow": "Yellow",
+                        "Orange": "Orange",
+                        "Green": "Green",
+                        "Purple": "Purple"
+                    },
+                    "default_value": [
+                        "Yellow"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59440af6086a5",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59440b00086a6",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         },
         {
             "key": "field_593e8cf359d85",
@@ -885,11 +952,11 @@
             ]
         },
         {
-            "key": "field_5943f586f8f7e",
+            "key": "field_594405b8086a2",
             "label": "Tip Bubbles",
-            "name": "tip_bubbles_panel_6",
-            "type": "clone",
-            "instructions": "",
+            "name": "tip_bubbles_6",
+            "type": "repeater",
+            "instructions": "Add 1 or more tip bubbles.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -897,14 +964,80 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "field_593568d810cab",
-                "field_593568d810cab"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 1,
-            "prefix_name": 0
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add a tip bubble",
+            "sub_fields": [
+                {
+                    "key": "field_59440a9a086a4",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Yellow": "Yellow",
+                        "Orange": "Orange",
+                        "Green": "Green",
+                        "Purple": "Purple"
+                    },
+                    "default_value": [
+                        "Yellow"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59440b1c086a7",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59440b28086a8",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         },
         {
             "key": "field_593e8d0d59d86",
@@ -987,5 +1120,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1497626031
+    "modified": 1497631620
 }

@@ -118,7 +118,7 @@
               <div class="col-xs-12 col-sm-6">
                 <h2><?php echo $project_path_title; ?></h2>
                 <div class="ppg-path-desc"><?php echo $description; ?></div>
-                <h4>PROJECT GOALS</h4>
+                <h4>YOU'LL GET TO:</h4>
                 <div class="ppg-path-goals"><?php echo $project_goals; ?></div>
                 <a href="<?php echo $url; ?>" class="mc-blue-btn">START MAKING</a>
               </div>
