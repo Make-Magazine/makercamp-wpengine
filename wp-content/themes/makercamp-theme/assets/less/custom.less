@@ -37,8 +37,11 @@
 @import "about/index";
 @import "layouts/overlay";
 @import "single-project.less";
+@import "single-project-path.less";
+@import "project-path-gallery.less";
 @import "project-landing.less";
 @import "sponsored-projects-collection.less";
+@import "sponsors.less";
 @import "project-print.less";
 
 // Glyphicon Path Fix
@@ -69,9 +72,9 @@ body {
   margin: 0 auto;
 }
 
-ul, li {
-  list-style: none;
-}
+// ul, li {
+//   list-style: none;
+// }
 
 .error-404 {
   margin: 80px 0;
@@ -1044,6 +1047,12 @@ form {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
+}
+
+//WordPress image fix
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*** ADDING FLEXBOX TO PARENTS AND CHILDREN ***/
