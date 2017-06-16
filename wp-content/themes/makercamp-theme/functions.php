@@ -485,7 +485,7 @@ function stuff_for_sale_panel() { ?>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/9780596519414-2_notebook_515x515_grande_6745f7ac-f2fc-4cf1-987c-b8c906b9411f_large_cropped.jpg" class="img-responsive" alt="Makers Notebook" />
             <h4>Maker's Notebook</h4>
-            <p>Jot down project ideas, diagrams, calculations and notes in this sweet notebook.</p>
+            <p>Jot down project ideas, diagrams, and notes in this sweet notebook.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
           </div>      
 
