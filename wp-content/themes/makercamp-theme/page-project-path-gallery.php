@@ -40,7 +40,7 @@
     <div class="container">
       <h2>Start Making!</h2>
       <h3>See our helpful resources guide for tips and tricks on how to lead these projects with your campers</h3>
-      <a href="http://makercamp.com/affiliate-program/info">RESOURCES</a>
+      <a href="/get-started">RESOURCES</a>
     </div>
   </section>
 

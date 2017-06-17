@@ -238,8 +238,8 @@ get_header();
               ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php the_permalink(); ?>" target="_blank">
-                  <h4><?php the_title(); ?></h4>
                   <div class="pp-ideas-img" style="background: url('<?php echo get_resized_remote_image_url($project_img, 500, 500); ?>')no-repeat center center;"></div>
+                  <h4><?php the_title(); ?></h4>
                   <div class="mc-blue-btn">Make This!</div>
                 </a>
               </div>
@@ -248,8 +248,8 @@ get_header();
             else { ?>
               <div class="col-xs-6 col-sm-4">
                 <a href="<?php echo get_resized_remote_image_url($gallery_of_idea['url'], 1000, 1000); ?>" target="_blank">
-                  <h4><?php echo $gallery_of_idea['title']; ?></h4>
                   <div class="pp-ideas-img" style="background: url(<?php echo get_resized_remote_image_url($gallery_of_idea['image'], 500, 500); ?>)no-repeat center center;"></div>
+                  <h4><?php echo $gallery_of_idea['title']; ?></h4>
                   <div class="mc-blue-btn">Make This!</div>
                 </a>
               </div>
