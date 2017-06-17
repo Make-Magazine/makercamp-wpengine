@@ -154,7 +154,7 @@ $parent_id = $post->post_parent; ?>
         $author_url = get_sub_field('author_url'); ?>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-3">
 
             <?php if (!empty($author_url)) { echo '<a href="' . $author_url . '">'; } ?>
               <?php if (!empty($image)) { 
@@ -165,7 +165,7 @@ $parent_id = $post->post_parent; ?>
             <?php if (!empty($author_url)) { echo '</a>'; } ?>
 
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-9">
 
             <h4><?php echo $name; ?></h4>
             <div class="sp-author-bio"><?php echo $bio; ?></div>
