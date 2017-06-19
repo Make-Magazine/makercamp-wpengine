@@ -3,14 +3,14 @@ function makercamp_about_customizer( $wp_customize ) {
 	global $makercamp_defaults_customizer_values;
 
 	/**
-	 * Section in customizer for About us page
+	 * Section in customizer for Get Started page
 	 */
 
 	$wp_customize->add_section(
 		'makercamp__about_hero',
 		array(
-			'title'       => 'About page, Hero section',
-			'description' => 'This is a settings for About page.',
+			'title'       => 'Get Started, Hero section',
+			'description' => 'This is a settings for Get Started.',
 			'priority'    => 209,
 		)
 	);
@@ -18,8 +18,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_first_section_about',
 		array(
-			'title'       => 'About page, 1st section',
-			'description' => 'This is a settings for About page.',
+			'title'       => 'Get Started, 1st section',
+			'description' => 'Settings for 1st section of Get Started.',
 			'priority'    => 209,
 		)
 	);
@@ -27,8 +27,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_second_section_about_page',
 		array(
-			'title'       => 'About page, 2nd section',
-			'description' => 'This is settings for 2nd section of About page',
+			'title'       => 'Get Started, 2nd section',
+			'description' => 'Settings for 2nd section of Get Started',
 			'priority'    => 209,
 		)
 	);
@@ -36,8 +36,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_third_section_about_page',
 		array(
-			'title'       => 'About page, 3rd section',
-			'description' => 'This is settings for 3rd section of About page',
+			'title'       => 'Get Started, 3rd section',
+			'description' => 'Settings for 3rd section of Get Started',
 			'priority'    => 209,
 		)
 	);
@@ -45,8 +45,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_fourth_section_about_page',
 		array(
-			'title'       => 'About page, 4th section',
-			'description' => 'This is settings for 4th section of About page',
+			'title'       => 'Get Started, 4th section',
+			'description' => 'Settings for 4th section of Get Started',
 			'priority'    => 209,
 		)
 	);
@@ -54,8 +54,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_fifth_section_about_page',
 		array(
-			'title'       => 'About page, 5th section',
-			'description' => 'This is settings for 5th section of About page',
+			'title'       => 'Get Started, 5th section',
+			'description' => 'Settings for 5th section of Get Started',
 			'priority'    => 209,
 		)
 	);
@@ -63,8 +63,8 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_sixth_section_about_page',
 		array(
-			'title'       => 'About page, 6th section',
-			'description' => 'This is a settings for About page.',
+			'title'       => 'Get Started, 6th section',
+			'description' => 'Settings for 6th section of Get Started',
 			'priority'    => 210,
 		)
 	);
@@ -81,7 +81,7 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'about_hero_title',
 		array(
-			'label'   => 'About us hero',
+			'label'   => 'Get Started hero',
 			'section' => 'makercamp__about_hero',
 			'type'    => 'text',
 		)
@@ -95,7 +95,7 @@ function makercamp_about_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'about_hero_text',
 		array(
-			'label'   => 'About Us hero text',
+			'label'   => 'Get Started hero text',
 			'section' => 'makercamp__about_hero',
 			'type'    => 'text',
 		)
@@ -161,7 +161,7 @@ function makercamp_about_customizer( $wp_customize ) {
 		)
 	);
 	/**
-	 * 2nd section of About page
+	 * 2nd section of Get Started
 	 */
 	$wp_customize->add_setting(   // Title
 		'second_section_title',
@@ -382,7 +382,7 @@ function makercamp_about_customizer( $wp_customize ) {
 		)
 	);
 	/**
-	 * 3rd section of About page
+	 * 3rd section of Get Started
 	 */
 	$wp_customize->add_setting(   // Title
 		'fifth_section_title',
@@ -483,7 +483,7 @@ function makercamp_about_customizer( $wp_customize ) {
 		)
 	);
 	/**
-	 * 4th section of About page
+	 * 4th section of Get Started
 	 */
 	$wp_customize->add_setting(   // Title
 		'fourth_section_title',
@@ -683,7 +683,7 @@ function makercamp_about_customizer( $wp_customize ) {
 		)
 	);
 	/**
-	 * 5th section, About page
+	 * 5th section, Get Started
 	 */
 	$wp_customize->add_setting(     // Title
 		'sponsor_thanks_title',
@@ -732,7 +732,7 @@ function makercamp_about_customizer( $wp_customize ) {
 	);
 
 	/**
-	 * 6th section, About page
+	 * 6th section, Get Started
 	 */
 	$wp_customize->add_setting(     // Title
 		'about_sixth_section_title',
