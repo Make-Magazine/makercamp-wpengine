@@ -46,8 +46,9 @@
         <p><?php echo $section_first_text_third; ?></p>
       <?php endif; ?>
 
-
       <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>about_robot.png" alt="virtual trips">
+      <div class="clearfix"></div>
+      <a class="mc-blue-btn" style="margin-top:30px;" href="/project-paths">Start Making</a>
     </div>
   </section>
 
@@ -230,7 +231,8 @@
 
       <ul class="stor-up-links">
 
-        <?php $fourth_section_first_link = makercamp_defaults_customizer( 'fourth_section_first_link' );
+        <?php 
+        $fourth_section_first_link       = makercamp_defaults_customizer( 'fourth_section_first_link' );
         $fourth_section_second_link      = makercamp_defaults_customizer( 'fourth_section_second_link' );
         $fourth_section_third_link       = makercamp_defaults_customizer( 'fourth_section_third_link' );
         $fourth_section_fourth_link      = makercamp_defaults_customizer( 'fourth_section_fourth_link' );
@@ -245,7 +247,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_first_link ) ) : ?>
-            <a href="<?php echo $sixth_section_first_link; ?>">
+            <a href="<?php echo $fourth_section_first_link; ?>">
               <?php if ( ! empty( $fourth_section_first_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_first_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
