@@ -5,8 +5,9 @@
       <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp-Intro-Video-2017-v2.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
-      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Camp starts June 19 during National Week of Making<br />2017 projects coming soon!</span></h2>
-      <a class="mc-blue-btn hidden-xs" href="/explore#host">Start a Camp</a>
+      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Celebrating the National Week of Making</span></h2>
+      <a class="mc-blue-btn" href="/get-started">Get Started Making</a>
+      <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
       <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
       </div>
@@ -73,7 +74,7 @@
           <h4>PROJECTS</h4>
           <p>Check out our awesome collection of projects from last summer!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/projects"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
+          <a class="mc-blue-arrow-btn" href="/project-paths"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
         </div>
         <div class="foating-div-2">
@@ -92,7 +93,7 @@
         </div>
         <div class="foating-div-4">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
-          <h4>EXPLORE</h4>
+          <h4>FIND A CAMP</h4>
           <p>Find a Maker Camp near you!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/explore"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE <span>MAKER CAMP </span>MAP</a>
@@ -100,7 +101,7 @@
         </div>
         <div class="foating-div-5">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Host_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
-          <h4>HOST</h4>
+          <h4>START A CAMP</h4>
           <p>Become a Maker Camp affiliate and introduce kids to the joys of making!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/explore#host"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
