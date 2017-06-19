@@ -38,6 +38,7 @@ get_header();
 
   <div id="single-project-path">
     <section class="pp-hero" style="background-image: url(<?php echo get_fitted_remote_image_url($hero_image['url'], 1900, 1200); ?>);">
+      <div class="pp-hero-overlay"></div>
       <div class="pp-hero-div">
         <?php if ($hero_image_sponsor) { ?>
           <img src="<?php echo get_fitted_remote_image_url($hero_image_sponsor, 500, 500); ?>" alt="Maker Camp project theme sponsorship logo" />

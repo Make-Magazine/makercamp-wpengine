@@ -24,6 +24,7 @@
       
           <div class="col-xs-4">
             <div class="ppg-c-img" style="background: url(<?php echo get_resized_remote_image_url($image_1['url'], 300, 300); ?>) no-repeat center center;">
+              <div class="ppg-gradient"></div>
               <h4><?php echo $project_path_title; ?></h4>
             </div>
           </div>
