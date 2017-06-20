@@ -247,7 +247,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_first_link ) ) : ?>
-            <a href="<?php echo $fourth_section_first_link; ?>">
+            <a href="<?php echo $fourth_section_first_link; ?>" target="_blank">
               <?php if ( ! empty( $fourth_section_first_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_first_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
@@ -259,7 +259,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_second_link ) ) : ?>
-            <a href="<?php echo $fourth_section_second_link; ?>">
+            <a href="<?php echo $fourth_section_second_link; ?>" target="_blank">
               <?php if ( ! empty( $fourth_section_second_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_second_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
@@ -271,7 +271,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_third_link ) ) : ?>
-            <a href="<?php echo $fourth_section_third_link; ?>">
+            <a href="<?php echo $fourth_section_third_link; ?>" target="_blank">
               <?php if ( ! empty( $fourth_section_third_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_third_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
@@ -283,7 +283,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_fourth_link ) ) : ?>
-            <a href="<?php echo $fourth_section_fourth_link; ?>">
+            <a href="<?php echo $fourth_section_fourth_link; ?>" target="_blank">
               <?php if ( ! empty( $fourth_section_fourth_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_fourth_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
@@ -295,7 +295,7 @@
         <li>
 
           <?php if ( ! empty( $fourth_section_fifth_link ) ) : ?>
-            <a href="<?php echo $fourth_section_fifth_link; ?>">
+            <a href="<?php echo $fourth_section_fifth_link; ?>" target="_blank">
               <?php if ( ! empty( $fourth_section_fifth_picture ) ) : ?>
                 <img src="<?php echo $fourth_section_fifth_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
