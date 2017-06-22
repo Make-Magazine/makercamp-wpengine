@@ -72,7 +72,7 @@
         <div class="foating-div-1">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Make_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>PROJECTS</h4>
-          <p>Check out our awesome collection of projects from last summer!</p>
+          <p>Check out our awesome collection of projects!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/project-paths"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>

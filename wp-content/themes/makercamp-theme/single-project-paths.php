@@ -312,12 +312,12 @@ get_header();
           <div class="col-xs-12 col-sm-6 text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/collabicon.png" alt="Collaborate on making projects here at Maker Camp" />
             <h3>COLLABORATE</h3>
-            <p>Make friends with Campers from all around the world and swap ideas!</p>
+            <p>Make friends with campers from all around the world and swap ideas!</p>
             <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>JOIN THE <span class="hidden-xs">MAKER CAMP </span>COMMUNITY</a>
           </div>
           <div class="col-xs-12 col-sm-6 text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/shareicon.png" alt="Share your ideas and what you build on social media" />
-            <h3>ALL DONE? SHARE IT!</h3>
+            <h3>SHARE YOUR PROJECTS</h3>
             <p>Share pictures and videos of your cool build! Be sure to use #makercamp</p>
             <a class="mc-blue-arrow-btn" href="/#share"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>POST YOUR PROJECTS</a>
           </div>
