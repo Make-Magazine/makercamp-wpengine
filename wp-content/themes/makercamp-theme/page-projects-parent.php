@@ -28,7 +28,7 @@
     <div class="week week-5"></div>
     <div class="week week-6"></div>
 
-    <h1>2016 Camp Projects<br/><span>new projects coming soon</span></h1>
+    <h1>2016 Camp Projects<!-- <br/><span>new projects coming soon</span> --></h1>
 
   </section>
 
