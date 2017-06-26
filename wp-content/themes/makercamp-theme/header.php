@@ -58,7 +58,7 @@
         </div>
 
         <!-- MENUS -->
-        <nav class="header-top-nav col-md-7 col-sm-9">
+        <nav class="header-top-nav col-md-8 col-sm-9">
           <div class="row">
             <button type="button" class="menu-bar visible-xs-block navbar-toggle" data-target="#mc-menu" data-toggle="collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -92,7 +92,7 @@
         </nav>
 
         <!-- New Header Subscribe stuff -->
-        <div id="mz-header-subscribe" class="hidden-xs">
+        <div id="mz-header-subscribe" class="hidden-xs hidden-sm">
           <div>
             <a id="trigger-overlay" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">
               <img src="<?php echo get_template_directory_uri() . '/assets/img/Subscribe_CTA_2x.png'; ?>" alt="Make: Magazine latest magazine cover, subscribe here" />

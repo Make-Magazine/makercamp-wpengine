@@ -5,7 +5,7 @@
       <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp-Intro-Video-2017-v2.mp4" type="video/mp4">
     </video>
     <div class="container text-center">
-      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><br><span>Celebrating the National Week of Making</span></h2>
+      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><!-- <br><span>Celebrating the National Week of Making</span> --></h2>
       <a class="mc-blue-btn" href="/get-started">Get Started Making</a>
       <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
       <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
