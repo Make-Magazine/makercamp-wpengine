@@ -423,6 +423,18 @@ function social_media_panel() { ?>
 <?php }
 
 
+
+/**
+ * 2017 project paths colloborate/more projects panel
+ */
+function colab_projects_panel_2017() { ?>
+  <section class="pp-buttons container text-center">
+    <a class="ghost-arrow-btn" href="/project-paths"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>BROWSE MORE MAKER CAMP PROJECTS</a>
+    <a class="ghost-arrow-btn" href="http://makezine.com/projects/" target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>FIND EVEN MORE PROJECTS AT Make:</a>
+  </section>
+<?php }
+
+
 /**
  * Maker Shed products for sale panel
  */
