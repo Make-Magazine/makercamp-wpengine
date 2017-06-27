@@ -36,7 +36,7 @@
     <?php endif; ?>
   </section>
 
-  <section class="ppg-startmaking">
+  <section class="ppg-startmaking" style="display:none;">
     <div class="triangle-block"></div>
     <div class="container">
       <h2>Start Making!</h2>
@@ -150,6 +150,11 @@
 
 <script>
 $(document).ready(function() {
+  //Show/hide getting started panel if user came from that page
+  var prevUrl = document.referrer;
+  if( prevUrl.indexOf('get-started') == -1) {
+    jQuery('.ppg-startmaking').slideDown();
+  }
   //initial rotation
   jQuery('.ppg-feat-img').each(function() {
       var randrot = Math.random() * 20 - 10; //has to be local to run w/ each function call
