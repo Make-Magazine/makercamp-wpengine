@@ -7,7 +7,6 @@
     "grunt-contrib-concat": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-imagemin": "latest",
     "grunt-contrib-watch": "latest"
   },
   "keywords": []
