@@ -384,4 +384,40 @@
     </div>
   </section>
 
+<!-- Newsletter Modal -->
+<script>
+$(function() {
+  $(".fancybox2").fancybox({
+    autoSize : false,
+    width  : 465,
+    height  : 200,
+    afterLoad   : function() {
+      this.content = this.content.html();
+    }
+  });
+
+  // On home page button click then launch
+  $( ".fancybox2-trigger" ).click(function() {
+    $(".fancybox2").trigger('click');
+  });
+});
+</script>
+
+<div class="fancybox2" style="display:none;">
+  <h2>Sign-up for updates on Maker Camp projects!</h2>
+  <form name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
+    <input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
+    <input type="hidden" name="cmd" value="subscribe" />
+    <input type="hidden" name="custom_host" value="makercamp.com" />
+    <input type="hidden" name="custom_incentive" value="none" />
+    <input type="hidden" name="custom_source" value="modal" />
+    <input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
+    <input type="hidden" name="custom_url" value="" />
+    <input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
+    <input type="submit" name="Submit" id="newsletter-set-cookie" value="Sign Me Up" class="btn-modal newsletter-set-cookie">
+    <input type="hidden" id="format_mime" name="format" value="mime" />
+  </form>
+</div>
+<!-- End Newsletter Modal -->
+
 <?php get_footer(); ?>

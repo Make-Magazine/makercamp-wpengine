@@ -17,19 +17,25 @@
 
       <div class="ppg-c-paths">
 
-        <?php while( have_rows('project_paths') ): the_row(); 
+        <?php 
+
+        $i = 1;
+
+        while( have_rows('project_paths') ): the_row(); 
 
           $image_1 = get_sub_field('image_1');
           $project_path_title = get_sub_field('project_path_title'); ?>
       
           <div class="col-xs-4">
-            <div class="ppg-c-img" style="background: url(<?php echo get_resized_remote_image_url($image_1['url'], 300, 300); ?>) no-repeat center center;">
+            <a href="#<?php echo 'path-scroll-' . $i; ?>" class="ppg-c-img" style="background: url(<?php echo get_resized_remote_image_url($image_1['url'], 300, 300); ?>) no-repeat center center;">
               <div class="ppg-gradient"></div>
               <h4><?php echo $project_path_title; ?></h4>
-            </div>
+            </a>
           </div>
 
-        <?php endwhile; ?>
+        <?php 
+        $i++;
+        endwhile; ?>
 
       </div>
 
@@ -97,7 +103,11 @@
 
     <?php if( have_rows('project_paths') ): ?>
 
-      <?php while( have_rows('project_paths') ): the_row(); 
+      <?php 
+
+      $i = 1;
+
+      while( have_rows('project_paths') ): the_row(); 
 
         $image_1 = get_sub_field('image_1');
         $image_2 = get_sub_field('image_2');
@@ -108,7 +118,7 @@
         $project_goals = get_sub_field('project_goals');
         $url = get_sub_field('url'); ?>
 
-        <article>
+        <article id="path-scroll-<?php echo $i; ?>">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -128,7 +138,9 @@
           </div>
         </article>
 
-      <?php endwhile; ?>
+      <?php 
+      $i++;
+      endwhile; ?>
 
     <?php endif; ?>
 
