@@ -28,7 +28,8 @@
 				<h4>Explore Making</h4>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
-					<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
+					<li><a href="//makershare.com/" target="_blank">Maker Share</a></li>
+          <li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 					<li><a href="//makerfaire.com">Maker Faire</a></li>
 					<li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Subscribe to Make:</a></li>											
 				</ul>
@@ -135,6 +136,7 @@
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
+                <li><a href="//makershare.com/" target="_blank">Maker Share</a></li>
 								<li><a href="//makerfaire.com">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 								<li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Subscribe to Make:</a></li>						

@@ -6,7 +6,8 @@
     </video>
     <div class="container text-center">
       <h2>WELCOME TO<br><strong>MAKER CAMP</strong><!-- <br><span>Celebrating the National Week of Making</span> --></h2>
-      <a class="mc-blue-btn" href="/get-started">Get Started Making</a>
+      <a class="mc-blue-btn" href="/get-started">Get Started</a>
+      <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
       <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
       <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
