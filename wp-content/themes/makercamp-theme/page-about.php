@@ -48,7 +48,7 @@
 
       <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>about_robot.png" alt="virtual trips">
       <div class="clearfix"></div>
-      <a class="mc-blue-btn" style="margin-top:30px;" href="/project-paths">Start Making</a>
+      <a class="mc-blue-btn" style="margin-top:30px;" href="/project-paths">Project Paths</a>
     </div>
   </section>
 
