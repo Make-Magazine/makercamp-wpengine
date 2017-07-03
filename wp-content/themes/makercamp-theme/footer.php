@@ -16,10 +16,10 @@
 			<div class="col-sm-6 col-md-3">
 				<a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>"  alt="Maker Camp projects, making, building, tickering for kids"></a>
 				<ul class="list-unstyled">
-					<li><a href="//makezine.com/projects">Make: Projects</a></li>
-					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/?post_type=projects">3D Printing Projects</a></li>
-					<li><a href="//makezine.com/category/technology/arduino/?post_type=projects">Arduino Projects</a></li>
-					<li><a href="//makezine.com/category/technology/raspberry-pi/?post_type=projects">Raspberry Pi Projects</a></li>
+					<li><a href="//makezine.com/projects?utm_source=makercamp.com&utm_medium=footer">Make: Projects</a></li>
+					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">3D Printing Projects</a></li>
+					<li><a href="//makezine.com/category/technology/arduino/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">Arduino Projects</a></li>
+					<li><a href="//makezine.com/category/technology/raspberry-pi/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">Raspberry Pi Projects</a></li>
 					<li><a href="//help.makercamp.com/hc/en-us" target="_blank">Maker Camp Help Page</a></li>
 				</ul>
 			</div>
@@ -136,11 +136,11 @@
 					<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-                <li><a href="//makezine.com/blog?utm_source=makercamp.com&utm_medium=footer" target="_blank">Make: News &amp; Projects</a></li>
-                <li><a href="//makerfaire.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Faire</a></li>
-                <li><a href="//makershare.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Share</a></li>
-                <li><a href="//www.makershed.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Shed</a></li>
-                <li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Get the magazine</a></li>
+                <li><a href="//makezine.com/projects?utm_source=makercamp.com&utm_medium=footer">Make: Projects</a></li>
+                <li><a href="//makezine.com/category/workshop/3d-printing-workshop/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">3D Printing Projects</a></li>
+                <li><a href="//makezine.com/category/technology/arduino/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">Arduino Projects</a></li>
+                <li><a href="//makezine.com/category/technology/raspberry-pi/?post_type=projects?utm_source=makercamp.com&utm_medium=footer">Raspberry Pi Projects</a></li>
+                <li><a href="//help.makercamp.com/hc/en-us" target="_blank">Maker Camp Help Page</a></li>
 							</ul>
 						</div>
 					</div>
@@ -155,10 +155,10 @@
 					<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-                <li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
-                <li><a href="//makershare.com/" target="_blank">Maker Share</a></li>
-                <li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
-                <li><a href="//makercamp.com" target="_blank">Maker Camp</a></li>
+                <li><a href="//makezine.com/blog?utm_source=makercamp.com&utm_medium=footer" target="_blank">Make: News &amp; Projects</a></li>
+                <li><a href="//makerfaire.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Faire</a></li>
+                <li><a href="//makershare.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Share</a></li>
+                <li><a href="//www.makershed.com?utm_source=makercamp.com&utm_medium=footer" target="_blank">Maker Shed</a></li>
                 <li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Get the magazine</a></li>
 							</ul>
 						</div>
