@@ -1,19 +1,17 @@
 <?php get_header(); ?>
 
-  <section class="home-hero">
-    <video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
-      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/Maker-Camp-Intro-Video-2017-v2.mp4" type="video/mp4">
-    </video>
-    <div class="container text-center">
-      <h2>WELCOME TO<br><strong>MAKER CAMP</strong><!-- <br><span>Celebrating the National Week of Making</span> --></h2>
+  <section class="home-hero container">
+    <h1 class="text-center">See What's Happening at Camp</h1>
+
+    <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
+
+    <div class="hero-btn-cont">
       <a class="mc-blue-btn" href="/get-started">Get Started</a>
       <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
       <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
-      <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-        <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
-      </div>
     </div>
-    <i style="margin-bottom:5px;" class="fa fa-chevron-down" aria-hidden="true"></i>
+
+    <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
   </section>
 
   <section class="home-sponsor">
@@ -63,6 +61,23 @@
 
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <section class="home-newsl-video">
+    <div class="container">
+      <div class="home-newsl-video-l">
+        <div class="embed-youtube">
+          <iframe src="https://www.youtube.com/embed/wXP6HNkryl0?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="home-newsl-video-r">
+        <h3>Join <strong>Make:</strong> EDUCATION e-NEWS</h3>
+        <p>How making is transforming learning.</p>
+        <button class="mc-blue-btn btn fancybox2-trigger">SIGN UP TODAY</button>
+      </div>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Supplies@2x.png" alt="Maker Camp porjects learing image" />
     </div>
   </section>
 
@@ -139,8 +154,6 @@
     </div>
   </section>
 
-  <?php echo social_media_panel(); ?>
-
 <!--   <section class="a-day-at-mc">
     <img src="<?php echo get_template_directory_uri() . '/assets/img/hm_pg_video_bg.jpg' ?>" alt="Click here to see what its like to experience Maker Camp for kids" />
     <div class="container text-center">
@@ -156,7 +169,7 @@
     </div>
   </section> -->
 
-  <section class="how-can-you-start">
+<!--   <section class="how-can-you-start">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
@@ -168,7 +181,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <?php
@@ -282,5 +295,41 @@
   </section>
 
   <?php echo stuff_for_sale_panel(); ?>
+
+  <!-- Newsletter Modal -->
+  <script>
+  $(function() {
+    $(".fancybox2").fancybox({
+      autoSize : false,
+      width  : 465,
+      height  : 200,
+      afterLoad   : function() {
+        this.content = this.content.html();
+      }
+    });
+
+    // On home page button click then launch
+    $( ".fancybox2-trigger" ).click(function() {
+      $(".fancybox2").trigger('click');
+    });
+  });
+  </script>
+
+  <div class="fancybox2" style="display:none;">
+    <h2>Sign-up for updates on Maker Camp projects!</h2>
+    <form class="home-nl-modal whatcounts-signup1" name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
+      <input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
+      <input type="hidden" name="cmd" value="subscribe" />
+      <input type="hidden" name="custom_host" value="makercamp.com" />
+      <input type="hidden" name="custom_incentive" value="none" />
+      <input type="hidden" name="custom_source" value="modal" />
+      <input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
+      <input type="hidden" name="custom_url" value="" />
+      <input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
+      <input type="submit" name="Submit" id="newsletter-set-cookie" value="Sign Me Up" class="btn-modal newsletter-set-cookie">
+      <input type="hidden" id="format_mime" name="format" value="mime" />
+    </form>
+  </div>
+  <!-- End Newsletter Modal -->
 
 <?php get_footer(); ?>
