@@ -120,6 +120,10 @@
       flex: 1 1 100%;
       height: 33vw;
     }
+    @media (max-width: 767px) {
+      height: auto;
+      padding-top: 30px;
+    }
     h3 {
       font-size: 28px;
       color: #3fafed;
@@ -136,11 +140,18 @@
     bottom: -.9vw;
     right: 4vw;
     width: 33vw;
+    max-width: 423px;
+    @media (min-width: 1200px) {
+      bottom: 9px;
+    }
     @media (max-width: 991px) {
       right: 0;
       left: 0;
       margin-left: auto;
       margin-right: auto;
+    }
+    @media (max-width: 767px) {
+      width: 45vw;
     }
   }
 }
