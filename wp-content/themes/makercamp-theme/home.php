@@ -137,9 +137,9 @@
         </div>
         <div class="col-xs-12 col-sm-6">
           <form class="form-inline sub-form whatcounts-signup1" action="http://whatcounts.com/bin/listctrl" method="POST">
-            <input type="hidden" name="slid_1" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp Newsletter -->
-            <input type="hidden" name="slid_2" value="6B5869DC547D3D46941051CC68679543" /><!-- Maker Media Newsletter -->
-            <input type="hidden" name="multiadd" value="1" />
+            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
+            <input type="hidden" name="custom_list_makermedia" value="yes" />
+            <input type="hidden" name="custom_list_makercampcampers" value="yes" />
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" name="custom_source" value="camp home page" />
             <input type="hidden" name="custom_incentive" value="none" />
@@ -318,7 +318,9 @@
   <div class="fancybox2" style="display:none;">
     <h2>Sign-up for updates on Maker Camp projects!</h2>
     <form class="home-nl-modal whatcounts-signup1" name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
-      <input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
+      <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
+      <input type="hidden" name="custom_list_makermedia" value="yes" />
+      <input type="hidden" name="custom_list_makercampcampers" value="yes" />
       <input type="hidden" name="cmd" value="subscribe" />
       <input type="hidden" name="custom_host" value="makercamp.com" />
       <input type="hidden" name="custom_incentive" value="none" />

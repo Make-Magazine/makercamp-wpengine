@@ -508,7 +508,9 @@ $(function() {
 <div class="fancybox2" style="display:none;">
   <h2>Sign-up for updates on Maker Camp projects!</h2>
   <form name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
-    <input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
+    <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
+    <input type="hidden" name="custom_list_makermedia" value="yes" />
+    <input type="hidden" name="custom_list_makercampcampers" value="yes" />
     <input type="hidden" name="cmd" value="subscribe" />
     <input type="hidden" name="custom_host" value="makercamp.com" />
     <input type="hidden" name="custom_incentive" value="none" />

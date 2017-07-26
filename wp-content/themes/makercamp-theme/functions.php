@@ -380,7 +380,9 @@ function subscribe_return_path_overlay() { ?>
             <h2>Sign-up for updates on Maker Camp projects!</h2>
             <p>Keep informed, stay inspired.</p>
             <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
-              <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43"/>
+              <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
+              <input type="hidden" name="custom_list_makermedia" value="yes" />
+              <input type="hidden" name="custom_list_makercampcampers" value="yes" />
               <input type="hidden" name="cmd" value="subscribe"/>
               <input type="hidden" name="custom_source" value="Subscribe return path overlay"/>
               <input type="hidden" name="custom_incentive" value="none"/>
