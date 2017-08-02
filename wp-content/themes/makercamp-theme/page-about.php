@@ -53,6 +53,10 @@
     </div>
   </section>
 
+  <?php 
+  $second_section_picture = makercamp_defaults_customizer( 'second_section_picture' );
+  $second_section_title = makercamp_defaults_customizer( 'second_section_title' ); 
+  if ($second_section_picture || $second_section_title) { ?>
   <section class="partner-mention">
     <div class="container">
       <div class="row">
@@ -60,7 +64,6 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-3">
               <?php
-              $second_section_picture = makercamp_defaults_customizer( 'second_section_picture' );
               $second_section_link = makercamp_defaults_customizer( 'second_section_link' );
               if ( ! empty( $second_section_link ) ) : ?>
                 <a class="pm-link" href="<?php echo $second_section_link ?>" target="_blank">
@@ -76,7 +79,7 @@
 
             </div>
             <div class="col-sm-8 col-md-8 col-lg-9">
-              <?php $second_section_title = makercamp_defaults_customizer( 'second_section_title' );
+              <?php 
               if ( ! empty( $second_section_title ) ) : ?>
                 <h4 class="pm-h4" ><?php echo $second_section_title; ?></h4>
               <?php endif;
@@ -91,6 +94,7 @@
       </div>
     </div>
   </section>
+  <?php } ?>
   
 
   <?php
