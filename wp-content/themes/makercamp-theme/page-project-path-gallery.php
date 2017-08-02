@@ -47,7 +47,7 @@
     <div class="container">
       <h2>Start Making!</h2>
       <h3>For background on our project paths, see our Get Started page before you start making.</h3>
-      <a href="/get-started">Project Path Background</a>
+      <a href="/get-started">Projects Background</a>
     </div>
   </section>
 
