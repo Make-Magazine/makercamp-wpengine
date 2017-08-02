@@ -73,6 +73,25 @@
             "multiple": 0
         },
         {
+            "key": "field_5981bd066eb74",
+            "label": "Sponsored By: (custom text)",
+            "name": "sponsored_by_text",
+            "type": "text",
+            "instructions": "Custom text if you want to edit \"SPONSORED BY\". Leave blank and \"SPONSORED BY\" will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "SPONSORED BY",
+            "prepend": "",
+            "append": "",
+            "maxlength": 30
+        },
+        {
             "key": "field_57686a031bd06",
             "label": "Sponsored By: (image 1)",
             "name": "sponsored_by",
@@ -461,5 +480,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1491480743
+    "modified": 1501674932
 }

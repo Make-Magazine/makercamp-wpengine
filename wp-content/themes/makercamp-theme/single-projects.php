@@ -17,6 +17,7 @@ $parent_id = $post->post_parent; ?>
   $hero_image = get_field('hero_image');
   $hero_image_sponsor = get_field('hero_image_sponsor');
   $theme = get_field('theme');
+  $sponsored_by_text = get_field('sponsored_by_text');
   $sponsored_by = get_field('sponsored_by');
   $sponsored_by_2 = get_field('sponsored_by_2');
   $time = get_field('time');
@@ -38,7 +39,7 @@ $parent_id = $post->post_parent; ?>
     <section class="sp-sponsor text-center">
       <div class="triangle-block"></div>
       <?php if (!empty($sponsored_by)) { ?>
-        <p>SPONSORED BY</p>
+        <p class="text-uppercase"><?php if($sponsored_by_text){ echo $sponsored_by_text; }else{ echo 'SPONSORED BY'; } ?></p>
         <img src="<?php echo $sponsored_by['url']; ?>" alt="Maker Camp Project Sponsor logo" />
       <?php } ?>
       <?php if (!empty($sponsored_by_2)) { ?>
