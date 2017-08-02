@@ -46,8 +46,8 @@
     <div class="triangle-block"></div>
     <div class="container">
       <h2>Start Making!</h2>
-      <h3>See our helpful resources guide for tips and tricks on how to lead these projects with your campers</h3>
-      <a href="/get-started">RESOURCES</a>
+      <h3>For background on our project paths, see our Get Started page before you start making.</h3>
+      <a href="/get-started">Project Path Background</a>
     </div>
   </section>
 
