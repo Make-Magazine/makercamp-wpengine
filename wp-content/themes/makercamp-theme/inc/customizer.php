@@ -42,6 +42,7 @@ $makercamp_defaults_customizer_values = array(
 	'map_embed_link'                               => 'https://www.google.com/maps/d/embed?mid=znSdL4uF4CiE.k7sHDldZCKys',
 	'map_hero_title'                               => 'Find a camp',
 	'map_hero_text'                                => 'Maker Camp is an online summer camp that happens everywhere around the world. But you can meet your neighbors who are taking part in Maker Camp too! Many libraries, makerspaces, and community centers are hosting Maker Camps for the kids in their communities.',
+	
 	/**
 	 * host a camp page
 	 */
@@ -54,6 +55,7 @@ $makercamp_defaults_customizer_values = array(
 	'host_first_section_second_text'               => 'Promote your Maker Camp program and affiliate status with a link on the Maker Camp map',
 	'host_first_section_third_text'                => 'Let kids in your neighborhood know you are a Maker Camp affiliate',
 	'host_first_section_fourth_text'               => 'Have the kids share their projects on the Maker Camp Community page',
+	
 	/**
 	 * about us page
 	 */
@@ -64,44 +66,10 @@ $makercamp_defaults_customizer_values = array(
 	'section_first_text_second'                    => 'Campers make projects, go on virtual field trips, and interact with our counselors wherever they are including: from home, on the road, or at local community spaces like public libraries, Boys and Girls Clubs, Computer Clubhouses, 4-H Clubs, scouting groups, and more. Past field trips have included virtual visits to NASA, Disney, LEGO, the White House, Blue Man Group, and Pixar.',
 	'section_first_text_third'                     => 'Maker Camp is produced by Maker Media, the people behind Maker Faire and Make: magazine.',
 	'second_section_title'                         => 'How Maker Camp Works',
-	'second_section_subtitle_h'                    => 'Maker Camp is a free online summer camp you can join anytime!',
-	'second_section_left_picture_h'                => get_template_directory_uri() . '/public/assets/img/how_it_works.png',
-	'second_section_left_title'                    => 'Participate online from home',
-	'second_section_left_text'                     => 'Join us at Makercamp.com to explore a new project every day. Get an overview about the project in our daily video playlist. Follow links to work on projects at home.',
-	'second_section_left_link'                     => '#hero',
-	'second_section_left_link_title'               => 'Sign up for fun alerts',
-	'second_section_right_picture'                 => get_template_directory_uri() . '/public/assets/img/how_camp_works.png',
-	'second_section_right_title'                   => 'Join a hosted camp in your neighborhood',
-	'second_section_right_text'                    => 'Maker Camp affiliates host physical campsites where campers work with other kids and adults to guide you. Affiliates can be Boys & Girls Clubs, community centers and many more!',
-	'second_section_first_right_link'              => '/affiliate-program',
-	'second_section_first_right_link_title'        => 'Find a campsite in your neighborhood',
-	'second_section_first_right_link_title_mobile' => 'Find a campsite',
-	'second_section_second_right_link'             => '/map',
-	'second_section_second_right_link_title'       => 'Find a campas',
-	'fifth_section_title'                          => 'A Day At Camp',
-	'fifth_section_left_title'                     => 'Explore',
-	'fifth_section_left_text'                      => 'Get your feet wet as you get inspired by what Makers do, and play around with the stuff, tools, and ways of making.',
-	'fifth_section_central_title'                  => 'Make',
-	'fifth_section_central_text'                   => 'Our cool and fun step-by-step projects branch out from the theme. Advanced Makers can take on our Camp Challenges.',
-	'fifth_section_right_title'                    => 'Share',
-	'fifth_section_right_text'                     => 'Share what you’ve done online. Meet up in real life with our end-of-week showcases. Or connect cabin-to-cabin with other Maker Campers.',
-	'fourth_section_title'                          => 'Stock up for Camp',
-	'fourth_section_first_picture'                  => get_template_directory_uri() . '/public/assets/img/stock_camp_1.png',
-	'fourth_section_first_link'                     => 'http://www.makershed.com/collections/maker-camp-2015',
-	'fourth_section_second_picture'                 => get_template_directory_uri() . '/public/assets/img/stock_camp_2.png',
-	'fourth_section_second_link'                    => 'http://www.makershed.com/collections/maker-camp-2015',
-	'fourth_section_third_picture'                  => get_template_directory_uri() . '/public/assets/img/stock_camp_3.png',
-	'fourth_section_third_link'                     => 'http://www.makershed.com/collections/maker-camp-2015',
-	'fourth_section_fourth_picture'                 => get_template_directory_uri() . '/public/assets/img/stock_camp_4.png',
-	'fourth_section_fourth_link'                    => 'http://www.makershed.com/collections/maker-camp-2015',
-	'fourth_section_fifth_picture'                  => get_template_directory_uri() . '/public/assets/img/stock_camp_5.png',
-	'fourth_section_fifth_link'                     => 'http://www.makershed.com/collections/maker-camp-2015',
-	'fourth_section_first_paragraph'                => 'Maker Shed covers all your camp needs... and more!',
-	'fourth_section_second_paragraph'               => 'Make sure to visit <strong><a href="http://www.makershed.com/collections/maker-camp-2015">our special camp page on makershed.com</a></strong>. We\'ve created a special collection of kids, tools and supplies we think that work well for making projects.',
-	'sponsor_thanks_title'                   			 => 'Sponsor Thanks',
-	'sponsor_thanks_first_link'                    => '/',
-	'sponsor_thanks_first_picture'                 => get_template_directory_uri() . '/public/assets/img/project_1.png',
-	'about_sixth_section_title'                    => 'Our Camp Crew',
+	'second_section_subtitle'                    	 => 'Maker Camp is a free online summer camp you can join anytime!',
+	'second_section_picture'                	 => get_template_directory_uri() . '/public/assets/img/how_it_works.png',
+	'second_section_link'                     => '#hero',
+
 	/**
 	 * hidden page
 	 */
