@@ -95,7 +95,7 @@
         <div id="mz-header-subscribe" class="hidden-xs hidden-sm">
           <div>
             <a id="trigger-overlay" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">
-              <img src="<?php echo get_template_directory_uri() . '/assets/img/Subscribe_CTA_2x.png'; ?>" alt="Make: Magazine latest magazine cover, subscribe here" />
+              <img src="<?php echo get_template_directory_uri() . '/assets/img/Make-magazine-cover-55.png'; ?>" alt="Make: magazine cover issue 55, subscribe here" />
             </a>
             <a class="subscribe-red-btn" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">SUBSCRIBE</a>
           </div>

@@ -87,7 +87,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Add Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=4.4' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=4.5' );
   /* Add jquery.cookie */
   //wp_enqueue_script( 'jquery.cookie', get_stylesheet_directory_uri() . '/bower_components/jquery.cookie/jquery.cookie.js', array( 'jquery' ), NULL, TRUE );
   /* Add Fancybox */
@@ -369,7 +369,7 @@ function subscribe_return_path_overlay() { ?>
       <div class="container">
         <div class="row">
           <div class="col-sm-4 overlay-1">
-            <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/Magazine-cover-44-for-overlay.jpg' ?>" alt="Make Magazine Volume 44 Cover" />
+            <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/Make-magazine-cover-55-for-overlay.jpg' ?>" alt="Make magazine cover issue 55, subscribe here" />
           </div>
           <div class="col-sm-4 overlay-2">
             <h2>Get the Magazine</h2>
