@@ -42,7 +42,7 @@
 					<li><a href="//makermedia.com/work-with-us/job-openings" target="_blank">Careers</a></li>
 					<li><a href="//help.makermedia.com/hc/en-us" target="_blank">Help</a></li>
 					<li><a href="//makermedia.com/privacy" target="_blank">Privacy</a></li>
-          <li><a href="http://makezine.com/join/?utm_source=makezine&utm_campaign=makezinefooter" target="_blank">Newsletters</a></li>
+          <li><a href="http://makezine.com/join/?utm_source=makercamp.com&utm_medium=footer" target="_blank">Newsletters</a></li>
 				</ul>
 			</div>
 
@@ -179,7 +179,7 @@
 								<li><a href="//makermedia.com/work-with-us/job-openings" target="_blank">Careers</a></li>
 								<li><a href="//help.makermedia.com/hc/en-us" target="_blank">Help</a></li>
 								<li><a href="//makermedia.com/privacy" target="_blank">Privacy</a></li>
-                <li><a href="http://makezine.com/join/?utm_source=makezine&utm_campaign=makezinefooter" target="_blank">Newsletters</a></li>
+                <li><a href="http://makezine.com/join/?utm_source=makercamp.com&utm_medium=footer" target="_blank">Newsletters</a></li>
 							</ul>
 						</div>
 					</div>
