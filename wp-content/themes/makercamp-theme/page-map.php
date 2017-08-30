@@ -181,6 +181,8 @@ usort( $addresses, function ( $a, $b ) {
 		</div>
 	</section>
 
+
+<!------------------------------
   <section class="host-a-camp-hero" id="host">
     <article>
       <?php
@@ -267,6 +269,10 @@ usort( $addresses, function ( $a, $b ) {
       </ul>
     </div>
   </section>
+  
+  
+  
+  ------------------------------>
 
 	<!-- Quick fix for URLs that are missing the http and become 404s -->
 	<script>
