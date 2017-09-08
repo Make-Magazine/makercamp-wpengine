@@ -136,7 +136,7 @@
           <p>Get the latest news near you.</p>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <form class="form-inline sub-form whatcounts-signup1" action="http://whatcounts.com/bin/listctrl" method="POST">
+          <form class="form-inline sub-form whatcounts-signup1" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
             <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
             <input type="hidden" name="custom_list_makermedia" value="yes" />
             <input type="hidden" name="custom_list_makercampcampers" value="yes" />

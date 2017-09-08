@@ -94,7 +94,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.css' );
   wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ), NULL, TRUE );
   /* Add Bootstrap JS */
-  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.3', array('jquery', 'fancybox-js'), '', true );
+  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.4', array('jquery', 'fancybox-js'), '', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
@@ -379,7 +379,7 @@ function subscribe_return_path_overlay() { ?>
           <div class="col-sm-4 overlay-3">
             <h2>Sign-up for updates on Maker Camp projects!</h2>
             <p>Keep informed, stay inspired.</p>
-            <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <form class="sub-form" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
               <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
               <input type="hidden" name="custom_list_makermedia" value="yes" />
               <input type="hidden" name="custom_list_makercampcampers" value="yes" />

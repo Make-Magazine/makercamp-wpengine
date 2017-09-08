@@ -67,7 +67,7 @@
 					?>
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
-          <form class="sub-form whatcounts-signup1f" action="http://whatcounts.com/bin/listctrl" method="POST">
+          <form class="sub-form whatcounts-signup1f" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
             <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
             <input type="hidden" name="custom_list_makermedia" value="yes" />
             <input type="hidden" name="custom_list_makercampcampers" value="yes" />
@@ -108,7 +108,7 @@
 					?>
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
-          <form class="sub-form whatcounts-signup1m" action="http://whatcounts.com/bin/listctrl" method="POST">
+          <form class="sub-form whatcounts-signup1m" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
             <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
             <input type="hidden" name="custom_list_makermedia" value="yes" />
             <input type="hidden" name="custom_list_makercampcampers" value="yes" />
