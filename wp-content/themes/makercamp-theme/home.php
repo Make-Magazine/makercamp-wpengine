@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <section class="home-hero container">
-    <h1 class="text-center">See What's Happening at Camp</h1>
+    <h1 class="text-center">Thanks for a Great Summer of Making</h1>
 
     <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
 
