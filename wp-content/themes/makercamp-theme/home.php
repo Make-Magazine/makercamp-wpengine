@@ -6,9 +6,9 @@
     <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
 
     <div class="hero-btn-cont">
-      <a class="mc-blue-btn" href="/get-started">Get Started</a>
-      <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
-      <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
+      <a class="mc-blue-btn" href="/get-started">GET STARTED</a>
+      <a class="mc-blue-btn" href="/project-paths">PROJECT PATHS</a>
+      <a class="mc-blue-btn" href="/explore#host">START A CAMP</a>
     </div>
 
     <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
@@ -96,15 +96,15 @@
         <div class="foating-div-2">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Share_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>SHARE</h4>
-          <p>Post your projects on social media with #MakerCamp and it will appear below!</p>
+          <p>Post your projects on social media with #MakerCamp and it will appear above!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="#share"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>SEE WHAT CAMPERS ARE SHARING</a>
+          <a class="mc-blue-arrow-btn" href="#share"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>SEE WHAT CAMPS ARE SHARING</a>
           </div>
         </div>
         <div class="foating-div-3">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>COMMUNITY</h4>
-          <p>Make friends with campers from all around the world and swap ideas!</p>
+          <p>Connect with camps from all around the world and swap ideas!</p>
           <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN <span>MAKER CAMP </span>COMMUNITY</a>
         </div>
         <div class="foating-div-4">
