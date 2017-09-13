@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <section class="home-hero container">
-    <h1 class="text-center">See What's Happening at Camp</h1>
+    <h1 class="text-center">Thanks for a Great Summer of Making</h1>
 
     <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
 
@@ -136,7 +136,7 @@
           <p>Get the latest news near you.</p>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <form class="form-inline sub-form whatcounts-signup1" action="http://whatcounts.com/bin/listctrl" method="POST">
+          <form class="form-inline sub-form whatcounts-signup1" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
             <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
             <input type="hidden" name="custom_list_makermedia" value="yes" />
             <input type="hidden" name="custom_list_makercampcampers" value="yes" />

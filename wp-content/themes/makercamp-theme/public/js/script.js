@@ -2480,7 +2480,7 @@ $(document).ready(function () {
    */
   $(document).on('submit', '.whatcounts-signup', function (e) {
     e.preventDefault();
-    $.post("http://whatcounts.com/bin/listctrl", $('.whatcounts-signup').serialize());
+    $.post("https://secure.whatcounts.com/bin/listctrl", $('.whatcounts-signup').serialize());
     $('.sign-up-screen').hide();
     $('.thank-you-screen').show();
     
@@ -2910,17 +2910,17 @@ $(document).ready(function () {
   });
   $(document).on('submit', '.whatcounts-signup1', function (e) {
     e.preventDefault();
-    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
     $('.fancybox-thx').trigger('click');
   });
   $(document).on('submit', '.whatcounts-signup1f', function (e) {
     e.preventDefault();
-    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
     $('.fancybox-thx').trigger('click');
   });
   $(document).on('submit', '.whatcounts-signup1m', function (e) {
     e.preventDefault();
-    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
     $('.fancybox-thx').trigger('click');
   });
 
