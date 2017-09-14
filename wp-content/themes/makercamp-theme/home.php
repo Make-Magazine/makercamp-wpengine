@@ -6,9 +6,9 @@
     <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
 
     <div class="hero-btn-cont">
-      <a class="mc-blue-btn" href="/get-started">GET STARTED</a>
-      <a class="mc-blue-btn" href="/project-paths">PROJECT PATHS</a>
-      <a class="mc-blue-btn" href="/explore#host">START A CAMP</a>
+      <a class="mc-blue-btn" href="/get-started">Get Started</a>
+      <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
+      <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
     </div>
 
     <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
