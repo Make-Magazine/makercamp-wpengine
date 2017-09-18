@@ -34,6 +34,7 @@ module.exports = function(grunt) {
           './bower_components/bootstrap/js/scrollspy.js',
           './bower_components/bootstrap/js/tab.js',
           './bower_components/bootstrap/js/transition.js',
+          './bower_components/fancybox/source/jquery.fancybox.pack.js',
           //'./assets/js/customizer.js',
           //'./assets/js/skip-link-focus-fix.js',
           './assets/js/script.js'

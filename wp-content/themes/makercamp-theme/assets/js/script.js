@@ -574,27 +574,57 @@ $(document).ready(function () {
       this.content = this.content.html();
     }
   });
+  $(".nl-thx-p2").fancybox({
+    autoSize : false,
+    width  : 400,
+    autoHeight : true,
+    padding : 0,
+    afterLoad   : function() {
+      this.content = this.content.html();
+    }
+  });
   $(document).on('submit', '.whatcounts-signup1', function (e) {
     e.preventDefault();
+    var bla = $('#wc-email-1').val();
     $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
     $('.fancybox-thx').trigger('click');
+    $('.nl-modal-email-address').text(bla);
+    $('.whatcounts-signup2 #email').val(bla);
   });
+  // desktop footer
   $(document).on('submit', '.whatcounts-signup1f', function (e) {
     e.preventDefault();
+    var bla = $('#wc-email-f').val();
     $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
     $('.fancybox-thx').trigger('click');
+    $('.nl-modal-email-address').text(bla);
+    $('.whatcounts-signup2 #email').val(bla);
   });
+  // mobile footer
   $(document).on('submit', '.whatcounts-signup1m', function (e) {
     e.preventDefault();
+    var bla = $('#wc-email-m').val();
     $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
     $('.fancybox-thx').trigger('click');
+    $('.nl-modal-email-address').text(bla);
+    $('.whatcounts-signup2 #email').val(bla);
   });
+  $(document).on('submit', '.whatcounts-signup2', function (e) {
+    e.preventDefault();
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup2').serialize());
+    $('.fancybox-thx').hide();
+    $('.nl-thx-p2').trigger('click');
+  });
+  $('.fancybox-thx input[type="checkbox"]').click(function(e){
+    e.stopPropagation();
+  });
+
 
 
   // Facybox for home page promo video
-  jQuery(".fancybox-promo").fancybox({
+  $(".fancybox-promo").fancybox({
     fitToView : false,
-    width   : '90%',
+    width     : '90%',
     height    : '90%',
     autoSize  : false,
     closeClick  : false,

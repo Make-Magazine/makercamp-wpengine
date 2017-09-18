@@ -78,7 +78,7 @@
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
             <div class="mz-form-horizontal">
-              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input id="wc-email-f" name="email" placeholder="Enter your Email" required type="email"><br>
               <input value="GO" class="btn-cyan" type="submit">
             </div>
 					</form>
@@ -119,7 +119,7 @@
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
             <div class="mz-form-horizontal">
-              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input id="wc-email-m" name="email" placeholder="Enter your Email" required type="email"><br>
               <input value="GO" class="btn-cyan" type="submit">
             </div>
           </form>
@@ -189,26 +189,12 @@
 		<!-- End social-foot-mobile -->
 	</div>
 	<!-- END container -->
-    <div class="copyright">
-      <p>Make: is a registered trademark and the Maker Camp logo and the Makey robot are trademarks of Maker Media | <a href="//makermedia.com/privacy/">Privacy</a> | <a href="//makermedia.com/terms/">Terms</a></p>
-      <p>Copyright © 2004-2017 Maker Media, Inc. All rights reserved</p>
-    </div>
+  <div class="copyright">
+    <p>Make: is a registered trademark and the Maker Camp logo and the Makey robot are trademarks of Maker Media | <a href="//makermedia.com/privacy/">Privacy</a> | <a href="//makermedia.com/terms/">Terms</a></p>
+    <p>Copyright © 2004-2017 Maker Media, Inc. All rights reserved</p>
+  </div>
 </footer>
 <!-- END new-footer -->
-
-  <div class="fancybox-thx" style="display:none;">
-    <div class="col-sm-4 hidden-xs nl-modal">
-      <span class="fa-stack fa-4x">
-      <i class="fa fa-circle-thin fa-stack-2x"></i>
-      <i class="fa fa-thumbs-o-up fa-stack-1x"></i>
-      </span>
-    </div>
-    <div class="col-sm-8 col-xs-12 nl-modal">
-      <h3>Awesome!</h3>
-      <p>Thanks for signing up.</p>
-    </div>
-    <div class="clearfix"></div>
-  </div>
 
 </div> <!-- /container -->
 
@@ -216,6 +202,9 @@
 
 <!-- Subscribe return path overlay -->
 <?php echo subscribe_return_path_overlay(); ?>
+
+<!-- Email newsletter subscribe modal -->
+<?php echo display_thank_you_modal_if_signed_up(); ?>
 
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

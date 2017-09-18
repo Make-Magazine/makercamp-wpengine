@@ -1,0 +1,185 @@
+/* Library over rides */
+.fancybox-skin {
+  background: #fff;
+  color: #333;
+}
+.fancybox-inner h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.fancybox-inner h3 {
+  font-weight: bold;
+}
+.fancybox-inner form div label {
+  text-align: center;
+}
+#subForm {
+  margin-top:10px;
+}
+#newsletter-set-cookie {
+  margin-top:0px;
+}
+.fancybox-inner #titllrt-titllrt {
+  width: 99%;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #d3d3d3;
+  border-top-color: #c9c9c9;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.45),0 0 2px rgba(74,139,217,0),0 -1px 0 rgba(0,0,0,0.02),inset 0 1px 0 rgba(0,0,0,0.04),inset 0 2px 0 rgba(0,0,0,0.02),inset 1px 0 0 rgba(0,0,0,0.04),inset -1px 0 0 rgba(0,0,0,0.04);
+  -moz-box-shadow: 0 1px 1px rgba(255,255,255,0.45),0 0 2px rgba(74,139,217,0),0 -1px 0 rgba(0,0,0,0.02),inset 0 1px 0 rgba(0,0,0,0.04),inset 0 2px 0 rgba(0,0,0,0.02),inset 1px 0 0 rgba(0,0,0,0.04),inset -1px 0 0 rgba(0,0,0,0.04);
+   box-shadow: 0 1px 1px rgba(255,255,255,0.45),0 0 2px rgba(74,139,217,0),0 -1px 0 rgba(0,0,0,0.02),inset 0 1px 0 rgba(0,0,0,0.04),inset 0 2px 0 rgba(0,0,0,0.02),inset 1px 0 0 rgba(0,0,0,0.04),inset -1px 0 0            rgba(0,0,0,0.04);
+  -webkit-transition: border-color .3s ease;
+  -moz-transition: border-color .3s ease;
+  -o-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+  -webkit-appearance: none;
+}
+
+.btn-modal {
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+  background: -moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+  background-color: #fe1a00;
+  text-indent: 0px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  width: 99%;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #b23e35;
+  border-radius: 4px;
+  padding: 9px 10px;
+}
+
+@media all and (max-width: 530px) {
+  .btn-modal, #titllrt-titllrt { 
+    height: 38px;
+  }
+}
+
+@media all and (max-width: 371px) {
+  .fancybox-inner {
+    overflow: visible;
+  }
+  .fancybox-inner h3 {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+  #newsletter-set-cookie {
+    margin-top: 10px;
+  }
+}
+
+/* Other newsletters modal */
+.nl-modal-extra-cont {
+  h4 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  p {
+    line-height: 1.2em;
+  }
+  .nl-modal-div1 {
+    padding: 15px 10px;
+    background-color: #4A90E2;
+    .col-sm-8 {
+      color: #fff;
+    }
+    .col-sm-4 {
+      color: #fff;
+      padding-top: 20px;
+    }
+  }
+  .nl-modal-div2 {
+    padding: 15px 10px 0 10px;
+    h4 {
+      line-height: 1.3em;
+      font-weight: 500;
+    }
+    form {
+      margin: 0;
+      padding: 5px 0 20px;
+      h4 {
+        color: #4A90E2;
+        margin-bottom: 0;
+      }
+      hr {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] + span.newcheckbox {
+    background-color: #fff;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 10px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+  }
+  input[type="checkbox"]:checked + span.newcheckbox {
+    background-color: #fafafa;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+  }
+  input[type="checkbox"]:checked + span:after {
+    font-size: 28px;
+    left: 6px;
+  }
+  input[type="checkbox"]:checked + span:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: #5286cc;
+  }
+  .ghost-button-black {
+    display: inline-block;
+    padding: 5px 25px;
+    margin-top: 15px;
+    color: #fff;
+    border: 2px solid #111;
+    text-align: center;
+    outline: none;
+    background-color: #111;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .ghost-button-black:hover,
+  .ghost-button-black:active {
+    background-color: #fff;
+    color: #111;
+    border: 2px solid #111;
+    transition: all 0.2s ease;
+  }
+}
+
+/* Awesome thank you modal */
+.nl-modal {
+
+}

@@ -86,15 +86,10 @@ add_action( 'widgets_init', 'makercamp_theme_widgets_init' );
 function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
-  /* Add Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=4.7' );
-  /* Add jquery.cookie */
-  //wp_enqueue_script( 'jquery.cookie', get_stylesheet_directory_uri() . '/bower_components/jquery.cookie/jquery.cookie.js', array( 'jquery' ), NULL, TRUE );
-  /* Add Fancybox */
-  wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.css' );
-  wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ), NULL, TRUE );
-  /* Add Bootstrap JS */
-  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.4', array('jquery', 'fancybox-js'), '', true );
+  /* Custom CSS */
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=4.8' );
+  /* Custom JS */
+  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.5', array('jquery'), '', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
@@ -507,5 +502,85 @@ function stuff_for_sale_panel() { ?>
       </div>
     </div>
   </section>
+<?php }
+
+
+
+/**
+ * Adds the newsletter subscribe modal html to the end of the body
+ */
+function display_thank_you_modal_if_signed_up() { ?>
+  <div class="fancybox-thx" style="display:none;">
+    <div class="nl-modal-extra-cont nl-thx-p1">
+      <div class="nl-modal-div1">
+        <div class="col-sm-8 col-xs-12">
+          <h4>Welcome to the Maker Camp Community!</h4>
+          <p><span class="nl-modal-email-address"></span> you are now signed up to the Maker Camp newsletter.</p>
+        </div>
+        <div class="col-sm-4 hidden-xs text-center">
+          <i class="fa fa-check-square-o fa-5x"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="nl-modal-div2">
+        <div class="col-xs-12">
+          <?php
+            $isSecure = "http://";
+            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+              $isSecure = "https://";
+            }
+          ?>
+          <h4>You might also like these newsletters:</h4>
+          <form class="whatcounts-signup2" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
+            <input type="hidden" name="cmd" value="subscribe" />
+            <input type="hidden" id="email" name="email" value="" />
+            <input type="hidden" id="format_mime" name="format" value="mime" />
+            <input type="hidden" name="custom_source" value="footer" />
+            <input type="hidden" name="custom_incentive" value="none" />
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+            <input type="hidden" name="goto" value="" />
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <label class="list-radio pull-right">
+              <input type="checkbox" id="list_6B5869DC547D3D46B52F3516A785F101_yes" name="custom_list_makenewsletter" value="yes" />
+              <span for="list_6B5869DC547D3D46B52F3516A785F101_yes" class="newcheckbox"></span>
+            </label>
+            <h4>Make: Weekly Digest</h4>
+            <p>The best stuff each week from Make: magazine</p>
+            <hr />
+            <label class="list-radio pull-right">
+              <input type="checkbox" id="list_6B5869DC547D3D46E66DEF1987C64E7A_yes" name="custom_list_makerfaire" value="yes" />
+              <span for="list_6B5869DC547D3D46E66DEF1987C64E7A_yes" class="newcheckbox"></span>
+            </label>
+            <h4>Maker Faire</h4>
+            <p>Keep up with the Greatest Show(and tell) on Earth</p>
+            <hr />
+            <label class="list-radio pull-right">
+              <input type="checkbox" id="list_6B5869DC547D3D4637EA6E33C6C8170D_yes" name="custom_list_makeeducation" value="yes" />
+              <span for="list_6B5869DC547D3D4637EA6E33C6C8170D_yes" class="newcheckbox"></span>
+            </label>
+            <h4>Make: Education</h4>
+            <p>How making is transforming learning</p>
+            <hr />
+            <input class="ghost-button-black pull-right" type="submit" value="Submit" />
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nl-modal-cont nl-thx-p2" style="display:none;">
+    <div class="col-sm-4 hidden-xs nl-modal">
+      <span class="fa-stack fa-4x">
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <i class="fa fa-thumbs-o-up fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class="col-sm-8 col-xs-12 nl-modal">
+      <h3>Awesome!</h3>
+      <p>Thanks for signing up. Please check your email to confirm.</p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
 <?php }
 
