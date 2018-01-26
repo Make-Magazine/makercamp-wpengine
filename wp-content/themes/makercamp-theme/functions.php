@@ -89,7 +89,7 @@ function makercamp_theme_scripts() {
   /* Custom CSS */
   wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=4.8' );
   /* Custom JS */
-  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.5', array('jquery'), '', true );
+  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=2.6', array('jquery'), '', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
@@ -375,9 +375,7 @@ function subscribe_return_path_overlay() { ?>
             <h2>Sign-up for updates on Maker Camp projects!</h2>
             <p>Keep informed, stay inspired.</p>
             <form class="sub-form" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
-              <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
-              <input type="hidden" name="custom_list_makermedia" value="yes" />
-              <input type="hidden" name="custom_list_makercampcampers" value="yes" />
+              <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
               <input type="hidden" name="cmd" value="subscribe"/>
               <input type="hidden" name="custom_source" value="Subscribe return path overlay"/>
               <input type="hidden" name="custom_incentive" value="none"/>
@@ -386,6 +384,7 @@ function subscribe_return_path_overlay() { ?>
               <input type="hidden" name="goto" value=""/>
               <input type="hidden" name="custom_host" value="makercamp.com" />
               <input type="hidden" name="errors_to" value=""/>
+              <div id="recapcha-header" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
               <input name="email" class="overlay-input" placeholder="Enter your email" required type="email"><br>
               <input value="GO" class="black-overlay-btn" type="submit">
             </form>
@@ -532,7 +531,6 @@ function display_thank_you_modal_if_signed_up() { ?>
           ?>
           <h4>You might also like these newsletters:</h4>
           <form class="whatcounts-signup2" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
-            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" id="email" name="email" value="" />
             <input type="hidden" id="format_mime" name="format" value="mime" />

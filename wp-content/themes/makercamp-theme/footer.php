@@ -68,15 +68,14 @@
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
           <form class="sub-form whatcounts-signup1f" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
-            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
-            <input type="hidden" name="custom_list_makermedia" value="yes" />
-            <input type="hidden" name="custom_list_makercampcampers" value="yes" />
+            <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" name="custom_source" value="camp footer" />
             <input type="hidden" name="custom_incentive" value="none" />
             <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <div id="recapcha-footer-desktop" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
             <div class="mz-form-horizontal">
               <input id="wc-email-f" name="email" placeholder="Enter your Email" required type="email"><br>
               <input value="GO" class="btn-cyan" type="submit">
@@ -109,15 +108,14 @@
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
           <form class="sub-form whatcounts-signup1m" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
-            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
-            <input type="hidden" name="custom_list_makermedia" value="yes" />
-            <input type="hidden" name="custom_list_makercampcampers" value="yes" />
+            <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" name="custom_source" value="camp footer" />
             <input type="hidden" name="custom_incentive" value="none" />
             <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <div id="recapcha-footer-mobile" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
             <div class="mz-form-horizontal">
               <input id="wc-email-m" name="email" placeholder="Enter your Email" required type="email"><br>
               <input value="GO" class="btn-cyan" type="submit">
@@ -191,12 +189,19 @@
 	<!-- END container -->
   <div class="copyright">
     <p>Make: is a registered trademark and the Maker Camp logo and the Makey robot are trademarks of Maker Media | <a href="//makermedia.com/privacy/">Privacy</a> | <a href="//makermedia.com/terms/">Terms</a></p>
-    <p>Copyright © 2004-2017 Maker Media, Inc. All rights reserved</p>
+    <p>Copyright © 2004-2018 Maker Media, Inc. All rights reserved</p>
   </div>
 </footer>
 <!-- END new-footer -->
 
 </div> <!-- /container -->
+
+<div class="nl-modal-error" style="display:none;">
+  <div class="col-xs-12 nl-modal padtop">
+    <p class="lead">The reCAPTCHA box was not checked. Please try again.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
 
 <?php wp_footer(); ?>
 
@@ -229,5 +234,6 @@
 		s.parentNode.insertBefore(p, s);
 	})();
 </script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </body>
 </html>

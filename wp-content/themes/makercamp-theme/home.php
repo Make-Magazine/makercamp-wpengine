@@ -137,15 +137,14 @@
         </div>
         <div class="col-xs-12 col-sm-6">
           <form class="form-inline sub-form whatcounts-signup1" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
-            <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
-            <input type="hidden" name="custom_list_makermedia" value="yes" />
-            <input type="hidden" name="custom_list_makercampcampers" value="yes" />
+            <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" name="custom_source" value="camp home page" />
             <input type="hidden" name="custom_incentive" value="none" />
             <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <div id="recapcha-home" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
             <input id="wc-email-1" class="form-control nl-panel-input" name="email" placeholder="Email Address" required type="email">
             <input class="btn-cyan" value="Yes Please" type="submit">
           </form>
@@ -317,16 +316,15 @@
 
   <div class="fancybox2" style="display:none;">
     <h2>Sign-up for updates on Maker Camp projects!</h2>
-    <form class="home-nl-modal whatcounts-signup1" name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
-      <input type="hidden" name="slid" value="6B5869DC547D3D4690C43FE9E066FBC6" /><!-- Confirmation -->
-      <input type="hidden" name="custom_list_makermedia" value="yes" />
-      <input type="hidden" name="custom_list_makercampcampers" value="yes" />
+    <form class="home-nl-modal" name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
+      <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
       <input type="hidden" name="cmd" value="subscribe" />
       <input type="hidden" name="custom_host" value="makercamp.com" />
       <input type="hidden" name="custom_incentive" value="none" />
       <input type="hidden" name="custom_source" value="modal" />
       <input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
       <input type="hidden" name="custom_url" value="" />
+      <div id="recapcha-home-modal" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
       <input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
       <input type="submit" name="Submit" id="newsletter-set-cookie" value="Sign Me Up" class="btn-modal newsletter-set-cookie">
       <input type="hidden" id="format_mime" name="format" value="mime" />
