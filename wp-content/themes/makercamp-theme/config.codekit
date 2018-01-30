@@ -1,12 +1,87 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19033",
+"creatorBuild": "19115",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/404.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/acf-json\/group_5768668cc5368.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_5768668cc5368.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_5768668cc5368-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_576dd9cbd3ea3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_576dd9cbd3ea3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_576dd9cbd3ea3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_57aa4493dd3af.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_57aa4493dd3af.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_57aa4493dd3af-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_593555b9080dc.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_593555b9080dc.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_593555b9080dc-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_5941cd3b23ea2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_5941cd3b23ea2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_5941cd3b23ea2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/acf-json\/group_59429e7a7d396.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_59429e7a7d396.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_59429e7a7d396-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/archive-projects.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/archive-projects.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -141,6 +216,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/animation\/static-background.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 161536,
+		"inputAbbreviatedPath": "\/assets\/img\/animation\/static-background.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/animation\/static-background.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/arrow-left.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -159,6 +245,72 @@
 		"initialSize": 2794,
 		"inputAbbreviatedPath": "\/assets\/img\/arrow_right.png",
 		"outputAbbreviatedPath": "\/assets\/img\/arrow_right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Aspire-FNL-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29101,
+		"inputAbbreviatedPath": "\/assets\/img\/Aspire-FNL-5.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Aspire-FNL-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/att-Hm-Hero_600-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16605,
+		"inputAbbreviatedPath": "\/assets\/img\/att-Hm-Hero_600-2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/att-Hm-Hero_600-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/att-Hm-Hero_600.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15909,
+		"inputAbbreviatedPath": "\/assets\/img\/att-Hm-Hero_600.png",
+		"outputAbbreviatedPath": "\/assets\/img\/att-Hm-Hero_600.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/att_globe_rgb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44131,
+		"inputAbbreviatedPath": "\/assets\/img\/att_globe_rgb.png",
+		"outputAbbreviatedPath": "\/assets\/img\/att_globe_rgb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/att_globe_rgb_pos.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19791,
+		"inputAbbreviatedPath": "\/assets\/img\/att_globe_rgb_pos.png",
+		"outputAbbreviatedPath": "\/assets\/img\/att_globe_rgb_pos.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/att_globe_rgb_wht.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18096,
+		"inputAbbreviatedPath": "\/assets\/img\/att_globe_rgb_wht.png",
+		"outputAbbreviatedPath": "\/assets\/img\/att_globe_rgb_wht.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -240,6 +392,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/bg_how_maker_camp_works2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78475,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_how_maker_camp_works2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_how_maker_camp_works2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/bg_phyzical.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -317,6 +480,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/campfire-banner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180784,
+		"inputAbbreviatedPath": "\/assets\/img\/campfire-banner.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/campfire-banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/castle.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -324,6 +498,28 @@
 		"initialSize": 23910,
 		"inputAbbreviatedPath": "\/assets\/img\/castle.png",
 		"outputAbbreviatedPath": "\/assets\/img\/castle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/collabicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4854,
+		"inputAbbreviatedPath": "\/assets\/img\/collabicon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/collabicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Collaborate_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21765,
+		"inputAbbreviatedPath": "\/assets\/img\/Collaborate_Icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Collaborate_Icon@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -427,6 +623,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/Explore_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15029,
+		"inputAbbreviatedPath": "\/assets\/img\/Explore_Icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Explore_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Google-Color@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9822,
+		"inputAbbreviatedPath": "\/assets\/img\/Google-Color@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Google-Color@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Google-Gry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5844,
+		"inputAbbreviatedPath": "\/assets\/img\/Google-Gry.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Google-Gry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/hero_FPO.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 327649,
+		"inputAbbreviatedPath": "\/assets\/img\/hero_FPO.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/hero_FPO.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/hiden_hero.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -434,6 +674,17 @@
 		"initialSize": 216323,
 		"inputAbbreviatedPath": "\/assets\/img\/hiden_hero.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/hiden_hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/hm_pg_video_bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 140023,
+		"inputAbbreviatedPath": "\/assets\/img\/hm_pg_video_bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/hm_pg_video_bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -471,6 +722,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/Host_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14105,
+		"inputAbbreviatedPath": "\/assets\/img\/Host_Icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Host_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/how_camp_works.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -504,6 +766,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/light-bike-home-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45716,
+		"inputAbbreviatedPath": "\/assets\/img\/light-bike-home-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/light-bike-home-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/lock_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -533,6 +806,193 @@
 		"initialSize": 41752,
 		"inputAbbreviatedPath": "\/assets\/img\/Logo.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/Logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Magazine-cover-44-for-overlay.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48591,
+		"inputAbbreviatedPath": "\/assets\/img\/Magazine-cover-44-for-overlay.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Magazine-cover-44-for-overlay.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/magazine-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6658,
+		"inputAbbreviatedPath": "\/assets\/img\/magazine-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/magazine-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/make-it-glow.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61682,
+		"inputAbbreviatedPath": "\/assets\/img\/make-it-glow.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/make-it-glow.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Make-magazine-cover-55-for-overlay.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64325,
+		"inputAbbreviatedPath": "\/assets\/img\/Make-magazine-cover-55-for-overlay.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Make-magazine-cover-55-for-overlay.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Make-magazine-cover-55.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73668,
+		"inputAbbreviatedPath": "\/assets\/img\/Make-magazine-cover-55.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Make-magazine-cover-55.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Make_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25856,
+		"inputAbbreviatedPath": "\/assets\/img\/Make_Icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Make_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/make_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4561,
+		"inputAbbreviatedPath": "\/assets\/img\/make_logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/make_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/maker-camp-coming-soon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160481,
+		"inputAbbreviatedPath": "\/assets\/img\/maker-camp-coming-soon.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/maker-camp-coming-soon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Maker-Camp-video-poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153192,
+		"inputAbbreviatedPath": "\/assets\/img\/Maker-Camp-video-poster.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Maker-Camp-video-poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Maker-Camp_Hm-Hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162999,
+		"inputAbbreviatedPath": "\/assets\/img\/Maker-Camp_Hm-Hero.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Maker-Camp_Hm-Hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/maker-camp_projects.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 231539,
+		"inputAbbreviatedPath": "\/assets\/img\/maker-camp_projects.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/maker-camp_projects.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Maker-Camp_Summer-2017@2x-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28021,
+		"inputAbbreviatedPath": "\/assets\/img\/Maker-Camp_Summer-2017@2x-min.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Maker-Camp_Summer-2017@2x-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/MakerCamp-Hero-2016.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181817,
+		"inputAbbreviatedPath": "\/assets\/img\/MakerCamp-Hero-2016.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/MakerCamp-Hero-2016.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/makercamp-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12374,
+		"inputAbbreviatedPath": "\/assets\/img\/makercamp-logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/makercamp-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/MAkey---Pinwheel@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37465,
+		"inputAbbreviatedPath": "\/assets\/img\/MAkey---Pinwheel@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/MAkey---Pinwheel@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Makey-Tshirt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69493,
+		"inputAbbreviatedPath": "\/assets\/img\/Makey-Tshirt.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Makey-Tshirt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Making-Science_Diamond.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16676,
+		"inputAbbreviatedPath": "\/assets\/img\/Making-Science_Diamond.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Making-Science_Diamond.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -669,6 +1129,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/project_hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44015,
+		"inputAbbreviatedPath": "\/assets\/img\/project_hero.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/project_hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/round_arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1560,
+		"inputAbbreviatedPath": "\/assets\/img\/round_arrow.png",
+		"outputAbbreviatedPath": "\/assets\/img\/round_arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Share_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12300,
+		"inputAbbreviatedPath": "\/assets\/img\/Share_Icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Share_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/shareicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4181,
+		"inputAbbreviatedPath": "\/assets\/img\/shareicon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/shareicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/slider_arrow_left.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -768,6 +1272,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/StartMaking.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54229,
+		"inputAbbreviatedPath": "\/assets\/img\/StartMaking.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/StartMaking.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/stock_camp_1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -819,6 +1334,39 @@
 		"initialSize": 68967,
 		"inputAbbreviatedPath": "\/assets\/img\/stock_camp_5.png",
 		"outputAbbreviatedPath": "\/assets\/img\/stock_camp_5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Subscribe_CTA_2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 102823,
+		"inputAbbreviatedPath": "\/assets\/img\/Subscribe_CTA_2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Subscribe_CTA_2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Supplies@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48763,
+		"inputAbbreviatedPath": "\/assets\/img\/Supplies@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Supplies@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/supplyimage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4990,
+		"inputAbbreviatedPath": "\/assets\/img\/supplyimage.png",
+		"outputAbbreviatedPath": "\/assets\/img\/supplyimage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -922,6 +1470,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/timer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2250,
+		"inputAbbreviatedPath": "\/assets\/img\/timer.png",
+		"outputAbbreviatedPath": "\/assets\/img\/timer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/video-coming-soon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19293,
+		"inputAbbreviatedPath": "\/assets\/img\/video-coming-soon.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/video-coming-soon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/video_pic_with_button.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -966,25 +1536,14 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/assets\/js\/navigation.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/navigation.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/navigation-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/assets\/js\/script.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/script.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/public\/js\/script-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
@@ -994,17 +1553,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/skip-link-focus-fix.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/skip-link-focus-fix-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/assets\/js\/theme.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/theme.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/theme-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1070,7 +1618,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/about\/presenters.less": {
+	"\/assets\/less\/about\/partner_mention.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -1078,28 +1626,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/about\/presenters.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/presenters.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/about\/sponsors.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/about\/sponsors.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/sponsors.css",
+		"inputAbbreviatedPath": "\/assets\/less\/about\/partner_mention.less",
+		"outputAbbreviatedPath": "\/assets\/less\/css\/partner_mention.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1120,6 +1648,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/less\/base.less",
 		"outputAbbreviatedPath": "\/assets\/css\/base.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/buttons.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/buttons.less",
+		"outputAbbreviatedPath": "\/assets\/css\/buttons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1220,26 +1768,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/less\/find-a-camp\/index.less",
 		"outputAbbreviatedPath": "\/assets\/less\/css\/index.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/fonts.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/fonts.less",
-		"outputAbbreviatedPath": "\/assets\/css\/fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1390,46 +1918,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/home\/camp_themes.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/camp_themes.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/camp_themes.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/home\/day_camp.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/day_camp.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/day_camp.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/assets\/less\/home\/hero.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -1440,26 +1928,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/less\/home\/hero.less",
 		"outputAbbreviatedPath": "\/assets\/less\/css\/hero.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/home\/how_its_works.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/how_its_works.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/how_its_works.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1510,7 +1978,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/home\/physical_campsites.less": {
+	"\/assets\/less\/home\/sections.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -1518,68 +1986,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/physical_campsites.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/physical_campsites.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/home\/social_feeds.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/social_feeds.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/social_feeds.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/home\/stock_up.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/stock_up.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/stock_up.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/assets\/less\/home\/welcome.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/home\/welcome.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/welcome.css",
+		"inputAbbreviatedPath": "\/assets\/less\/home\/sections.less",
+		"outputAbbreviatedPath": "\/assets\/less\/css\/sections.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1710,7 +2118,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/typography\/typography.less": {
+	"\/assets\/less\/layouts\/overlay.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -1718,8 +2126,228 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/typography\/typography.less",
-		"outputAbbreviatedPath": "\/assets\/less\/css\/typography.css",
+		"inputAbbreviatedPath": "\/assets\/less\/layouts\/overlay.less",
+		"outputAbbreviatedPath": "\/assets\/less\/css\/overlay.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/modals.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/modals.less",
+		"outputAbbreviatedPath": "\/assets\/css\/modals.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/project-landing.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/project-landing.less",
+		"outputAbbreviatedPath": "\/assets\/css\/project-landing.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/project-library\/camp_themes.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/project-library\/camp_themes.less",
+		"outputAbbreviatedPath": "\/assets\/less\/css\/camp_themes.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/project-library\/index.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/project-library\/index.less",
+		"outputAbbreviatedPath": "\/assets\/less\/css\/index.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/project-path-gallery.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/project-path-gallery.less",
+		"outputAbbreviatedPath": "\/assets\/css\/project-path-gallery.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/project-print.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/project-print.less",
+		"outputAbbreviatedPath": "\/assets\/css\/project-print.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/single-project-path.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/single-project-path.less",
+		"outputAbbreviatedPath": "\/assets\/css\/single-project-path.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/single-project.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/single-project.less",
+		"outputAbbreviatedPath": "\/assets\/css\/single-project.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/sponsored-projects-collection.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/sponsored-projects-collection.less",
+		"outputAbbreviatedPath": "\/assets\/css\/sponsored-projects-collection.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/sponsors.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/sponsors.less",
+		"outputAbbreviatedPath": "\/assets\/css\/sponsors.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/assets\/less\/typography.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/less\/typography.less",
+		"outputAbbreviatedPath": "\/assets\/css\/typography.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3800,15 +4428,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/bower_components\/fancybox\/source\/jquery.fancybox.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/fancybox\/source\/jquery.fancybox.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/bower_components\/fancybox\/source\/jquery.fancybox.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -3819,6 +4438,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
+		},
+	"\/bower_components\/fancybox\/source\/jquery.fancybox.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fancybox\/source\/jquery.fancybox.less",
+		"outputAbbreviatedPath": "\/bower_components\/fancybox\/css\/jquery.fancybox.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/bower_components\/fancybox\/source\/jquery.fancybox.pack.js": {
 		"fileType": 64,
@@ -5061,6 +5700,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/package-lock.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/package-lock.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/package-lock-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/package.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -5099,11 +5749,47 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/page-makey-game.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-makey-game.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/page-map.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-map.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-project-library.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-project-library.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-project-path-gallery.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-project-path-gallery.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-projects-parent.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-projects-parent.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -5117,11 +5803,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/page-sponsored-project-collection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-sponsored-project-collection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-sponsors.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-sponsors.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/page.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/project-print-template.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/project-print-template.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -5236,6 +5949,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/Affiliates-Maker-Camp-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 157339,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Affiliates-Maker-Camp-2.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Affiliates-Maker-Camp-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/animation.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5243,6 +5967,17 @@
 		"initialSize": 226,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/animation.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/animation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/animation\/static-background.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155778,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/animation\/static-background.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/animation\/static-background.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5265,6 +6000,72 @@
 		"initialSize": 2588,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/arrow_right.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/arrow_right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Aspire-FNL-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28242,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Aspire-FNL-5.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Aspire-FNL-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/att-Hm-Hero_600-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12255,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/att-Hm-Hero_600-2.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/att-Hm-Hero_600-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/att-Hm-Hero_600.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12362,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/att-Hm-Hero_600.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/att-Hm-Hero_600.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/att_globe_rgb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10778,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/att_globe_rgb_pos.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8835,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb_pos.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb_pos.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/att_globe_rgb_wht.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8835,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb_wht.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/att_globe_rgb_wht.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5346,6 +6147,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/bg_how_maker_camp_works2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74477,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/bg_how_maker_camp_works2.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/bg_how_maker_camp_works2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/bg_phyzical.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5401,6 +6213,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/calendar-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1151,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/calendar-icon.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/calendar-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/calendar_icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 785,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/calendar_icon.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/calendar_icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/campfire-banner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 161069,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/campfire-banner.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/campfire-banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/castle.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5408,6 +6253,28 @@
 		"initialSize": 4389,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/castle.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/castle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/collabicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8948,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/collabicon.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/collabicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Collaborate_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15845,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Collaborate_Icon@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Collaborate_Icon@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5430,6 +6297,17 @@
 		"initialSize": 770,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/current_icon.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/current_icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/current_icon_blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 899,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/current_icon_blue.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/current_icon_blue.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5500,6 +6378,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/Explore_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12435,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Explore_Icon@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Explore_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Google-Color@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6997,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Google-Color@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Google-Color@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Google-Gry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2811,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Google-Gry.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Google-Gry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/header_template.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5511,6 +6422,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/hero_FPO.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 315041,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/hero_FPO.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/hero_FPO.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/hiden_hero.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5518,6 +6440,17 @@
 		"initialSize": 208896,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/hiden_hero.jpg",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/hiden_hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/hm_pg_video_bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 139588,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/hm_pg_video_bg.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/hm_pg_video_bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5540,6 +6473,17 @@
 		"initialSize": 1.68878e+06,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/host_a_camp_hero.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/host_a_camp_hero.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Host_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10899,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Host_Icon@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Host_Icon@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5588,6 +6532,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/light-bike-home-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44412,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/light-bike-home-bg.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/light-bike-home-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/lock_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5617,6 +6572,171 @@
 		"initialSize": 21080,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/Logo.jpg",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/Logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Magazine-cover-44-for-overlay.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45897,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Magazine-cover-44-for-overlay.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Magazine-cover-44-for-overlay.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/magazine-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4862,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/magazine-icon.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/magazine-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/make-it-glow.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60775,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/make-it-glow.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/make-it-glow.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Make_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20681,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Make_Icon@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Make_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/make_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2583,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/make_logo.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/make_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/maker-camp-coming-soon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117128,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/maker-camp-coming-soon.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/maker-camp-coming-soon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Maker-Camp-video-poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153192,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Maker-Camp-video-poster.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Maker-Camp-video-poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Maker-Camp_Hm-Hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159412,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Maker-Camp_Hm-Hero.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Maker-Camp_Hm-Hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/maker-camp_projects.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 227061,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/maker-camp_projects.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/maker-camp_projects.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/maker-robot-textbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2184,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/maker-robot-textbox.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/maker-robot-textbox.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/MakerCamp-Hero-2016.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 178514,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/MakerCamp-Hero-2016.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/MakerCamp-Hero-2016.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/MakerCamp-HmPg-Hero-2016.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 269823,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/MakerCamp-HmPg-Hero-2016.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/MakerCamp-HmPg-Hero-2016.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/makercamp-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8956,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/makercamp-logo.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/makercamp-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Makey-Tshirt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68636,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Makey-Tshirt.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Makey-Tshirt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Making-Science_Diamond.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12257,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Making-Science_Diamond.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Making-Science_Diamond.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5753,6 +6873,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/project_hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44015,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/project_hero.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/project_hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/round_arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 889,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/round_arrow.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/round_arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Share_Icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9602,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Share_Icon@2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Share_Icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/shareicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10531,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/shareicon.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/shareicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/slider_arrow_left.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5852,6 +7016,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/StartMaking.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52214,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/StartMaking.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/StartMaking.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/stock_camp_1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5903,6 +7078,28 @@
 		"initialSize": 68382,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/stock_camp_5.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/stock_camp_5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/Subscribe_CTA_2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87242,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/Subscribe_CTA_2x.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/Subscribe_CTA_2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/supplyimage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3492,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/supplyimage.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/supplyimage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6006,6 +7203,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/assets\/img\/timer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1465,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/timer.png",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/timer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/assets\/img\/twitter-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6013,6 +7221,17 @@
 		"initialSize": 1757,
 		"inputAbbreviatedPath": "\/public\/assets\/img\/twitter-icon.png",
 		"outputAbbreviatedPath": "\/public\/assets\/img\/twitter-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/assets\/img\/video-coming-soon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19264,
+		"inputAbbreviatedPath": "\/public\/assets\/img\/video-coming-soon.jpg",
+		"outputAbbreviatedPath": "\/public\/assets\/img\/video-coming-soon.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6050,6 +7269,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/css\/admin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/admin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/css\/custom.min.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -6058,6 +7286,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/public\/js\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/script-min.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
 		},
 	"\/public\/js\/script.js": {
 		"fileType": 64,
@@ -6076,28 +7315,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/public\/js\/script.min.js",
 		"outputAbbreviatedPath": "\/public\/js\/min\/script.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/theme.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/theme.js",
-		"outputAbbreviatedPath": "\/public\/js\/theme-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/public\/js\/theme.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/public\/js\/theme.min.js",
-		"outputAbbreviatedPath": "\/public\/js\/min\/theme.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -6137,6 +7354,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-project-paths.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-project-paths.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-projects.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-projects.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -6271,8 +7506,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -6281,6 +7524,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
@@ -6660,10 +7907,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -6672,15 +7915,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"debug": {
+		"couch": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -6688,75 +7923,27 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
+		"es6": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
+		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
+		"for": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": 0,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"vars": {
+		"this": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -6857,7 +8044,9 @@
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
