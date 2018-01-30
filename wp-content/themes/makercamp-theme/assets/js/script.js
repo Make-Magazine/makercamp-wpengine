@@ -697,7 +697,7 @@ $(document).ready(function () {
   // Thank you modal with extra newsletter options
   $('.fancybox-wrap').on('click', '.ghost-button-black', function (e) {
     e.preventDefault();
-    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup2').serialize());
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.fancybox-wrap .whatcounts-signup2').serialize());
     $('.fancybox-thx').hide();
     $('.nl-thx-p2').trigger('click');
   });
