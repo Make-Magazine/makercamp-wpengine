@@ -3077,7 +3077,7 @@ $(document).ready(function () {
   // Thank you modal with extra newsletter options
   $(document).on('submit', '.whatcounts-signup2', function (e) {
     e.preventDefault();
-    $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup2').serialize());
+    $.post('https://secure.whatcounts.com/bin/listctrl', $('.fancybox-wrap .whatcounts-signup2').serialize());
     $('.fancybox-thx').hide();
     $('.nl-thx-p2').trigger('click');
   });
