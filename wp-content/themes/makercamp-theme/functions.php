@@ -534,10 +534,9 @@ function display_thank_you_modal_if_signed_up() { ?>
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" id="email" name="email" value="" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
-            <input type="hidden" name="custom_source" value="footer" />
+            <input type="hidden" name="custom_source" value="Thank you modal" />
             <input type="hidden" name="custom_incentive" value="none" />
             <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-            <input type="hidden" name="goto" value="" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
             <label class="list-radio pull-right">
               <input type="checkbox" id="list_6B5869DC547D3D46B52F3516A785F101_yes" name="custom_list_makenewsletter" value="yes" />
