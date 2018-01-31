@@ -2978,18 +2978,8 @@ $(document).ready(function () {
     }
   };
 
-  // Thank you modal with extra newsletter options
+  // Thank you modal
   $(".fancybox-thx").fancybox({
-    autoSize : false,
-    width  : 400,
-    autoHeight : true,
-    padding : 0,
-    afterLoad   : function() {
-      this.content = this.content.html();
-    }
-  });
-  // Final thank you modal
-  $(".nl-thx-p2").fancybox({
     autoSize : false,
     width  : 400,
     autoHeight : true,
@@ -3073,17 +3063,6 @@ $(document).ready(function () {
     } else {
       $('.nl-modal-error').trigger('click');
     }
-  });
-  // Thank you modal with extra newsletter options
-  $('.fancybox-wrap').on('click', '.ghost-button-black', function (e) {
-    e.preventDefault();
-    $.post('https://secure.whatcounts.com/bin/listctrl', $('.fancybox-wrap #wc-signup-modal').serialize());
-    $('.fancybox-thx').hide();
-    $('.nl-thx-p2').trigger('click');
-  });
-
-  $('.fancybox-thx input[type="checkbox"]').click(function(e){
-    e.stopPropagation();
   });
 
 
