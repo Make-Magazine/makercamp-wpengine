@@ -530,7 +530,7 @@ function display_thank_you_modal_if_signed_up() { ?>
             }
           ?>
           <h4>You might also like these newsletters:</h4>
-          <form class="whatcounts-signup2" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
+          <form id="wc-signup-modal" class="whatcounts-signup2" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
             <input type="hidden" name="cmd" value="subscribe" />
             <input type="hidden" id="email" name="email" value="" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
