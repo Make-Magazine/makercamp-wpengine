@@ -43,13 +43,13 @@ class CPK_WPCSV_Log_Model {
 	public function empty_table( ) {
 		$sql =	"TRUNCATE TABLE `{$this->table_name}`";
 		$this->db->query( $sql );
-	}	
-	
+	}
+
 	public function drop_table( ) {
 		$sql =	"DROP TABLE `{$this->table_name}`";
 		$this->db->query( $sql );
 	}
-	
+
 	public function add_message( $message, $category = 'Report', $data = NULL  ) {
 		$message = Array(
 			'msg' => $message,
@@ -78,14 +78,14 @@ class CPK_WPCSV_Log_Model {
 					extract( $message );
 					$msg = mysqli_real_escape_string( $link, $msg );
 					$data = mysqli_real_escape_string( $link, $data );
-					$values[] = "( '{$msg}', '{$category}', '{$data}', '{$date}' )";	
+					$values[] = "( '{$msg}', '{$category}', '{$data}', '{$date}' )";
 				} # End foreach
 			} else {
 				foreach( $this->messages as $message ) {
 					extract( $message );
-					$msg = mysql_real_escape_string( $msg, $this->db->dbh );
-					$data = mysql_real_escape_string( $data, $this->db->dbh );
-					$values[] = "( '{$msg}', '{$category}', '{$data}', '{$date}' )";	
+					$msg = mysqli_real_escape_string( $msg, $this->db->dbh );
+					$data = mysqli_real_escape_string( $data, $this->db->dbh );
+					$values[] = "( '{$msg}', '{$category}', '{$data}', '{$date}' )";
 				} # End foreach
 			}
 
@@ -94,7 +94,7 @@ class CPK_WPCSV_Log_Model {
 		$values_sql = implode( ',', $values );
 
 		$sql = "INSERT INTO {$this->table_name} ( `msg`, `category`, `data`, `created` ) VALUES {$values_sql}";
-		
+
 		$this->db->query( $sql );
 
 		$this->messages = Array( );

@@ -12,7 +12,7 @@ class CPK_WPCSV_Posts_Model {
 		global $wpdb;
 		$this->db = $wpdb;
 		$this->settings = $settings;
-		
+
 	}
 
 	public function update_settings( $settings ) {
@@ -49,7 +49,7 @@ class CPK_WPCSV_Posts_Model {
 	private function get_post_type_status_filter( ) {
 
 		$excludes = $this->settings['post_type_status_exclude_filter'];
-		
+
 		$statements = Array( );
 
 		if ( is_array( $excludes ) && !empty( $excludes ) ) {
@@ -57,7 +57,7 @@ class CPK_WPCSV_Posts_Model {
 				$status_list = "'" . implode( "','", array_keys( $statuses ) ) . "'";
 				$statements[] = "( `post_type` != '{$type}' OR `post_status` NOT IN ( {$status_list} ) )";
 			} # End foreach
-		} # End if	
+		} # End if
 
 		return ( $statements ) ? ' AND ' . implode( ' AND ', $statements ) : '';
 	}
@@ -69,18 +69,18 @@ class CPK_WPCSV_Posts_Model {
 		$types = $this->db->get_col( $sql );
 
 		$statuses = $this->get_post_status_list( );
-		
+
 		if ( is_array( $types ) && !empty( $types ) ) {
 			foreach( $types as $type ) {
 				$type_statuses[ $type ] = array_combine( $statuses, array_fill( 0, count( $statuses ), $default ) );
 			} # End foreach
 		} # End if
-		
+
 		if ( is_array( $settings ) && !empty( $settings ) ) {
 			foreach( $settings as $post_type => $post_statuses ) {
 				if ( is_array( $post_statuses ) && !empty( $post_statuses ) ) {
 					foreach( $post_statuses as $post_status => $enabled ) {
-						$type_statuses[ $post_type ][ $post_status ] = $enabled;	
+						$type_statuses[ $post_type ][ $post_status ] = $enabled;
 					} # End foreach
 				} # End if
 			} # End foreach
@@ -105,7 +105,7 @@ class CPK_WPCSV_Posts_Model {
 	}
 
 	private function get_post_status_list( ) {
-		
+
 		$sql = "SELECT DISTINCT post_status FROM {$this->db->posts}";
 
 		$statuses = $this->db->get_col( $sql );
@@ -153,9 +153,9 @@ class CPK_WPCSV_Posts_Model {
 				} # End while
 			}
 		} else {
-			$results = mysql_query( $sql, $this->db->dbh );
+			$results = mysqli_query( $sql, $this->db->dbh );
 			if ( $results ) {
-				while ( $result = mysql_fetch_array( $results, MYSQL_ASSOC ) ) {
+				while ( $result = mysqli_fetch_array( $results, MYSQL_ASSOC ) ) {
 					$post_ids[] = (int)$result['ID'];
 				} # End while
 			}
@@ -190,7 +190,7 @@ class CPK_WPCSV_Posts_Model {
 		$thumb_heading = $this->add_prefix( 'fi_', $thumb_heading );
 		$thumb_value = array_values( $thumb_field );
 
-		# Custom fields		
+		# Custom fields
 		$custom_fields = $this->get_custom_fields_by_post_id( $post_id, $this->settings['export_hidden_custom_fields'] );
 		$cf_headings = array_keys( $custom_fields );
 		$cf_headings = $this->add_prefix( 'cf_', $cf_headings );
@@ -198,7 +198,7 @@ class CPK_WPCSV_Posts_Model {
 
 		$headings = array_merge( $post_headings, $tax_headings, $thumb_heading, $cf_headings );
 		$values = array_merge( $post_values, $tax_values, $thumb_value, $cf_values );
-		
+
 		$post = $this->apply_filters( $headings, $values, $this->settings );
 
 		$this->trace( 'Filtered Post', $post );
@@ -207,7 +207,7 @@ class CPK_WPCSV_Posts_Model {
 	}
 
 	public function add_prefix( $prefix, $keys ) {
-		
+
 		$prefixed = Array( );
 		if ( is_array( $keys ) && !empty( $keys ) ) {
 			foreach( $keys as $index => $key ) {
@@ -219,7 +219,7 @@ class CPK_WPCSV_Posts_Model {
 	}
 
 	public function remove_prefix( $prefix, $keys ) {
-		
+
 		$deprefixed = Array( );
 		if ( is_array( $keys ) && !empty( $keys ) ) {
 			foreach( $keys as $index => $key ) {
@@ -233,14 +233,14 @@ class CPK_WPCSV_Posts_Model {
 	}
 
 	public function apply_filters( $headings, $values, $settings ) {
-		
+
 		$include_list = $this->include_filter( $headings, $this->settings['include_field_list'], $this->settings['mandatory_fields'] );
 		$filter_list = $this->exclude_filter( $include_list, $this->settings['exclude_field_list'], $this->settings['mandatory_fields'] );
 
 		$this->trace( 'headings', $headings );
 		$this->trace( 'values', $values );
 		$this->trace( 'filter list', $filter_list );
-		
+
 		if ( is_array( $filter_list ) && !empty( $filter_list ) ) {
 			foreach( $filter_list as $index => $value ) {
 				$filtered_headings[] = $headings[ $index ];
@@ -248,14 +248,14 @@ class CPK_WPCSV_Posts_Model {
 			} # End foreach
 		} # End if
 
-		return Array( 
+		return Array(
 			'headings' => $filtered_headings,
 			'values' => $filtered_values
 		);
 	}
 
 	public function get_thumbnail( $post_id ) {
-		
+
 		$thumb_id = get_post_thumbnail_id( $post_id );
 		$thumb_src = wp_get_attachment_image_src( $thumb_id, 'full' );
 		$thumb_url = $thumb_src[0];
@@ -285,13 +285,13 @@ class CPK_WPCSV_Posts_Model {
 	public function get_taxonomy_fields( $post_id ) {
 		$taxonomy_values = Array( );
 		$taxonomy_list = $this->get_taxonomy_list( );
-		
+
 		$this->trace( 'Taxonomy List', $taxonomy_list );
 
 		foreach( $taxonomy_list as $taxonomy ) {
 			$taxonomy_values[] = $this->export_taxonomy( wp_get_object_terms( $post_id, $taxonomy ) );
 		}
-		
+
 		$tax_fields = array_combine( $taxonomy_list, $taxonomy_values );
 
 		return $tax_fields;
@@ -315,7 +315,7 @@ class CPK_WPCSV_Posts_Model {
 	}
 
 	private function sort_taxonomy( Array $items ) {
-		
+
 		if ( empty( $items ) ) return $items;
 
 		foreach( $items as $item ) {
@@ -360,14 +360,14 @@ class CPK_WPCSV_Posts_Model {
 		if ( !$export_hidden ) $sql .= " WHERE meta_key NOT LIKE '\_%'";
 		return $this->db->get_col( $sql );
 	}
-	
+
 	public function get_custom_fields_by_post_id( $post_id, $export_hidden = TRUE ) {
 
 		$sql = "SELECT DISTINCT meta_key, meta_value FROM {$this->db->postmeta}";
 		$sql .= " WHERE post_id = '{$post_id}'";
 		if ( !$export_hidden ) $sql .= " AND meta_key NOT LIKE '\_%'";
 		$results = $this->db->get_results( $sql, ARRAY_A );
-		
+
 		$custom_field_keys = $this->get_custom_field_list( $export_hidden );
 		$custom_field_values = array_fill_keys( $custom_field_keys, '' );
 
@@ -418,7 +418,7 @@ class CPK_WPCSV_Posts_Model {
 	public function include_filter( Array $elements, Array $rules, Array $mandatory_fields ) {
 
 		$filtered_array = Array( );
-		
+
 		if ( is_array( $elements ) && !empty( $elements ) ) {
 			foreach( $elements as $key => $val ) {
 				if ( $this->rule_match( $val, $rules ) || in_array( $val, $mandatory_fields ) ) {
@@ -430,13 +430,13 @@ class CPK_WPCSV_Posts_Model {
 		return $filtered_array;
 
 	}
-	
+
 	private function rule_match( $value, Array $rules ) {
-		
+
 		if ( is_array( $rules ) && !empty( $rules ) ) {
 			foreach( $rules as $rule ) {
 				if ( $rule == $value ) return TRUE;
-				if ( $rule == '*' ) return TRUE; 
+				if ( $rule == '*' ) return TRUE;
 				if ( substr( $rule, 0, 1 ) == '*' && preg_match( '/' . substr( $rule, 1 ) . '$/', $value ) ) return TRUE;
 				if ( substr( $rule, -1, 1 ) == '*' && preg_match( '/^' . substr( $rule, 0, -1 ) . '/', $value ) ) return TRUE;
 			} # End foreach

@@ -2,10 +2,9 @@
 /*
 Plugin Name: WP CSV
 Plugin URI: http://cpkwebsolutions.com/plugins/wp-csv
-Description: A powerful, yet easy to use, CSV Importer/Exporter for Wordpress posts and pages. 
+Description: A powerful, yet easy to use, CSV Importer/Exporter for Wordpress posts and pages.
 Version: 1.8.0.0
-Author: CPK Web Solutions
-Author URI: http://cpkwebsolutions.com
+Author: Make: modified for PHP7
 Text Domain: wp-csv
 
 	LICENSE
@@ -13,7 +12,7 @@ Text Domain: wp-csv
 	Copyright 2012  CPK Web Solutions  (email : paul@cpkwebsolutions.com )
 
 	This program is free software; you can redistribute it and/or modify
-	it under the terms of the GNU General Public License, version 2, as 
+	it under the terms of the GNU General Public License, version 2, as
 	published by the Free Software Foundation.
 
 	This program is distributed in the hope that it will be useful,
@@ -34,7 +33,7 @@ function spl_autoload_classes( $name ) {
 	if ( class_exists( $name ) ) return FALSE;
 
 	$folders = Array( '' );
-	
+
 	if ( is_array( $folders ) && !empty( $folders ) ) {
 		foreach( $folders as $folder ) {
 			$file = dirname( __FILE__ ) . "/{$folder}{$name}.php";
@@ -81,7 +80,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 			$backup_url = '';
 
-			$settings = Array( 
+			$settings = Array(
 				'delimiter' => ',',
 				'enclosure' => '"',
 				'date_format' => 'US',
@@ -131,19 +130,19 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				if ( $key == 'post_fields' ) {
 					$this->settings[ $key ] = $settings[ $key ];
 				}
-				
+
 				if ( $key == 'mandatory_fields' ) {
 					$this->settings[ $key ] = $settings[ $key ];
 				}
 			}
-			
+
 			$this->wpcsv = new CPK_WPCSV_Engine( $this->settings );
 			$this->debug = new CPK_WPCSV_Debug_Log( $this->settings['csv_path'] . '/' . self::DEBUG_FILE_NAME );
 
 			if ( $this->settings['debug'] ) $this->debug->enable( );
 
 			$this->wpcsv->set_debugger( $this->debug );
-			
+
 			$this->save_settings( );
 
 			$this->csv->delimiter = $this->settings['delimiter'];
@@ -153,7 +152,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			$this->cleanup_folder( );
 
 			add_action( 'init', Array( $this, 'init' ) );
-		
+
 		}
 
 		private function cleanup_folder( ) {
@@ -212,7 +211,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 		}
 
 		private function load_js( ) {
-			
+
 			if ( $this->settings['frontend_shortcode'] && !is_admin( ) ) {
 				wp_enqueue_script( 'jquery-ui-datepicker' );
 			}
@@ -242,11 +241,11 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				add_submenu_page( 'wpcsv-settings', __( 'Import' ), __( 'Import' ), $capability, 'wpcsv-import', Array( $this, 'import_page' ) );
 				add_submenu_page( 'wpcsv-settings-hidden', __( 'Report' ), __( 'Report' ), $capability, 'wpcsv-report', Array( $this, 'report_page' ) );
 				add_submenu_page( 'wpcsv-settings-hidden', __( 'Download' ), __( 'Download' ), $capability, 'wpcsv-download', Array( $this, 'download_page' ) );
-				
+
 				# Help users find the new settings page
 				add_submenu_page( 'tools.php', __( 'WP CSV' ), __( 'WP CSV' ), $capability, 'wpcsv-old', Array( $this, 'old_settings_page' ) );
 			}
-		}	
+		}
 
 		private function update_settings( $settings ) {
 			if ( $settings['access_level'] == 'administrator' ) {
@@ -256,15 +255,15 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 			if ( isset( $settings['post_type'] ) && isset( $settings['post_status'] ) ) {
 				$posts_model = new CPK_WPCSV_Posts_Model( $settings );
-			
+
 				$args = Array(
-					"{$settings['post_type']}" => Array( 
+					"{$settings['post_type']}" => Array(
 						"{$settings['post_status']}" => FALSE
 					)
 				);
 
 				$settings['post_type_status_exclude_filter'] = $posts_model->get_post_type_status_combos( $args, TRUE );
-				
+
 				unset( $settings['post_type'] );
 				unset( $settings['post_status'] );
 			}
@@ -291,7 +290,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				unlink( "{$path}/.wpcsv-test" );
 				return TRUE;
 			}
-			
+
 		}
 
 		public function add_htaccess( $path ) {
@@ -305,7 +304,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			$uploads_dir = wp_upload_dir( );
 
 			# In order of preference
-			return Array( 
+			return Array(
 				sys_get_temp_dir( ) . '/' . $sub_folder,
 				ABSPATH . $sub_folder,
 				WP_CONTENT_DIR . '/' . $sub_folder,
@@ -376,7 +375,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				} else {
 					$this->settings['export_hidden_custom_fields'] = 0;
 				}
-				
+
 				if ( isset( $_POST['frontend_shortcode'] ) ) {
 					$this->settings['frontend_shortcode'] = 1;
 				} else {
@@ -388,7 +387,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				} else {
 					$this->settings['debug'] = 0;
 				}
-				
+
 				if ( isset( $_POST['include_attachments'] ) ) {
 					$this->settings['include_attachments'] = 1;
 				} else {
@@ -396,11 +395,11 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				}
 
 				$this->settings['include_field_list'] = preg_split( '/(,|\s)/', $_POST['include_field_list'] );
-				
+
 				$this->settings['exclude_field_list'] =  preg_split( '/(,|\s)/', $_POST['exclude_field_list'] );
 				$this->settings['post_type'] = ( !empty( $_POST['custom_post'] ) ) ? $_POST['custom_post'] : NULL;
 				$this->settings['post_status'] = ( !empty( $_POST['post_status'] ) ) ? $_POST['post_status'] : NULL;
-				
+
 				if ( !empty( $_POST['access_level'] ) ) $this->settings['access_level'] = $_POST['access_level'];
 				if ( empty( $this->settings['access_level'] ) ) $this->settings['access_level'] = 'administrator';
 
@@ -410,7 +409,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			}
 
 			$options = $this->settings;
-		
+
 			global $wpdb;
 			$sql = "SELECT count(ID) FROM {$wpdb->posts} WHERE post_status IN ( 'publish', 'draft', 'future' )";
 			$options['total_rows'] = $wpdb->get_var( $sql );
@@ -425,7 +424,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			$options['hc'] = new CPK_WPCSV_Html_Components( );
 
 			$this->view->page( 'settings', $options );
-			
+
 		}
 
 		public function export_page( ) {
@@ -444,7 +443,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			$settings['export_id'] = $settings['frontend']['export_id'];
 			$settings['export_link'] = site_url( ) . "/wp-admin/admin.php?page=wpcsv-download&wpcsv_export={$settings['frontend']['export_id']}";
 			$settings['debug_link'] = site_url( ) . "/wp-admin/admin.php?page=wpcsv-download&wpcsv_export=debug";
-			
+
 			$this->view->page( 'export', $settings );
 
 		}
@@ -462,11 +461,11 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			$this->log->add_message( __( "Max Execution Time: {$max_execution_time} (This is a server setting.)", 'wp-csv' ), 'Info' );
 			$this->log->add_message( __( "Initial Memory Usage: {$memory_usage}% (This is on the import page, before the plugin does any real work)", 'wp-csv' ), 'Info' );
 			$this->log->store_messages( );
-			
+
 			$options = Array( );
 			$options['error'] = '';
 			$error = '';
-			
+
 			$file_destination = $this->settings['csv_path'] . '/' . self::IMPORT_FILE_NAME;
 
 			# Prepare to upload file
@@ -480,8 +479,8 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 				if ( empty( $_FILES ) || ( isset( $_SERVER['CONTENT_LENGTH'] ) && (int)$_SERVER['CONTENT_LENGTH'] > $this->convert_to_bytes( ini_get( 'post_max_size' ) ) ) ) {
 					$options['error'] = "The file you uploaded appears to be larger than your 'post_max_size' and/or 'upload_max_filesize' PHP ini settings!  Please make the file smaller or talk to your web host.";
-				} 
-				
+				}
+
 				if ( !isset( $options['error'] ) || empty( $options['error'] ) ) {
 					$source = $_FILES['uploadedfile']['tmp_name'];
 					move_uploaded_file( $source, $file_destination );
@@ -495,16 +494,16 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 						}
 					}
 
-					
+
 					$options['file_name'] = $_FILES['uploadedfile']['name'];
 					$options['error'] = $error;
 				}
 
 			}
-			
+
 			$this->view->page( 'import', $options );
 		}
-			
+
 		public function report_page( ) {
 
 			if ( !$this->authorized( ) ) wp_redirect( wp_get_referer( ) );
@@ -521,12 +520,12 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 		public function download_page( ) {
 
-			if ( !$this->settings['frontend_shortcode'] || is_admin( ) ) { 
+			if ( !$this->settings['frontend_shortcode'] || is_admin( ) ) {
 				if ( empty( $_GET['wpcsv_export'] ) || !$this->authorized( ) ) {
 					wp_redirect( wp_get_referer( ) );
 				}
 			}
-			
+
 			$file_utility = new CPK_WPCSV_File_Utility( );
 
 			# Clean export_id for security purposes
@@ -543,7 +542,7 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			}
 			$file_utility->set_file( $file_path );
 			$file_utility->send_to_browser( $download_name, TRUE );
-			
+
 			wp_redirect( wp_get_referer( ) );
 			die( );
 		}
@@ -593,12 +592,12 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 				</div>";
 				echo $html;
 			}
-			
+
 		}
 
 		public function save_settings( ) {
 			update_option( $this->option_name, $this->settings );
-			
+
 			// A bit ugly but necessary, refactor later
 			$this->csv->delimiter = $this->settings['delimiter'];
 			$this->csv->enclosure = $this->settings['enclosure'];
@@ -613,9 +612,9 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 			$this->wpcsv->prepare( $settings );
 		}
-		
+
 		public function process_export( ) {
-			
+
 			if ( !isset( $_GET['export_id'] ) ) trigger_error( 'No export id provided!' );
 
 			$export_id = $_GET['export_id'];
@@ -649,25 +648,25 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			echo json_encode( Array( 'position' => $position, 'percentagecomplete' => $ret_percentage, 'errors' => $errors ) );
 			die( );
 		}
-		
+
 		public function process_import( ) {
 
 			$file = $this->settings['csv_path'] . '/' . self::IMPORT_FILE_NAME;
-			
+
 			$start = $_GET['start'];
-			
+
 			$this->csv->delimiter = $this->settings['delimiter'];
 
 			$this->csv->enclosure = $this->settings['enclosure'];
 
 			$total = ( $_GET['lines'] == 0 ) ? $this->csv->line_count( $file ) : $_GET['lines'];
-			
+
 			$rows = $this->csv->load( $file, $start, $this->settings['limit'] );
-			
+
 			$number_processed = $this->wpcsv->import( $rows );
 
 			$position = $start + $number_processed;
-			
+
 			$ret_percentage = round( ( ( $position - 1 ) / $total ) * 100 );
 
 			$errors = ob_get_clean( );
@@ -682,9 +681,9 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 			echo json_encode( Array( 'position' => $position, 'percentagecomplete' => $ret_percentage, 'lines' => $total ) );
 			die( );
 		}
-		
+
 		public function export_shortcode( $atts ) {
-			
+
 			if ( !$this->settings['frontend_shortcode'] ) return 'CSV export is disabled!';
 
 			$settings = shortcode_atts( $this->settings, $atts );
@@ -704,8 +703,8 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 			$output = ob_get_clean( );
 
-			return $output;	
-			
+			return $output;
+
 		}
 
 		public function cpk_add_settings_link( $links, $file ) {
@@ -726,3 +725,10 @@ if ( !class_exists( 'CPK_WPCSV' ) ) {
 
 global $cpk_wpcsv;
 $cpk_wpcsv = new CPK_WPCSV( );
+
+//disable plugin from looking for updates as we hardcoded php7 fixes
+add_filter('site_transient_update_plugins', 'remove_update_notification');
+function remove_update_notification($value) {
+     unset($value->response[ plugin_basename(__FILE__) ]);
+     return $value;
+}
