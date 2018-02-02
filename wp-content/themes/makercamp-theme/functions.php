@@ -4,6 +4,7 @@
  *
  * @package Maker Camp Theme
  */
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -222,13 +223,13 @@ function project_post_types() {
 /**
  * Create the print pages for each project
  */
-function project_add_child_print_page( $post_id ) {  
+function project_add_child_print_page( $post_id ) {
   if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
     return;
 
   if ( !wp_is_post_revision( $post_id )
   && 'projects' == get_post_type( $post_id )
-  && 'auto-draft' != get_post_status( $post_id ) ) {  
+  && 'auto-draft' != get_post_status( $post_id ) ) {
     $show = get_post( $post_id );
     if( 0 == $show->post_parent ){
       $children =& get_children(
@@ -483,7 +484,7 @@ function stuff_for_sale_panel() { ?>
             <h4>Make It Glow</h4>
             <p>Explore electricity and electronics with a collection of kid-ready LED projects.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-it-glow" target="_blank">BUY NOW</a>
-          </div>  
+          </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Paper_Inventions_large.jpg" class="img-responsive" alt="Make: Paper Inventions Book" />
             <h4>Make: Paper Inventions</h4>
@@ -495,7 +496,7 @@ function stuff_for_sale_panel() { ?>
             <h4>Maker's Notebook</h4>
             <p>Jot down project ideas, diagrams, and notes in this sweet notebook.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
-          </div>      
+          </div>
 
         </div>
       </div>
