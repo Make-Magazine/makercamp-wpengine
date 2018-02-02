@@ -729,6 +729,8 @@ $cpk_wpcsv = new CPK_WPCSV( );
 //disable plugin from looking for updates as we hardcoded php7 fixes
 add_filter('site_transient_update_plugins', 'remove_update_notification');
 function remove_update_notification($value) {
+  if(isset($value->response[ plugin_basename(__FILE__) ])){
      unset($value->response[ plugin_basename(__FILE__) ]);
-     return $value;
+  }
+  return $value;
 }
