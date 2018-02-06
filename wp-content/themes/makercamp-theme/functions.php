@@ -375,7 +375,7 @@ function subscribe_return_path_overlay() { ?>
           <div class="col-sm-4 overlay-3">
             <h2>Sign-up for updates on Maker Camp projects!</h2>
             <p>Keep informed, stay inspired.</p>
-            <form class="sub-form " action="https://secure.whatcounts.com/bin/listctrl" method="POST">
+            <form class="sub-form whatcounts-signup1o" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
               <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp -->
               <input type="hidden" name="cmd" value="subscribe"/>
               <input type="hidden" name="custom_source" value="Subscribe return path overlay"/>
@@ -385,7 +385,7 @@ function subscribe_return_path_overlay() { ?>
               <input type="hidden" name="goto" value=""/>
               <input type="hidden" name="custom_host" value="makercamp.com" />
               <input type="hidden" name="errors_to" value=""/>
-              <div id="recapcha-home-nl-panel" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
+              <div id="recapcha-header" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
               <input name="email" class="overlay-input" placeholder="Enter your email" required type="email"><br>
               <input value="GO" class="black-overlay-btn" type="submit">
             </form>

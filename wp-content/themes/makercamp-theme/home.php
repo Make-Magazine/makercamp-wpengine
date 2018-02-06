@@ -322,7 +322,6 @@
       <input type="hidden" name="custom_host" value="makercamp.com" />
       <input type="hidden" name="custom_incentive" value="none" />
       <input type="hidden" name="custom_source" value="modal" />
-      <input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
       <input type="hidden" name="custom_url" value="" />
       <div id="recapcha-home-modal" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
       <input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
