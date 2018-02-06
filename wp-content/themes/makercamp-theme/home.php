@@ -144,7 +144,7 @@
             <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
             <input type="hidden" id="format_mime" name="format" value="mime" />
             <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
-            <div id="recapcha-home" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
+            <div id="recapcha-home-panel" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
             <input id="wc-email-1" class="form-control nl-panel-input" name="email" placeholder="Email Address" required type="email">
             <input class="btn-cyan" value="Yes Please" type="submit">
           </form>

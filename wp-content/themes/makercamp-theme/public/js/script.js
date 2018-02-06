@@ -2948,7 +2948,8 @@ $(document).ready(function () {
   var recaptchaFooterDesk;
   var recaptchaFooterMob;
   var recaptchaHeader;
-  var recaptchaHome;
+  var recaptchaHomePanel;
+  var recaptchaHomeModal;
   var recaptchaAbout;
   onloadCallback = function() {
     if ( jQuery('#recapcha-footer-desktop').length ) {
@@ -2966,8 +2967,13 @@ $(document).ready(function () {
         'sitekey' : recaptchaKey
       });
     }
+    if ( jQuery('#recapcha-home-panel').length ) {
+      recaptchaHomePanel = grecaptcha.render('recapcha-home-panel', {
+        'sitekey' : recaptchaKey
+      });
+    }
     if ( jQuery('#recapcha-home-modal').length ) {
-      recaptchaHome = grecaptcha.render('recapcha-home-modal', {
+      recaptchaHomeModal = grecaptcha.render('recapcha-home-modal', {
         'sitekey' : recaptchaKey
       });
     }
@@ -2999,12 +3005,38 @@ $(document).ready(function () {
     }
   });
   
-  // Home page
-  $(document).on('submit', '.whatcounts-signup1', function (e) {
+  // Header overlay page
+  $(document).on('submit', '.whatcounts-signup1o', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaHeader) != "" ) {
       var bla = $('#wc-email-1').val();
+      $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1o').serialize());
+      $('.fancybox-thx').trigger('click');
+      $('.nl-modal-email-address').text(bla);
+      $('.whatcounts-signup2 #email').val(bla);
+    } else {
+      $('.nl-modal-error').trigger('click');
+    }
+  });
+  // Home page nl panel
+  $(document).on('submit', '.whatcounts-signup1', function (e) {
+    e.preventDefault();
+    if ( grecaptcha.getResponse(recaptchaHomePanel) != "" ) {
+      var bla = $('#wc-email-1').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+      $('.fancybox-thx').trigger('click');
+      $('.nl-modal-email-address').text(bla);
+      $('.whatcounts-signup2 #email').val(bla);
+    } else {
+      $('.nl-modal-error').trigger('click');
+    }
+  });
+  // Home modal
+  $(document).on('submit', '.home-nl-modal', function (e) {
+    e.preventDefault();
+    if ( grecaptcha.getResponse(recaptchaHomeModal) != "" ) {
+      var bla = $('#wc-email-m').val();
+      $.post('https://secure.whatcounts.com/bin/listctrl', $('.home-nl-modal').serialize());
       $('.fancybox-thx').trigger('click');
       $('.nl-modal-email-address').text(bla);
       $('.whatcounts-signup2 #email').val(bla);
@@ -3031,19 +3063,6 @@ $(document).ready(function () {
     if ( grecaptcha.getResponse(recaptchaFooterMob) != "" ) {
       var bla = $('#wc-email-m').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
-      $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // Home modal
-  $(document).on('submit', '.home-nl-modal', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaHome) != "" ) {
-      var bla = $('#wc-email-m').val();
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.home-nl-modal').serialize());
       $('.fancybox-thx').trigger('click');
       $('.nl-modal-email-address').text(bla);
       $('.whatcounts-signup2 #email').val(bla);
