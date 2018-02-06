@@ -629,11 +629,8 @@ $(document).ready(function () {
   $(document).on('submit', '.whatcounts-signup1o', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaHeader) != "" ) {
-      var bla = $('#wc-email-1').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1o').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
@@ -642,11 +639,8 @@ $(document).ready(function () {
   $(document).on('submit', '.whatcounts-signup1', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaHomePanel) != "" ) {
-      var bla = $('#wc-email-1').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
@@ -655,11 +649,8 @@ $(document).ready(function () {
   $(document).on('submit', '.home-nl-modal', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaHomeModal) != "" ) {
-      var bla = $('#wc-email-m').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.home-nl-modal').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
@@ -668,11 +659,8 @@ $(document).ready(function () {
   $(document).on('submit', '.whatcounts-signup1f', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaFooterDesk) != "" ) {
-      var bla = $('#wc-email-f').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
@@ -681,11 +669,8 @@ $(document).ready(function () {
   $(document).on('submit', '.whatcounts-signup1m', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaFooterMob) != "" ) {
-      var bla = $('#wc-email-m').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
@@ -694,11 +679,8 @@ $(document).ready(function () {
   $(document).on('submit', '.recapcha-about', function (e) {
     e.preventDefault();
     if ( grecaptcha.getResponse(recaptchaAbout) != "" ) {
-      var bla = $('#wc-email-m').val();
       $.post('https://secure.whatcounts.com/bin/listctrl', $('.recapcha-about').serialize());
       $('.fancybox-thx').trigger('click');
-      $('.nl-modal-email-address').text(bla);
-      $('.whatcounts-signup2 #email').val(bla);
     } else {
       $('.nl-modal-error').trigger('click');
     }
