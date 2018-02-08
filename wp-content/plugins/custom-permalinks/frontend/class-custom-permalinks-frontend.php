@@ -97,7 +97,7 @@ class Custom_Permalinks_Frontend {
 			if ( ! $posts ) {
 				$def_query = apply_filters( 'custom_permalinks_like_query', '__false' );
 				if ( defined( 'POLYLANG_VERSION' ) || defined( 'AMP__VERSION' )
-					|| '__false' !== $def_query ) {
+					|| defined( 'TASTY_RECIPES_PLUGIN_VERSION' ) || '__false' !== $def_query ) {
 					$sql = $wpdb->prepare( "SELECT p.ID, pm.meta_value, p.post_type, p.post_status FROM $wpdb->posts AS p " .
 									" LEFT JOIN $wpdb->postmeta AS pm ON (p.ID = pm.post_id) WHERE " .
 									" meta_key = 'custom_permalink' AND meta_value != '' AND " .
@@ -192,7 +192,11 @@ class Custom_Permalinks_Frontend {
 			if ( isset( $_SERVER['QUERY_STRING'] ) ) {
 				$old_query_string = $_SERVER['QUERY_STRING'];
 			}
-			$_SERVER['REQUEST_URI']  = '/' . ltrim( $original_url, '/' );
+			$_SERVER['REQUEST_URI'] = '/' . ltrim( $original_url, '/' );
+			$path_info = apply_filters( 'custom_permalinks_path_info', '__false' );
+			if ( '__false' !== $path_info ) {
+				$_SERVER['PATH_INFO'] = '/' . ltrim( $original_url, '/' );
+			}
 			$_SERVER['QUERY_STRING'] = ( ( $pos = strpos( $original_url, '?' ) ) !== false ? substr( $original_url, $pos + 1 ) : '' );
 			parse_str( $_SERVER['QUERY_STRING'], $query_array );
 			$old_values = array();
