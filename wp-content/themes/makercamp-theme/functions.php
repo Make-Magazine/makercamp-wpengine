@@ -385,7 +385,7 @@ function subscribe_return_path_overlay() { ?>
               <input type="hidden" name="goto" value=""/>
               <input type="hidden" name="custom_host" value="makercamp.com" />
               <input type="hidden" name="errors_to" value=""/>
-              <div id="recapcha-header" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
+              <div id="recapcha-header" class="g-recaptcha" data-size="invisible"></div>
               <input name="email" class="overlay-input" placeholder="Enter your email" required type="email"><br>
               <input value="GO" class="black-overlay-btn" type="submit">
             </form>

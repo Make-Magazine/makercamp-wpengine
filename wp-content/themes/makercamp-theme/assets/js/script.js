@@ -564,46 +564,6 @@ $(document).ready(function () {
   });
 
 
-  var recaptchaKey = '6Lffo0EUAAAAABhGRLPk751JrmCLqR5bvUR9RYZJ';
-  var recaptchaFooterDesk;
-  var recaptchaFooterMob;
-  var recaptchaHeader;
-  var recaptchaHomePanel;
-  var recaptchaHomeModal;
-  var recaptchaAbout;
-  onloadCallback = function() {
-    if ( jQuery('#recapcha-footer-desktop').length ) {
-      recaptchaFooterDesk = grecaptcha.render('recapcha-footer-desktop', {
-        'sitekey' : recaptchaKey
-      });
-    }
-    if ( jQuery('#recapcha-footer-mobile').length ) {
-      recaptchaFooterMob = grecaptcha.render('recapcha-footer-mobile', {
-        'sitekey' : recaptchaKey
-      });
-    }
-    if ( jQuery('#recapcha-header').length ) {
-      recaptchaHeader = grecaptcha.render('recapcha-header', {
-        'sitekey' : recaptchaKey
-      });
-    }
-    if ( jQuery('#recapcha-home-panel').length ) {
-      recaptchaHomePanel = grecaptcha.render('recapcha-home-panel', {
-        'sitekey' : recaptchaKey
-      });
-    }
-    if ( jQuery('#recapcha-home-modal').length ) {
-      recaptchaHomeModal = grecaptcha.render('recapcha-home-modal', {
-        'sitekey' : recaptchaKey
-      });
-    }
-    if ( jQuery('#recapcha-about').length ) {
-      recaptchaAbout = grecaptcha.render('recapcha-about', {
-        'sitekey' : recaptchaKey
-      });
-    }
-  };
-
   // Thank you modal
   $(".fancybox-thx").fancybox({
     autoSize : false,
@@ -624,67 +584,6 @@ $(document).ready(function () {
       this.content = this.content.html();
     }
   });
-  
-  // Header overlay page
-  $(document).on('submit', '.whatcounts-signup1o', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaHeader) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1o').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // Home page nl panel
-  $(document).on('submit', '.whatcounts-signup1', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaHomePanel) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // Home modal
-  $(document).on('submit', '.home-nl-modal', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaHomeModal) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.home-nl-modal').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // desktop footer
-  $(document).on('submit', '.whatcounts-signup1f', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaFooterDesk) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // mobile footer
-  $(document).on('submit', '.whatcounts-signup1m', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaFooterMob) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
-  // About page
-  $(document).on('submit', '.recapcha-about', function (e) {
-    e.preventDefault();
-    if ( grecaptcha.getResponse(recaptchaAbout) != "" ) {
-      $.post('https://secure.whatcounts.com/bin/listctrl', $('.recapcha-about').serialize());
-      $('.fancybox-thx').trigger('click');
-    } else {
-      $('.nl-modal-error').trigger('click');
-    }
-  });
 
 
   // Facybox for home page promo video
@@ -700,3 +599,97 @@ $(document).ready(function () {
   });
 
 });
+
+// Header overlay page
+var onSubmitHeader = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1o').serialize());
+  $('.fancybox-thx').trigger('click');
+}
+$(document).on('submit', '.whatcounts-signup1o', function (e) {
+  e.preventDefault();
+  onSubmitHeader();
+});
+// Home page nl panel
+var onSubmitHomePanel = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+  $('.fancybox-thx').trigger('click');
+}
+$(document).on('submit', '.whatcounts-signup1', function (e) {
+  e.preventDefault();
+  onSubmitHomePanel();
+});
+// Home modal
+var onSubmitHomeModal = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.home-nl-modal').serialize());
+  $('.fancybox-thx').trigger('click');
+}
+$(document).on('submit', '.home-nl-modal', function (e) {
+  e.preventDefault();
+  onSubmitHomeModal();
+});
+// desktop footer
+var onSubmitFooterDesk = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
+  $('.fancybox-thx').trigger('click');
+}
+$(document).on('submit', '.whatcounts-signup1f', function (e) {
+  e.preventDefault();
+  onSubmitFooterDesk();
+});
+// mobile footer
+var onSubmitFooterMob = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
+  $('.fancybox-thx').trigger('click');
+} 
+$(document).on('submit', '.whatcounts-signup1m', function (e) {
+  e.preventDefault();
+  onSubmitFooterMob();
+});
+// About page
+var onSubmitAbout = function(token) {
+  $.post('https://secure.whatcounts.com/bin/listctrl', $('.recapcha-about').serialize());
+  $('.fancybox-thx').trigger('click');
+} 
+$(document).on('submit', '.recapcha-about', function (e) {
+  e.preventDefault();
+  onSubmitAbout();
+});
+var recaptchaKey = '6Lf_-kEUAAAAAHtDfGBAleSvWSynALMcgI1hc_tP';
+onloadCallback = function() {
+  if ( jQuery('#recapcha-footer-desktop').length ) {
+    grecaptcha.render('recapcha-footer-desktop', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitFooterDesk
+    });
+  }
+  if ( jQuery('#recapcha-footer-mobile').length ) {
+    grecaptcha.render('recapcha-footer-mobile', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitFooterMob
+    });
+  }
+  if ( jQuery('#recapcha-header').length ) {
+    grecaptcha.render('recapcha-header', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitHeader
+    });
+  }
+  if ( jQuery('#recapcha-home-panel').length ) {
+    grecaptcha.render('recapcha-home-panel', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitHomePanel
+    });
+  }
+  if ( jQuery('#recapcha-home-modal').length ) {
+    grecaptcha.render('recapcha-home-modal', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitHomeModal
+    });
+  }
+  if ( jQuery('#recapcha-about').length ) {
+    grecaptcha.render('recapcha-about', {
+      'sitekey' : recaptchaKey,
+      'callback' : onSubmitAbout
+    });
+  }
+};

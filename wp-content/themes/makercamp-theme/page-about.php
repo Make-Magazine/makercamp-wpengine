@@ -226,7 +226,7 @@ $(function() {
     <input type="hidden" name="custom_source" value="modal" />
     <input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
     <input type="hidden" name="custom_url" value="" />
-    <div id="recapcha-about" class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;margin-bottom:-8px;"></div>
+    <div id="recapcha-about" class="g-recaptcha" data-size="invisible"></div>
     <input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
     <input type="submit" name="Submit" id="newsletter-set-cookie" value="Sign Me Up" class="btn-modal newsletter-set-cookie">
     <input type="hidden" id="format_mime" name="format" value="mime" />
