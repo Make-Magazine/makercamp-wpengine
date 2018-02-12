@@ -1,13 +1,12 @@
 === Custom Permalinks ===
-
 Contributors: sasiddiqui, michaeltyson
 Donate link: https://www.paypal.me/yasglobal
 Tags: permalink, url, link, address, custom, redirect, custom post type
 Requires at least: 2.6
 Tested up to: 4.9
-Stable tag: 1.2.12
+Stable tag: 1.2.16
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl.html
 
 Set custom permalinks on a per-post, per-tag or per-category basis.
 
@@ -61,6 +60,11 @@ add_filter( 'custom_permalinks_like_query', '__return_true');
 
 Note: Use `custom_permalinks_like_query` filter if the URLs doesn't works for you after upgrading to v1.2.9
 
+To add `PATH_INFO` in `$_SERVER` Variable just add this line in your theme's functions.php:
+`
+add_filter( 'custom_permalinks_path_info', '__return_true');
+`
+
 === Thanks for the Support ===
 
 I does not always provide active support for the Custom Permalinks plugin on the WordPress.org forums, as i have prioritize the email support. 
@@ -88,6 +92,22 @@ This process defines you the steps to follow either you are installing through W
 3. Go to "after activation" below.
 
 == Changelog ==
+
+= 1.2.16 =
+
+  * Added compatibility with Tasty Recipes Plugin
+
+= 1.2.15 =
+
+  * Added filter which can be used to add PATH_INFO in $_SERVER Variable
+
+= 1.2.14 =
+
+  * Enhancement
+    * Added PATH_INFO in $_SERVER Variable
+
+  * Bugs
+    * $this variable issue on static method
 
 = 1.2.12 =
 
@@ -126,79 +146,6 @@ This process defines you the steps to follow either you are installing through W
     * Fixed Query Issue on parse_request
     * Resolving Issues with Cornerstone
 
-= 1.2.5 =
-  
-  * Fixed Category/Tag Update Issue + Typo on Admin Page
-
-= 1.2.4 =
-
-  * Fixed Slug issue with Yoast SEO
-
-= 1.2.3 =
-
-  * Fixed PHP Notice on Edit Post Page
-
-= 1.2.2 =
-
-  * Fixed Typo of Class Object for term on Admin Page
-
-= 1.2.1 =
-  * Fixed Class Typo
-
-= 1.2 =
-
-  * Enhancements
-    * Added Filter to Exclude/Ignore URL to be processed
-    * Added Translation Capability
-    * Split the Code using OOPS Concept to improve performance and applied the filters according to the need
-    * Removed some unnecessary filters
-  * Bugs
-    * Fixed Vulnerability Issues
-
-= 1.1 =
-  
-  * Enhancements
-    * Added PostTypes Permalinks Page
-      * View all the PostTypes permalinks
-      * Search Permalinks
-      * Sort by Title
-      * Pagination
-    * Added Categories Permalinks Page
-      * View all the Category/Tags permalinks
-      * Search Permalinks
-      * Pagination
-
-  * Bug Fixes
-     * 404 Issues
-     * Child pages bug
-    
-= 1.0.2 =
-  
-  * Fixed Notice and some URL Issues
-
-= 1.0.1 =
-  
-  * Fixed issue with AMP Pages
-
-= 1.0 =
-  
-  * Updated Query on the `custom_permalinks_request` Function
-
 = Earlier versions =
 
   * For the changelog of earlier versions, please refer to the separate changelog.txt file.
-
-== Upgrade Notice ==
-
-= 0.6.1 =
-
- * This release fixes a bug causing incorrect link from the "View Post"/"View Page" button in the editor
-
-= 0.6 =
-
-In the process of fixing one issue, version 0.5.3 broke permalinks ending with a "/". Update now to fix this, and sorry for the inconvenience!
-
-= 0.5.3 =
-
-If you are having problems with Custom Permalinks causing an invalid URL redirect (eg. http://domain.comfolder/file.html instead of http://domain.com/folder/file.html),
-upgrade: This has now been fixed.
