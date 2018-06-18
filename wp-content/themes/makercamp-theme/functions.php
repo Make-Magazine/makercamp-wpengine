@@ -88,7 +88,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=5.1' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=5.2' );
   /* Custom JS */
   wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=3.3', array('jquery'), '', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -443,25 +443,25 @@ function stuff_for_sale_panel() { ?>
 
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Start Making!</h4>
+              <h4>Make: Easy Electronics</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Make It Glow</h4>
+              <h4>How to Use a Breadboard!</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Make: Paper Inventions</h4>
+              <h4>BrushBot Party Pack</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Maker's Notebook</h4>
+              <h4>Learn to Solder</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -481,7 +481,7 @@ Make: Easy Electronics - Book and Kit" />
             <a class="mc-blue-btn" href="https://www.makershed.com/products/easy-electronics-book-and-kit" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/make-it-glow.jpg' ?>" class="img-responsive" alt="How to Use a Breadboard! - Kit" />
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/BreadboardKit_White-1_large.jpg" class="img-responsive" alt="How to Use a Breadboard! - Kit" />
             <h4>How to Use a Breadboard!</h4>
             <p>Enhance your electronics skills with this self-guided learning course.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/how-to-use-a-breadboard-1ed" target="_blank">BUY NOW</a>
