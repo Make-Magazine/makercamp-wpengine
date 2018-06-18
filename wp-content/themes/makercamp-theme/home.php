@@ -14,20 +14,7 @@
       <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
     </div>
  </section>
- 
 
-  <section class="home-hero container">
-    <h1 class="text-center">Thanks for a Great Summer of Making</h1>
-    
-
-    <div class="hero-btn-cont">
-      <a class="mc-blue-btn" href="/get-started">Get Started</a>
-      <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
-      <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
-    </div>
-
-    <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
-  </section>
 
   <section class="home-sponsor">
     <div class="container">

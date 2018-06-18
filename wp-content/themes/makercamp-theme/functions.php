@@ -474,7 +474,7 @@ function stuff_for_sale_panel() { ?>
         <div class="row">
 
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Easy_Electronics_ec54aa34-bfc8-449a-8189-f140ee35f319_large.jpg' ?>" class="img-responsive" alt="
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Easy_Electronics_ec54aa34-bfc8-449a-8189-f140ee35f319_large.jpg" class="img-responsive" alt="
 Make: Easy Electronics - Book and Kit" />
             <h4>Make: Easy Electronics</h4>
             <p>12 great projects guaranteed to spark your imagination and get you making.</p>

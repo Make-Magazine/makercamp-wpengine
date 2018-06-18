@@ -3,7 +3,7 @@
   "title": "Maker Camp Theme",
   "version": "1.0.0",
   "devDependencies": {
-    "grunt": "latest",
+    "grunt": "^1.0.3",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
