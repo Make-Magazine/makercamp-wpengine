@@ -474,28 +474,29 @@ function stuff_for_sale_panel() { ?>
         <div class="row">
 
           <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/StartMaking.jpg' ?>" class="img-responsive" alt="Start Making!" />
-            <h4>Start Making!</h4>
-            <p>Six great projects guaranteed to spark your imagination and get you making.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-start-making" target="_blank">BUY NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Easy_Electronics_ec54aa34-bfc8-449a-8189-f140ee35f319_large.jpg' ?>" class="img-responsive" alt="
+Make: Easy Electronics - Book and Kit" />
+            <h4>Make: Easy Electronics</h4>
+            <p>12 great projects guaranteed to spark your imagination and get you making.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/easy-electronics-book-and-kit" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/make-it-glow.jpg' ?>" class="img-responsive" alt="Make It Glow - Book" />
-            <h4>Make It Glow</h4>
-            <p>Explore electricity and electronics with a collection of kid-ready LED projects.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-it-glow" target="_blank">BUY NOW</a>
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/make-it-glow.jpg' ?>" class="img-responsive" alt="How to Use a Breadboard! - Kit" />
+            <h4>How to Use a Breadboard!</h4>
+            <p>Enhance your electronics skills with this self-guided learning course.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/how-to-use-a-breadboard-1ed" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Paper_Inventions_large.jpg" class="img-responsive" alt="Make: Paper Inventions Book" />
-            <h4>Make: Paper Inventions</h4>
-            <p>A colorful book to guide you in making your own paper projects.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-paper-inventions" target="_blank">BUY NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MSBBRP-0_1287c69c-4306-4ffd-b1a6-c2b88a4507ba_large.jpg" class="img-responsive" alt="BrushBot Party Pack " />
+            <h4>BrushBot Party Pack</h4>
+            <p>Brushbot Party Packs (12) are the perfect way to electrify your next party.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/brushbot-party-pack-12-pack" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/9780596519414-2_notebook_515x515_grande_6745f7ac-f2fc-4cf1-987c-b8c906b9411f_large_cropped.jpg" class="img-responsive" alt="Makers Notebook" />
-            <h4>Maker's Notebook</h4>
-            <p>Jot down project ideas, diagrams, and notes in this sweet notebook.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-notebook-hard-bound" target="_blank">BUY NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MKLS01_pin_800x800_large.jpg" class="img-responsive" alt="Learn to Solder" />
+            <h4>Learn to Solder</h4>
+            <p>Our exclusive kit has been used to teach tens of thousands of people how to solder.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/learn-to-solder-skill-badge-kit" target="_blank">BUY NOW</a>
           </div>
 
         </div>
