@@ -88,7 +88,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=5.2' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=5.3' );
   /* Custom JS */
   wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=3.3', array('jquery'), '', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -477,26 +477,34 @@ function stuff_for_sale_panel() { ?>
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/Make_Easy_Electronics_ec54aa34-bfc8-449a-8189-f140ee35f319_large.jpg" class="img-responsive" alt="
 Make: Easy Electronics - Book and Kit" />
             <h4>Make: Easy Electronics</h4>
-            <p>12 great projects guaranteed to spark your imagination and get you making.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/easy-electronics-book-and-kit" target="_blank">BUY NOW</a>
+            <div class="sale-text">
+              <p>12 great projects guaranteed to spark your imagination and get you making.</p>
+              <a class="mc-blue-btn" href="https://www.makershed.com/products/easy-electronics-book-and-kit" target="_blank">BUY NOW</a>
+            </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/BreadboardKit_White-1_large.jpg" class="img-responsive" alt="How to Use a Breadboard! - Kit" />
             <h4>How to Use a Breadboard!</h4>
-            <p>Enhance your electronics skills with this self-guided learning course.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/how-to-use-a-breadboard-1ed" target="_blank">BUY NOW</a>
+            <div class="sale-text">
+              <p>Enhance your electronics skills with this self-guided learning course.</p>
+              <a class="mc-blue-btn" href="https://www.makershed.com/products/how-to-use-a-breadboard-1ed" target="_blank">BUY NOW</a>
+            </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MSBBRP-0_1287c69c-4306-4ffd-b1a6-c2b88a4507ba_large.jpg" class="img-responsive" alt="BrushBot Party Pack " />
             <h4>BrushBot Party Pack</h4>
-            <p>Brushbot Party Packs (12) are the perfect way to electrify your next party.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/brushbot-party-pack-12-pack" target="_blank">BUY NOW</a>
+            <div class="sale-text">
+              <p>Brushbot Party Packs (12) are the perfect way to electrify your next party.</p>
+              <a class="mc-blue-btn" href="https://www.makershed.com/products/brushbot-party-pack-12-pack" target="_blank">BUY NOW</a>
+            </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MKLS01_pin_800x800_large.jpg" class="img-responsive" alt="Learn to Solder" />
             <h4>Learn to Solder</h4>
-            <p>Our exclusive kit has been used to teach tens of thousands of people how to solder.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/learn-to-solder-skill-badge-kit" target="_blank">BUY NOW</a>
+            <div class="sale-text">
+              <p>Our exclusive kit has been used to teach tens of thousands of people how to solder.</p>
+              <a class="mc-blue-btn" href="https://www.makershed.com/products/learn-to-solder-skill-badge-kit" target="_blank">BUY NOW</a>
+            </div>
           </div>
 
         </div>
