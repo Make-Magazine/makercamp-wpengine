@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <section class="home-hero">
-   <div id="hero-video" class="embed-youtube">
+   <!--<div id="hero-video" class="embed-youtube">
        <iframe src="https://www.youtube.com/embed/wXP6HNkryl0?showinfo=0" frameborder="0" allowfullscreen></iframe>
-   </div>
-   <!--<video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php //echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
-      <source src="<?php //echo get_template_directory_uri(); ?>/assets/video/Maker-Camp-Intro-Video-2017-v2.mp4" type="video/mp4">
-   </video>-->
+   </div>-->
+   <video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/MakerCamp2018Loop.mp4" type="video/mp4">
+   </video>--
    <div class="container text-center">
       <h2>WELCOME TO<br><strong>MAKER CAMP</strong><!-- <br><span>Celebrating the National Week of Making</span> --></h2>
       <div class="hero-btn-cont">
