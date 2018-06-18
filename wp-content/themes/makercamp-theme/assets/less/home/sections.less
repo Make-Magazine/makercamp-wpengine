@@ -566,11 +566,21 @@
     .col-sm-3 {
       text-align: center;
       height: 320px;
+      @media (max-width: 978px) {
+          height: 280px;
+      }
       @media (max-width: 767px) {
         margin-top: 15px;
+        height: 360px;
         &:nth-child(3) {
           clear: both;
         }
+      }
+      @media (max-width: 427px) {
+          height: 320px;
+      }
+      @media (max-width: 320px) {
+          height: 280px;
       }
       img {
         padding: 0 7px 10px;
@@ -591,12 +601,19 @@
         margin: 0 auto;
         left: 0px;
         right: 0px;
+        height: 120px;
         p, a {
           font-size: 14px;
-          margin-bottom: 0;
+        }
+        p { 
+            height: 60px;
+            margin-bottom: 0;
+            @media (max-width: 978px) {
+                height: 85px;
+            }
         }
         a {
-          margin-top: 10px;
+          margin: 10px 0;
         }
       }
     }
