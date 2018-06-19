@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE</br> POSSIBLE BY THE GENEROUS SUPPORT OF:</P>
+          <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE<br /> POSSIBLE BY THE GENEROUS SUPPORT OF:</p>
         </div>
         <div class="col-xs-12 col-sm-6 home-sponsor-img">
             
@@ -27,20 +27,22 @@
           ));
           foreach($sponsor_pages as $sponsor_page) {
             $sponsor_ID = $sponsor_page->ID;
-            var_dump($sponsor_page);
           }
+            
           // check if the nested repeater field has rows of data
           if( have_rows('sponsors', $sponsor_ID)) {
+            echo("sponsors has rows");
             // loop through the rows of data
             while ( have_rows('sponsors', $sponsor_ID) ) {
               the_row();
 
               if( get_row_layout() == 'sponsors_with_image' ) {
+                echo("sponsor has image");
                 $sub_field_3 = get_sub_field('sponsors_image_size'); //size option
 
                 // check if the nested repeater field has rows of data
                 if( have_rows('sponsors_with_image') ) {
-
+                  echo("sponsor image has rows");
                   // loop through the rows of data
                   while ( have_rows('sponsors_with_image') ) {
                     the_row();
