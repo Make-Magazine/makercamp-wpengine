@@ -1,18 +1,10 @@
 <?php get_header(); ?>
 <section class="home-hero">
-   <!--<div id="hero-video" class="embed-youtube">
-       <iframe src="https://www.youtube.com/embed/wXP6HNkryl0?showinfo=0" frameborder="0" allowfullscreen></iframe>
-   </div>-->
    <video id="hero-video" autoplay="autoplay" muted="muted" loop poster="<?php echo get_template_directory_uri(); ?>/assets/img/Maker-Camp-video-poster.jpg">
       <source src="<?php echo get_template_directory_uri(); ?>/assets/video/MakerCamp2018Loop.mp4" type="video/mp4">
    </video>--
    <div class="container text-center">
       <h2>WELCOME TO<br><strong>MAKER CAMP</strong><!-- <br><span>Celebrating the National Week of Making</span> --></h2>
-      <div class="hero-btn-cont">
-         <a class="mc-blue-btn" href="/get-started">Get Started</a>
-         <a class="mc-blue-btn" href="/project-paths">Project Paths</a>
-         <a class="mc-blue-btn" href="/explore#host">Start a Camp</a>
-      </div>
       <i style="margin-bottom:5px;" class="fa fa-chevron-down" aria-hidden="true"></i>
       <img class="home-hero-makey" src="<?php echo get_template_directory_uri(); ?>/assets/img/MAkey---Pinwheel@2x.png" alt="Maker Camp learning for kids Makey icon" />
     </div>
@@ -26,6 +18,8 @@
           <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE</br> POSSIBLE BY THE GENEROUS SUPPORT OF:</P>
         </div>
         <div class="col-xs-12 col-sm-6 home-sponsor-img">
+            
+
           <?php
           $sponsor_pages = get_pages(array(
             'meta_key' => '_wp_page_template',
@@ -33,6 +27,7 @@
           ));
           foreach($sponsor_pages as $sponsor_page) {
             $sponsor_ID = $sponsor_page->ID;
+            var_dump($sponsor_page);
           }
           // check if the nested repeater field has rows of data
           if( have_rows('sponsors', $sponsor_ID)) {
@@ -72,11 +67,11 @@
 
   <section class="home-newsl-video">
     <div class="container">
-      <div class="home-newsl-video-l">
+      <!-- <div class="home-newsl-video-l">
         <div class="embed-youtube">
           <iframe src="https://www.youtube.com/embed/wXP6HNkryl0?showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
+      </div> -->
       <div class="home-newsl-video-r">
         <h3>Join <strong>Make:</strong> EDUCATION e-NEWS</h3>
         <p>How making is transforming learning.</p>
@@ -93,48 +88,48 @@
   <section class="what-happens-at-mc">
     <div class="">
       <h2>WHAT HAPPENS AT <strong>MAKER CAMP?</strong></h2>
-      <div class="foating-divs">
-        <div class="foating-div-1">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Make_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
+      <div class="floating-divs">
+        <div class="floating-div-1">
+          <a href="/project-paths"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Make_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" /></a>
           <h4>PROJECTS</h4>
           <p>Check out our awesome collection of projects!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/project-paths"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
         </div>
-        <div class="foating-div-2">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Share_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
+        <div class="floating-div-2">
+          <a href="#share"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Share_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" /></a>
           <h4>SHARE</h4>
           <p>Post your projects on social media with #MakerCamp and it will appear above!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="#share"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>SEE WHAT CAMPS ARE SHARING</a>
           </div>
         </div>
-        <div class="foating-div-3">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
+        <div class="floating-div-3">
+          <a href="https://plus.google.com/communities/107377046073638428310" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" /></a>
           <h4>COMMUNITY</h4>
           <p>Connect with camps from all around the world and swap ideas!</p>
           <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN <span>MAKER CAMP </span>COMMUNITY</a>
         </div>
-        <div class="foating-div-4">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
+        <div class="floating-div-4">
+          <a href="/explore"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" /></a>
           <h4>FIND A CAMP</h4>
           <p>Find a Maker Camp near you!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/explore"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE <span>MAKER CAMP </span>MAP</a>
           </div>
         </div>
-        <div class="foating-div-5">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Host_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
+        <div class="floating-div-5">
+          <a href="https://makercamp.com/affiliate-program"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Host_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" /></a>
           <h4>START A CAMP</h4>
           <p>Become a Maker Camp affiliate and introduce kids to the joys of making!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/explore#host"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
+          <a class="mc-blue-arrow-btn" href="https://makercamp.com/affiliate-program"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
           </div>
         </div>
       </div>
     </div>
-    <dic class="clearfix"></div>
+    <div class="clearfix"></div>
   </section>
 
   <section class="newsletter-panel">
