@@ -31,29 +31,27 @@
             
           // check if the nested repeater field has rows of data
           if( have_rows('sponsors', $sponsor_ID)) {
-            echo("sponsors has rows");
+
             // loop through the rows of data
             while ( have_rows('sponsors', $sponsor_ID) ) {
               the_row();
 
               if( get_row_layout() == 'sponsors_with_image' ) {
-                echo("sponsor has image");
                 $sub_field_3 = get_sub_field('sponsors_image_size'); //size option
 
                 // check if the nested repeater field has rows of data
                 if( have_rows('sponsors_with_image') ) {
-                  echo("sponsor image has rows");
+
                   // loop through the rows of data
                   while ( have_rows('sponsors_with_image') ) {
                     the_row();
 
                     $sub_field_1 = get_sub_field('image'); //Photo
+                    $sub_field_2 = get_sub_field('url'); //URL
                     $photon = get_fitted_remote_image_url($sub_field_1['url'], 300, 300);
 
                     // check if the nested repeater field has rows of data
-                    if( $sub_field_3 == 'sponsors-box-xl' ) {
-                      echo '<img src="' . $photon . '" class="img-responsive" alt="Maker Camp Sponsor logos" />';
-                    }
+                    echo '<img src="' . $photon . '" class="img-responsive" alt="Maker Camp Sponsor logos" />';
                   }
                 }
               }// end if sponsor image rows
