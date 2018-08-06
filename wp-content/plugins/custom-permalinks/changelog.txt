@@ -2,27 +2,124 @@
 
 This file contains only old changelog. See readme.txt for newer versions.
 
-= 1.2.5 =
+= 1.2.22 - May 16, 2018 =
+
+  * Enhancement
+    * Added Capabilities to view the Permalinks Page
+
+  * Bug
+    * Fixed cp_remove_like_query Filter issue
+
+= 1.2.21 - April 17, 2018 =
+
+  * Bug
+    * Removed final keyword with the classes.
+      For further details:
+      https://wordpress.org/support/topic/page-not-found-404-errors-after-latest-update/
+      https://wordpress.org/support/topic/throws-404-here-and-there/
+
+= 1.2.20 - April 11, 2018 =
+
+  * Bug
+    * Removed extra code which was written for the equal query.
+      For further details:
+      https://wordpress.org/support/topic/page-not-found-404-errors-after-latest-update/
+  
+= 1.2.19 - April 10, 2018 =
+
+  * Bugs
+    * Fixed undefined variable issue on PostTypes Permalinks page
+    * Fixed LIKE Query Issue
+
+= 1.2.18 - April 05, 2018 =
+
+  * Enhancement
+    * Merged custom-permalinks-main.php with custom-permalinks.php
+    * Added uninstall.php
+
+  * Bugs
+    * Added feed redirect of default permalink
+    * Provide proper feed of custom permalink
+
+= 1.2.17 - Feb 13, 2018 =
+
+  * Fixed Pagination Issue on Comments
+  * Optimize Post Pager Query
+
+= 1.2.16 - Feb 09, 2018 =
+
+  * Added compatibility with Tasty Recipes Plugin
+
+= 1.2.15 - Feb 08, 2018 =
+
+  * Added filter which can be used to add PATH_INFO in $_SERVER Variable
+
+= 1.2.14 - Feb 07, 2018 =
+
+  * Enhancement
+    * Added PATH_INFO in $_SERVER Variable
+
+  * Bugs
+    * $this variable issue on static method
+
+= 1.2.12 - Jan 25, 2018 =
+
+  * Fixed translation path and pager content issue
+
+= 1.2.11 - Jan 24, 2018 =
+
+  * Fixed pager issue
+
+= 1.2.10 - Jan 17, 2018 =
+
+  * Fixed Redirect Issue of Child Pages
+
+= 1.2.9 - Jan 16, 2018 =
+
+  * Enhancements
+    * Added Filter to enable the like query
+  * Bugs
+    * PHP error displayed on all pages using custom permalinks
+    * Removed LIKE Query in default. It only works if the site uses PolyLang,
+      AMP Plugins or separately enabled using the provided filter.
+
+= 1.2.8 - Nov 03, 2017 =
+
+  * Add Order by in request query
+
+= 1.2.7 - Oct 27, 2017 =
+
+  * Fixed Parse Error
+
+= 1.2.6 - Oct 27, 2017 =
+
+  * Enhancements
+    * Added Filter to Exclude Post types
+  * Bugs
+    * Fixed Query Issue on parse_request
+    * Resolving Issues with Cornerstone
+
+= 1.2.5 - Oct 17, 2017 =
   
   * Fixed Category/Tag Update Issue + Typo on Admin Page
 
-= 1.2.4 =
+= 1.2.4 - Oct 07, 2017 =
 
   * Fixed Slug issue with Yoast SEO
 
-= 1.2.3 =
+= 1.2.3 - Sept 27, 2017 =
 
   * Fixed PHP Notice on Edit Post Page
 
-= 1.2.2 =
+= 1.2.2 - Sept 26, 2017 =
 
   * Fixed Typo of Class Object for term on Admin Page
 
-= 1.2.1 =
+= 1.2.1 - Sept 25, 2017 =
 
   * Fixed Class Typo
 
-= 1.2 =
+= 1.2 - Sept 25, 2017 =
 
   * Enhancements
     * Added Filter to Exclude/Ignore URL to be processed
@@ -32,7 +129,7 @@ This file contains only old changelog. See readme.txt for newer versions.
   * Bugs
     * Fixed Vulnerability Issues
 
-= 1.1 =
+= 1.1 - Sept 25, 2017 =
   
   * Enhancements
     * Added PostTypes Permalinks Page
@@ -49,51 +146,51 @@ This file contains only old changelog. See readme.txt for newer versions.
      * 404 Issues
      * Child pages bug
     
-= 1.0.2 =
+= 1.0.2 - Aug 15, 2017 =
   
   * Fixed Notice and some URL Issues
 
-= 1.0.1 =
+= 1.0.1 - Aug 12, 2017 =
   
   * Fixed issue with AMP Pages
 
-= 1.0 =
+= 1.0 - Aug 11, 2017 =
   
   * Updated Query on the `custom_permalinks_request` Function
 
-= 0.9.3 =
+= 0.9.3 - July 21, 2017 =
 
  * Fixed PolyLang Conflicts
 
-= 0.9.2 =
+= 0.9.2 - July 16, 2017 =
 
  * Fixed WPML Conflicts
 
-= 0.9.1 =
+= 0.9.1 - July 16, 2017 =
 
  * Fixed issues of Filters and Actions (Replaces 'edit_files' with 10)
 
-= 0.9 =
+= 0.9 - July 16, 2017 =
 
  * Resolved the conflict with PolyLang Plugin
 
-= 0.8 =
+= 0.8 - Aug 19, 2016 =
 
  * Fixed (Draft preview issue for custom post types + some PHP Warnings)
 
-= 0.7.28 =
+= 0.7.28 - July 28, 2016 =
 
  * Fixed draft preview issue(posts + pages)
 
-= 0.7.27 =
+= 0.7.27 - July 21, 2016 =
 
  * Fixed Loop Redirecting issue
 
-= 0.7.26 =
+= 0.7.26 - July 20, 2016 =
 
  * Fixed PHP Notice issue
 
-= 0.7.25 =
+= 0.7.25 - June 06, 2016 =
 
  * Fixed draft preview issue
 
