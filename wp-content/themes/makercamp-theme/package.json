@@ -4,7 +4,7 @@
    "author": "Maker Media",
    "description": "Theme for Maker Camp site",
    "license": "UNLICENSED",
-   "version": "1.2.10",
+   "version": "1.2.9",
    "repository": {
       "type": "git",
       "url": "git@github.com:Make-Magazine/makercamp-wpengine.git"
@@ -13,13 +13,13 @@
       "cachebust:update": "npm version patch",
       "postcachebust:update": "npm run replace:version",
       "replace:version": "replace-in-file '/Version\\: [0-9]\\.{0,1}[0-9]*\\.{0,1}[0-9]*/' 'Version: '\"$npm_package_version\" style.css --isRegex",
-      "less:compile": "lessc --source-map-less-inline --source-map-map-inline --line-numbers=comments less/style.less css/style.css",
+      "less:compile": "lessc --source-map-less-inline --source-map-map-inline ./assets/less/custom.less ./public/css/custom.css",
       "postless:compile": "npm run less:minify",
-      "less:minify": "cleancss -o css/style.min.css css/style.css --source-map",
-      "postless:minify": "rm css/style.css",
-      "js:uglify": "uglifyjs js/*.js -o js/min/scripts.min.js -c -m --source-map \"root='../../', url='scripts.min.js.map'\"",
-      "onchange:less": "onchange 'less/*.less' -- npm run less:compile",
-      "onchange:js": "onchange 'js/*.js' -- npm run js:uglify",
+      "less:minify": "cleancss -o ./public/css/custom.min.css ./public/css/custom.css --source-map",
+      "postless:minify": "rm public/css/custom.css",
+      "js:uglify": "uglifyjs bower_components/bootstrap/js/affix.js bower_components/bootstrap/js/alert.js bower_components/bootstrap/js/button.js bower_components/bootstrap/js/carousel.js bower_components/bootstrap/js/collapse.js bower_components/bootstrap/js/dropdown.js bower_components/bootstrap/js/modal.js bower_components/bootstrap/js/tooltip.js bower_components/bootstrap/js/popover.js bower_components/bootstrap/js/scrollspy.js bower_components/bootstrap/js/tab.js bower_components/bootstrap/js/transition.js bower_components/fancybox/source/jquery.fancybox.pack.js assets/js/script.js -o public/js/script.min.js -c -m --source-map \"root='../../', url='script.min.js.map'\"",
+      "onchange:less": "onchange 'assets/**/*.less' -- npm run less:compile",
+      "onchange:js": "onchange 'assets/js/script.js' -- npm run js:uglify",
       "build": "npm-run-all js:uglify less:compile",
       "build:cachebust": "npm-run-all cachebust:update js:uglify less:compile",
       "dev": "npm-run-all build -p onchange:js onchange:less"
