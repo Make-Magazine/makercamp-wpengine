@@ -85,12 +85,14 @@ add_action( 'widgets_init', 'makercamp_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function makercamp_theme_scripts() {
-  wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
+   $my_theme = wp_get_theme();
+   $my_version = $my_theme->get('Version');
+  wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri(), array(),  $my_version );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=5.6' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css', array(),  $my_version);
   /* Custom JS */
-  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js?v=3.3', array('jquery'), '', true );
+  wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js', array('jquery'), $my_version, true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );

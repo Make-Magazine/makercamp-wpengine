@@ -1,13 +1,40 @@
 {
-  "name": "maker-camp-theme",
-  "title": "Maker Camp Theme",
-  "version": "1.0.0",
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest"
-  },
-  "keywords": []
+   "name": "maker-camp-theme",
+   "title": "Maker Camp Theme",
+   "author": "Maker Media",
+   "description": "Theme for Maker Camp site",
+   "license": "UNLICENSED",
+   "version": "1.2.10",
+   "repository": {
+      "type": "git",
+      "url": "git@github.com:Make-Magazine/makercamp-wpengine.git"
+   },
+   "scripts": {
+      "cachebust:update": "npm version patch",
+      "postcachebust:update": "npm run replace:version",
+      "replace:version": "replace-in-file '/Version\\: [0-9]\\.{0,1}[0-9]*\\.{0,1}[0-9]*/' 'Version: '\"$npm_package_version\" style.css --isRegex",
+      "less:compile": "lessc --source-map-less-inline --source-map-map-inline --line-numbers=comments less/style.less css/style.css",
+      "postless:compile": "npm run less:minify",
+      "less:minify": "cleancss -o css/style.min.css css/style.css --source-map",
+      "postless:minify": "rm css/style.css",
+      "js:uglify": "uglifyjs js/*.js -o js/min/scripts.min.js -c -m --source-map \"root='../../', url='scripts.min.js.map'\"",
+      "onchange:less": "onchange 'less/*.less' -- npm run less:compile",
+      "onchange:js": "onchange 'js/*.js' -- npm run js:uglify",
+      "build": "npm-run-all js:uglify less:compile",
+      "build:cachebust": "npm-run-all cachebust:update js:uglify less:compile",
+      "dev": "npm-run-all build -p onchange:js onchange:less"
+   },
+   "devDependencies": {
+      "clean-css-cli": "^4.2.1",
+      "grunt": "^1.0.3",
+      "grunt-contrib-concat": "latest",
+      "grunt-contrib-less": "latest",
+      "grunt-contrib-uglify": "latest",
+      "grunt-contrib-watch": "latest",
+      "less": "^3.9.0",
+      "npm-run-all": "^4.1.5",
+      "onchange": "^5.2.0",
+      "replace-in-file": "^3.4.2",
+      "uglify-js": "^3.4.9"
+   }
 }
