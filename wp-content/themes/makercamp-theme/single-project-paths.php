@@ -230,7 +230,7 @@ get_header();
               $post = $project_2016;
               setup_postdata( $post );
               if ( has_post_thumbnail() ) {
-                $project_img = get_the_post_thumbnail_url($post_object->ID);
+                $project_img = get_the_post_thumbnail_url($post->ID);
                 
               } else {
                 $project_img = get_field('hero_image'); 

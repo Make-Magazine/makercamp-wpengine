@@ -29,7 +29,7 @@ $parent_id = $post->post_parent; ?>
         <?php if ($hero_image_sponsor) { ?>
           <img src="<?php echo $hero_image_sponsor ?>" alt="Maker Camp project theme sponsorship logo" />
         <?php } ?>
-        <h2><?php echo $theme->name; ?></h2>
+        <h2><?php echo (isset($theme->name)?$theme->name:''); ?></h2>
         <hr />
         <h1><?php the_title(); ?></h1>
       </div>
