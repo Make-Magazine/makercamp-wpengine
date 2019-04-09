@@ -4,6 +4,11 @@
  *
  * @package Maker Camp Theme
  */
+// FOR NOW, TURN OFF GUTENBURG
+// disable for posts
+add_filter('use_block_editor_for_post', '__return_false', 10);
+// disable for post types
+add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
 /**
  * Set the content width based on the theme's design and stylesheet.
